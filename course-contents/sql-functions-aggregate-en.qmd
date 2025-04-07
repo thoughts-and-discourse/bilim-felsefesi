@@ -1,0 +1,13 @@
+# Aggregate functions
+
+Aggregate functions takes a set of values as input and returns a single one as output.
+
+
+
+{{< include ../course-contents/tables/table-agregate-functions-en.md >}}
+
+
+## Sqlite
+
+TODO add them.
+https://www.sqlite.org/lang_aggfunc.html

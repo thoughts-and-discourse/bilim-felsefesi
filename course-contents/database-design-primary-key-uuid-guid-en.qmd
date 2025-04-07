@@ -1,0 +1,23 @@
+## Primary keys UUID or GUID
+
+Universally unique identifier (UUID) or Globally Unique Identifier (GUID) 
+
+
+
+
+- [Wikipedia Universally_unique_identifier](https://en.wikipedia.org/wiki/Universally_unique_identifier)
+- [RFC 4122: A Universally Unique IDentifier (UUID) URN Namespace ](https://www.rfc-editor.org/rfc/rfc4122)
+
+[RFC 9562: Universally Unique IDentifiers (UUIDs)](https://www.rfc-editor.org/rfc/rfc9562.html)
+
+{{< include ../course-contents/database-design-primary-key-uuid-guid-sqlite-en.qmd >}}
+
+
+
+
+
+## other tutorials 
+
+- ["Why UUIDs are Secretly Incredibly Fascinating" - Tom Eastman (Pycon AU 2024)](https://www.youtube.com/watch?v=n9Cxs0sTqEY)
+
+- [UUID vs INT: What’s Better For Your Primary Key?](https://www.youtube.com/watch?v=DHtf_46OxY8)

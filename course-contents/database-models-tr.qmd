@@ -1,0 +1,30 @@
+# Veri Tabanı Modelleri
+
+{{< include ../course-contents/database-models-flat-file-tr.qmd >}}
+
+{{< include ../course-contents/database-models-hierarchical-tr.qmd >}}
+
+
+
+{{< include ../course-contents/database-models-network-tr.qmd >}}
+
+{{< include ../course-contents/database-models-relational-tr.qmd >}}
+
+{{< include ../course-contents/database-models-object-oriented-tr.qmd >}}
+
+{{< include ../course-contents/database-models-xml-tr.qmd >}}
+
+{{< include ../course-contents/database-models-document-tr.qmd >}}
+
+
+
+{{< include ../course-contents/database-models-graph-tr.qmd >}}
+
+{{< include ../course-contents/database-models-vector-tr.qmd >}}
+
+
+
+
+
+
+

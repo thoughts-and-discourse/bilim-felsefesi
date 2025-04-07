@@ -1,0 +1,70 @@
+## First Normal Form
+
+In the first normal form, all records must contain same number of fields.
+The first normal form forbids multi-valued attributes and groups.
+Every cell should contain only **atomic values**.
+
+For example, in the following table: skills, separated using commas, are multi-valued attributes. 
+
+
+| Id | Skills                             |
+|----|------------------------------------|
+| 1  | Programming, Web Design, Databases |
+| 2  | Databases, Algorithms              |
+
+:::{.callout-important}
+Not in 1st normal form
+:::
+
+To be in the first normal form, a given cell should not contain complex data structures, like sets or lists.
+
+
+In the following table: phone numbers are repeated for the same person.
+This again violates 1st normal form.
+
+| Id | Name   | Phone   |
+|----|--------|---------|
+| 1  | Celal | Phone 1 |
+| 2  | Celal | Phone 2 |
+
+:::{.callout-important}
+Not in 1st normal form
+:::
+
+
+### Side note: atomic 
+
+There are disagreements about definition of atomic cell:
+Consider following table:
+
+
+
+| Id | Name   | Address                               |
+|----|--------|---------------------------------------|
+| 1  | Celal Bicak | Example Street, No 20, Ankara Türkiye |
+| 2  | Oya Bicak  | Example Str, No 20, MG Germany        |
+
+:::{.callout-tip}
+Is this table in 1st normal form?
+:::
+
+
+Does address and name values are atomic in this table?
+It could be argued that:
+
+1. Name should be divided to first name and last name columns.
+2. Address column should be divided so that at least city and country information should be in different columns.
+
+But where to stop?
+In the same way: 
+
+- Any string value could be thought as list of characters.
+- A date value could be divided to year, month and day values.
+
+My opinion is that: think about your application queries.
+
+If your application needs to deal with first and last name separately, for example sort/filter according to last names, then this name column should be divided.
+In the same way, if your application needs to filter/order data according to city and country, then, these two information, city and country, should be in different columns.
+For date values, specific date SQL functions will be helpful; therefore, you may not need to divide date columns.
+
+First normal form is actually a design guideline since relational database theory does not deal with variable number of fields  @Kent1983simple.

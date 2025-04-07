@@ -1,0 +1,25 @@
+# SQL With
+
+With statements are also called Common Table Expressions or CTEs.
+Why should we CTEs instead of views or derived tables (from sub-queries)?
+
+- CTEs are Temporary. Views are permanent
+- readable, literate sql
+- nesting
+- Recursion
+
+
+There are two types of CTEs.
+
+1. Ordinary
+2. Recursive
+
+{{< include ../course-contents/sql-with-ordinary-en.qmd >}}
+{{< include ../course-contents/sql-with-recursive-en.qmd >}}
+
+
+
+## Suggested readings
+
+- [literate-sql](https://modern-sql.com/use-case/literate-sql)
+

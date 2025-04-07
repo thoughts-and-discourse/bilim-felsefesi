@@ -1,0 +1,18 @@
+# SQL Data Types
+
+## ANSI SQL Data Types
+
+
+See below table by Microsoft @Access2024Equivalent
+
+{{< include ../course-contents/tables/table-ansi-sql-data-types.md >}}
+
+## SQL Data Types strings
+
+- difference between quotes "" and ''
+
+
+{{< include ../course-contents/sql-data-types-sqlserver-en.qmd >}}
+
+{{< include ../course-contents/sql-data-types-sqlite-en.qmd >}}
+

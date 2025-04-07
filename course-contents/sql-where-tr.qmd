@@ -1,0 +1,248 @@
+# SQL WHERE
+
+{{< include ../course-contents/tables/table-where-operators-tr.md >}}
+
+## Örnekler
+
+Chinook
+
+```sql
+select * from Employee where EmployeeId = 5;
+```
+
+```sql
+select * from Employee where EmployeeId != 5;
+```
+
+```sql
+select * from Employee where EmployeeId <> 5;
+```
+
+```sql
+select * from Employee where EmployeeId < 5;
+```
+```sql
+select * from Employee where EmployeeId <= 5;
+```
+```sql
+select * from Employee where EmployeeId > 5;
+```
+
+```sql
+select * from Employee where EmployeeId >= 5;
+```
+## mantıksal operatörler
+
+- AND
+- OR
+- NOT
+
+{{< include ../course-contents/tables/table-truth-table-and.md >}}
+
+
+{{< include ../course-contents/tables/table-truth-table-or.md >}}
+
+
+## IN operatörü
+
+Verilen değerin bir liste içinde olup olmadığını kontrol ederiz.
+Örneğin aşağıdaki komut EmployeeId 2, 5 veya 8 olan çalışanları getirecektir.
+
+```sql
+SELECT * FROM Employee WHERE EmployeeId IN (2,5,8);  
+```
+IN komutu aşağıdaki OR kullanımına eşittir ama daha kısa, okunur ve anlaşılır olduğu için tercih edilir.
+
+```sql
+SELECT * from Employee WHERE 
+EmployeeId = 2 OR
+EmployeeId = 5 OR
+EmployeeId = 8
+;  
+```
+NOT kullanarak bu listede içinde olmayanlar getirilebilir.
+
+```sql
+SELECT * FROM Employee WHERE EmployeeId NOT IN (2,5,8);  
+```
+```sql
+SELECT * FROM Employee WHERE EmployeeId NOT IN (2,5,8);  
+```
+Başka bir örnek
+
+```sql
+SELECT * FROM Track t 
+WHERE t.MediaTypeId  IN (1,2)
+```
+
+IN operatörü birden fazla kolon kullanarakta çalışır.
+Bu kullanım her veri tabanında desteklenmez.
+Aşağıdaki sorgu SQLite ve Oracle veri tabanlarında çalışırken SQL Server'da çalışmamaktadır.
+
+
+
+```sql
+SELECT COUNT(*) FROM Track t 
+WHERE 
+(t.MediaTypeId , t.GenreId) 
+IN (
+(1,1),
+(1,2),
+(2,2),
+(2,2)
+)
+```
+
+
+
+Alt sorgu ve IN operatörü kullanarak bazen 2 tabloyu birleştirmek için inner join yerine kullanılabiliriz.
+
+
+
+## Between Arasında  operatörü
+
+```sql
+select * from Employee 
+where EmployeeId Between 2 and 5;  
+```
+
+Between operatörü aşağıdaki **>= and <=** kullanımına eşittir.
+Ama ingilizce daha anlaşılır bir kullanımı vardır.
+
+
+```sql
+select * from Employee 
+where EmployeeId >= 2 and EmployeeId <= 5;  
+```
+
+Between operatörü sayı, tarih ve yazılar ile çalışır.
+
+```sql
+SELECT * FROM Invoice i 
+WHERE i.Total BETWEEN 14.91 and 18.86
+ORDER BY i.Total ASC
+```
+
+NOT operatörü ile bu aralık dışındakileri getirebiliriz.
+
+```sql
+SELECT * FROM Invoice i 
+WHERE i.Total NOT BETWEEN 14.91 and 18.86
+ORDER BY i.Total ASC
+```
+
+2022 yılındakileri getir.
+
+```sql
+SELECT *
+FROM Invoice
+WHERE InvoiceDate BETWEEN '2022-01-01' AND '2022-12-31'
+ORDER BY InvoiceDate;
+```
+
+## LIKE operatörü
+
+
+Arama yaparken joker karakterleri kullanırız.
+yüzde **%** ve alt çizgi **_** karakterleri  tüm veritabanları tarafından desteklenirken diğer joker karakterler daha az desteklenmektedir.
+
+
+
+- [sql server wild cards](https://learn.microsoft.com/en-us/sql/t-sql/language-elements/wildcard-character-s-to-match-transact-sql?view=sql-server-ver16)
+- [oracle wild cards](https://docs.oracle.com/cd/B13789_01/server.101/b10759/conditions016.htm)
+- [sqlite wild cards](https://sqlite.org/lang_expr.html#like)
+
+
+{{< include ../course-contents/tables/table-sql-wildcards-en.md >}}
+
+
+**Örnekler Chinook**
+
+İsmi L ile başlayan müşteriler
+
+```sql
+SELECT * from Customer c WHERE C.FirstName LIKE 'L%';
+```
+
+isminde a karakteri olan müşteriler
+
+```sql
+SELECT * from Customer c WHERE C.FirstName LIKE '%a%';
+```
+Aşağıdaki büyük A harfi ile çalıştırılan sorgu aynı sonucu getirir.
+
+```sql
+SELECT * from Customer c WHERE C.FirstName LIKE '%A%';
+```
+
+Dikkat edilmesi gereken şey, SQLite varsayılan olarak yalnızca ASCII karakterleri için büyük/küçük harfleri anlar.
+Ö harfi ASCII olmadığı için aşağıdaki sorguda 0, false dönülmektedir.
+
+```sql
+SELECT 'a' LIKE 'A','ö' LIKE 'Ö' 
+```
+
+
+Aşağıdaki sorgu Lu ile başlayan arkasından herhangi bir harf olan ve s ile biten adları getirir.
+
+```sql
+SELECT * from Customer c WHERE C.FirstName LIKE 'Lu_s'
+```
+
+Aşağıdaki 2 sorgunun farkına bakınız.
+
+```sql
+SELECT * from Customer c 
+WHERE C.FirstName LIKE 'Fr'
+```
+
+
+```sql
+SELECT * from Customer c 
+WHERE C.FirstName LIKE 'Fr%'
+```
+
+Aşağıdaki 2 sorgunun farkına bakınız.
+
+```sql
+SELECT * from Customer c 
+WHERE C.FirstName LIKE 'Fran_'
+```
+```sql
+SELECT * from Customer c 
+WHERE C.FirstName LIKE 'Fran%'
+```
+**%deger%** kullanımı arama sayfalarında çok kullanılır.
+Ama bu kullanım indeks kullanamadığı için daha yavaştır.
+Çok fazla kayıdın olduğu tablolarda, **%deger%** yerine **deger%** tercih edilmelidir.
+
+
+
+SQL Server'da çalışır
+
+```sql
+SELECT * from Customer c WHERE C.Address LIKE '%[12]%'
+```
+
+
+```sql
+-- ikinci karakter bir a
+SELECT * from Customer c WHERE  C.FirstName LIKE '_[a]%'
+
+-- ikinci karakter bir a DEĞİL
+--SELECT * from Customer c WHERE C.FirstName LIKE '_[^a]%'
+```
+
+
+
+
+
+## Koşulların zincirlenmesi
+
+- 3'ten fazla koşulu zincirlemeniz gerektiğinde parantez kullanın.
+- Matematikte olduğu gibi, parantezler işlemlerin sırasını değiştirir.
+
+
+- (2+3)*5
+- 2+3*5
+

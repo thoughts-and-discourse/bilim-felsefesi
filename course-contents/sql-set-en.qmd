@@ -1,0 +1,37 @@
+# SQL SET Operations
+
+
+- UNION [ALL]
+- EXCEPT
+- INTERSECT 
+
+
+![set-operations-union-intersect-except](./images/set-operations-union-intersect-except.png)
+
+
+
+{{< include ../course-contents/sql-set-union-en.qmd >}}
+
+{{< include ../course-contents/sql-set-except-en.qmd >}}
+
+
+
+{{< include ../course-contents/sql-set-intersect-en.qmd >}}
+
+{{< include ../course-contents/sql-set-intersect-questions-en.qmd >}}
+
+
+
+
+## Oracle MINUS 
+
+Except is SQL standard but oracle also accept MINUS keyword.
+It is functionality is the same.
+Oracle also accepts ALL to EXCEPT ALL and MINUS ALL so that duplicated will not be removed, same as UNION ALL.
+See following [Oracle tutorial Set operations](https://oracle-base.com/articles/21c/sql-set-operator-enhancements-21c)
+
+
+## Other tutorials
+
+- [The EXCEPT and INTERSECT Operators in SQL Server](https://www.red-gate.com/simple-talk/databases/sql-server/performance-sql-server/the-except-and-intersect-operators-in-sql-server/)
+

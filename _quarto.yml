@@ -1,0 +1,34 @@
+project:
+  type: book
+  execute-dir: "project"
+  output-dir: ./docs
+
+book:
+  author: "Thought and Reason"
+  date: today
+  chapters:
+    - index.qmd
+    - intro.qmd
+    - references.qmd
+
+bibliography: references.bib
+
+profile:
+  default: tr
+  group: 
+    - [def,en,tr]
+
+format:
+  html:
+    smooth-scroll: true
+    link-external-icon: true
+    toc-location: left
+    toc-expand: false
+    theme: cosmo
+    mermaid:
+      theme: forest
+  pdf:
+    documentclass: scrreprt
+
+
+

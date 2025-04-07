@@ -1,0 +1,38 @@
+# DQL (data query language) SQL Select
+
+
+## SQL en basit SELECT örneği
+
+SQL standardına göre en basit seçme örneği aşağıdaki gibi olacaktır
+
+```sql
+SELECT * FROM TableName;
+```
+
+SQL Standard'a göre, SELECT ifadelerinde FROM kullanılması zorunludur.
+Ancak SQL Server ve sqlite gibi bazı veritabanları FROM kullanılmadan SELECT ifadelerine izin verir.
+
+
+```sql
+SELECT 2+2;
+```
+
+Select ifadelerini iki şekilde sıralayabiliriz.
+
+1. Sözdizimi sıralaması: SQL kelimelerini nasıl sıraladığımız
+2. Anlamsal sıralama: Veritabanı motorunun bu SQL kelimeleri hangi sırada işlediği
+
+Basit durumlar için iki sıralama vereceğiz ve bunları temel alarak daha karışık örnekler vereceğiz.
+
+
+
+
+{{< include ../course-contents/sql-select-ordering-syntax-tr.qmd >}}
+
+
+
+
+
+{{< include ../course-contents/sql-select-examples-tr.md >}}
+
+

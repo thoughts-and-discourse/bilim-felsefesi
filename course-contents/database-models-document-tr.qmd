@@ -1,0 +1,51 @@
+## Dokuman (Belge) veritabanları
+
+
+Belge veritabanları çoğunlukla json belgelerini depolar. 
+Bunlar şema içermeyen veri düzenlemeleridir. İlişkisel veritabanlarından farklı olarak, önceden veritabanı şemasını tasarlamak zorunda değilsinizdir.
+Bunun avantajları ve dezavantajları vardır.
+En bilinen örnek mongodb'dir. 
+
+Veri tabanı (database) en üst seviyedeki veri tutma nesnesidir.
+Veri tabanı bir çok kolleksiyon içerebilir.
+Kolleksiyon (collection) ilişkisel veri tabanlarındaki tabloya denktir.
+Dokuman (document) ise bu kolleksiyon içindeki bir satır olarak json nesnesidir.
+Örnek olarak:
+
+- veri tabanı = kütüphane
+- Kolleksiyon = Kitap rafı
+- Dokuman = kitap
+
+
+```{mermaid}
+flowchart TB
+    subgraph database
+        subgraph collection
+            subgraph document
+                d1["{id:1,name:'Atilla'}"]
+                d2["{id:2,name:'Duru'}"]
+            end    
+        end    
+    end
+```
+
+
+Örnek Dokuman veri tabanları:
+
+- MongoDB
+- Databricks
+- Amazon DynamoDB
+- Microsoft Azure Cosmos DB
+- Couchbase
+- Firebase (google)
+- Oracle NoSQL
+
+SQL standardına eklenen json fonksiyonları sayesinde bütün modern ilişkisel veri tabanları dokuman veri tabanı olarak çalışabilmektedir.
+
+- oracle
+- SQL-Server
+- SQLite
+- Postgres
+- MySQL/MariaDB
+
+

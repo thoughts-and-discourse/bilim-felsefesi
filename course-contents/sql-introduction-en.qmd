@@ -1,0 +1,17 @@
+# SQL introduction
+
+{{< include ../course-contents/sql-introduction-contents-en.md >}}
+
+{{< include ../course-contents/sql-knowledge-among-developers-en.md >}}
+
+
+
+{{< include ../course-contents/database-schema-object-names-en.md >}}
+
+
+{{< include ../course-contents/sql-database-links-en.md >}}
+
+
+
+
+

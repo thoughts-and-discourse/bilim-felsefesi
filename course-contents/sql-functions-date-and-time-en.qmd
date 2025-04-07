@@ -1,0 +1,69 @@
+# sql date-and-time functions
+
+Every database supports date and time functions but their name could be a little different.
+We will see examples from sqlite.
+
+[Date functions in sqlite](https://www.sqlite.org/lang_datefunc.html)
+
+
+> SQLite does not have a dedicated date/time datatype. Instead, date and time values can stored as any of the following:
+
+> ISO-8601	A text string that is an ISO 8601 date/time value. Example: '2025-05-29 14:16:00'
+> Julian day number	The number of days including fractional days since -4713-11-24 12:00:00 Example: 2460825.09444444
+> Unix timestamp	The number of seconds including fractional seconds since 1970-01-01 00:00:00 Example: 1748528160
+
+
+ISO-8601 syntax is more natural; therefore, I suggest you to use it.
+
+But unix timestamp is also widely used and all programming languages provides support for unix timestamp.
+See below for c# example
+
+```sql
+DateTime value = DateTime.UtcNow;
+long unixTime = ((DateTimeOffset)value).ToUnixTimeSeconds();
+```
+
+SQLite has following 7 scalar date and time functions:
+
+
+**date** 
+
+return the date as ISO-8601 format, YYYY-MM-DD.
+
+```sql
+select date();
+```
+
+last day of the current month.
+```sql
+SELECT date('now','start of month','+1 month','-1 day');
+```
+
+**time**
+
+returns the time as text in formatted as HH:MM:SS 
+
+**datetime**
+
+returns the date and time formatted as YYYY-MM-DD HH:MM:SS 
+
+
+**julianday**
+
+returns the Julian day - the fractional number of days since noon in Greenwich on November 24, 4714 B.C.
+
+**unixepoch**
+
+the number of seconds since 1970-01-01 00:00:00 UTC.
+
+**strftime**
+
+format the date according to the format string specified as the first argument.
+Format string supports  strftime() function from the standard C library.
+
+**timediff**
+
+The timediff(A,B) function returns a string that describes the amount of time that must be added to B in order to reach time A. 
+
+
+

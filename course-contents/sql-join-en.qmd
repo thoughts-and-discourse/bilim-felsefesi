@@ -1,0 +1,27 @@
+# SQL Join
+
+## Querying multiple tables with Join 
+
+- Join
+- Inner Join  
+- Outer Join  
+	* Right outer join
+	* Left outer join
+	* Full outer join
+- Cross Join  
+- Self Join   
+
+{{< include ../course-contents/sql-join-concept-en.md >}}
+
+
+{{< include ../course-contents/sql-join-syntax-en.qmd >}}
+
+
+{{< include ../course-contents/sql-join-inner-en.md >}}
+
+
+{{< include ../course-contents/sql-join-outer-en.md >}}
+
+{{< include ../course-contents/sql-join-self-en.md >}}
+
+{{< include ../course-contents/sql-join-cross-en.md >}}

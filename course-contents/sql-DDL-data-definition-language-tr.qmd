@@ -1,0 +1,73 @@
+# Veri Tanım Dili (DDL) (data definition language)
+
+Veri tanımlama dili ingilizce Data definition language (DDL) ifadeleri CREATE, DROP, ALTER ifadeleridir.
+Veritabanı nesneleri **CREATE OBJECT** ifadeleri kullanılarak oluşturulur ve ardından veritabanının veri sözlüğünde saklanır.
+Bu nesneleri **DROP OBJECT** ifadelerini kullanarak veri tabanında kaldırabiliriz.
+Bu nesneleri **ALTER OBJECT** ifadelerini kullanarak da değiştirebiliriz.
+ALTER ifadeleri genellikle her değişikliğe izin vermez.
+Veritabanı motoruna göre, nesneyi bırakıp sıfırdan oluşturmamız gerekebilir.
+Ancak veritabanı motoru izin veriyorsa çoğu ALTER ifadesi her zaman daha tercih edilir ve daha hızlıdır.
+
+
+Oluşturabileceğimiz nesneler veritabanı motoruna göre değişir.
+En yaygınları aşağıdaki listedir.
+
+- Tablolar (Tables)
+- Görünümler (Views)
+- İndeksler (Indexes)
+
+Hemen hemen her veritabanı yukarıdaki nesneleri desteklemelidir.
+Bu listeye ek olarak bir çok veritabanı kullanıcı ve veritabanı içinde kod yazımı,özel fonksiyonlar ve yordamlar, ile ilgili nesneleri destekler.
+
+
+- Tetikleyici (Triggers)
+- Fonksiyonlar (Functions)
+- Yordamlar (Procedures)
+- Kullanıcı (User)
+ 
+
+
+Sqlite bu listeden bir Tetikleyicileri (Trigger) desteklemektedir.
+SQL-Server ve Oracle yukarıdaki nesnelerin hepsini destekler.
+
+
+Sqlite'ın kullanıcı nesnesinin dosya tabanlı bir veritabanı olmasına ihtiyacı yoktur ancak Oracle ve SQL Server'ın her ikisi de veritabanı bağlantısı için bir kullanıcı gerektirir.
+Bu nedenle, kullanıcılar için güvenlik, roller ve ayrıcalıkları ele almak için çeşitli komutlara sahiptirler.
+
+
+
+
+Açık kaynaklı ve ücretsiz bir araç olan DBeaver çok güçlü değildir.
+Ama veritabanına göre bu nesnelerin oluşturulması için destek vermektedir.
+
+Oracle SQL Developer ve SQL-Server Management Studio, üretici tarafından yazılmış ve desteklenen araçlar olarak kendi veri tabanlarında, yukarıda belirtilen her nesnenin oluşturulmasına, değiştirilmesine ve düşürülmesine (drop) izin verir.
+
+
+## Diğer Nesneler
+
+Bir çok veritabanı motoru yukarıda belirtilen nesnelerden daha fazlasını destekler.
+Veritabanları bir çok farklı tür yazılım geliştirme akışını desteklemeye çalışmaktadırlar.
+
+Oracle bir numaralı kurumsal paralı veritabanı olarak çok çeşitli nesneleri ve yazılım akışlarını desteklemektedir. 
+SQL Server, Oracle'dan daha az olmasına rağmen, yine de çok daha fazla çeşit nesne çeşidi desteklemektedir.
+Bundan dolayı, bu nesnelerin oluşturulması/değiştirilmesi ve düşürülmesi için gerekli komutlara sahiptirler.
+
+::: {#fig-dbeaver-objects layout-ncol=3}
+
+![Dbeaver SQLite objects](images/dbeaver-sqlite-objects-all.png)
+
+
+![Dbeaver Oracle objects](images/dbeaver-oracle-objects-all.png)
+
+![Dbeaver SQL-Server objects](images/dbeaver-sqlserver-objects-all.png)
+
+DBeaver farklı veritabanları Nesne Desteği 
+:::
+
+
+
+Giriş seviyesinde bir kurs olduğu için bu diğer nesneleri detaylı bir şekilde incelemeyeceğiz.
+Her veritabanı için, kendine ait bölümünde, yukarıdaki nesnelerin, en yaygın olanları, (tablo, görünüm ve indeks) ile bir giriş yapacağız.
+Ama ayrıca ileride ilgili nesne bölümlerinde, bu nesnelere ait DDL komutları daha fazla incelenecektir.
+
+

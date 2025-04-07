@@ -1,1 +1,1 @@
-# bilim-felsefesi
+# bilim-felsesefi

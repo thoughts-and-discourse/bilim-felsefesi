@@ -1,0 +1,30 @@
+# SQL Yorumlar
+
+Normal sql yorumları çift tire -- karakterleridir.
+Yorumlar satırın herhangi bir yerinden başlayabilirler.
+O satırda -- karakterlerinden sonra yazılanlar veritabanı motoru tarafından işlenmez.
+Yorumlar, boşluk karakterlerinin gelebileceği her yerde görünebilir.
+
+Aşağıdaki örneğe bakınız.
+
+```sql
+SELECT
+ * -- * tüm sütunlar anlamına gelir
+FROM Employee;
+
+```
+
+C stili /* */ çok satırlı yorumlar da birçok farklı veritabanı tarafından desteklenmektedir, örneğin [Sqlite yorumlar](https://sqlite.org/lang_comment.html), [oracle yorumlar](https://docs.oracle.com/en/database/oracle/oracle-database/21/sqlrf/Comments.html) and [SQL Server yorumlar](https://learn.microsoft.com/en-us/sql/t-sql/language-elements/slash-star-comment-transact-sql?view=sql-server-ver16). 
+
+
+```sql
+
+/*
+Bu 
+bir
+çok satırlı
+yorumdur
+*/
+
+```
+

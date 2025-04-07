@@ -1,0 +1,39 @@
+# DQL (data query language) SQL Select
+
+## SQL most basic select example
+
+
+The most basic select example according to SQL standard will be as following
+
+```sql
+SELECT * FROM TableName;
+```
+
+According to SQL Standard, from is required in the select statements but some databases like SQL Server and sqlite allow select statements without from.
+
+
+```sql
+SELECT 2+2;
+```
+
+We could order select statements in two ways.
+
+1. Syntax ordering: How we write them
+2. Semantic ordering: how the database engine process them
+
+We will do give two ordering for simple cases and we will build upon them.
+
+
+
+{{< include ../course-contents/sql-select-ordering-syntax-en.qmd >}}
+
+
+
+{{< include ../course-contents/sql-select-ordering-semantic-en.qmd >}}
+
+
+
+
+
+
+{{< include ../course-contents/sql-select-examples-en.md >}}

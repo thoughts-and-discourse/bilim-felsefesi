@@ -1,0 +1,32 @@
+# SQL NULL functions SQL Standard
+
+**coalesce(X,Y,...)**
+
+-     The coalesce() function returns its first non-NULL argument.
+-    If all arguments are null, returns NULL.
+-    It requires at least two arguments.
+
+coalesce by itself satisfy a lot of use cases involving null.
+coalesce is always better choice for null handling since coalesce is supported by a lot of different databases like sqlite, oracle, sql server, postgres, mysql ....
+
+
+**working with NULL  - COALESCE example**
+
+
+```sql
+    SELECT 
+    COALESCE(FirstName + ' ' + SecondName + ' ' + LastName
+    ,FirstName + ' ' + LastName
+     ) AS FullName FROM COMMON.PERSON;
+```
+
+
+**nullif(X,Y)**
+
+- null if function returns first argument ,X, if two arguments are different.
+- it returns null if the arguments are same.
+
+
+**case**
+
+SQL Case 

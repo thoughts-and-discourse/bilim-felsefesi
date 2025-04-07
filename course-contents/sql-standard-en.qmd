@@ -1,0 +1,13 @@
+# SQL standard
+
+
+
+
+## SQL Standarts History
+
+{{< include ../course-contents/tables/table-sql-standard-history-en.md >}}
+
+## Modern SQL
+
+- [modern-sql](https://modern-sql.com/)
+

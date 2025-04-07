@@ -1,0 +1,86 @@
+# SQL Görünümler (Views) {#sec-sql-views}
+
+
+Görünümler, seçme sorgularınızı veritabanlarında veri sözlüğünde saklamınıza izin verir.
+Bu şekilde saklanan görünümler sanal tablo gibi çalışırlar.
+Özellikle yaygın ve karmaşık sorguları soyutlamak için çok kullanışlıdır.
+Aşağıdaki şekil, birden fazla tablodan sütunlar içeren bir görünümü göstermektedir:
+
+
+![view example multiple columns from multiple tables](images/view-example1.png)
+
+Görünümler veritabanlarında yaygın bir kavramdır ve tüm veritabanları bunu destekler.
+Örnek veritabanlarımız için belgelere bakın.
+
+- [sqlite views](https://www.sqlite.org/lang_createview.html)
+- [sql server views](https://learn.microsoft.com/en-us/sql/relational-databases/views/views?view=sql-server-ver16)
+- [Oracle views](https://docs.oracle.com/en/database/oracle/oracle-database/23/cncpt/partitions-views-and-other-schema-objects.html#GUID-15E7AEDB-9A3F-4B31-AD2D-66253CC822E5)
+
+
+
+
+**Basit lab**
+
+
+1. Chinook veritabanı join örnek sorgusu
+
+
+```sql
+SELECT A.Name AS ArtistName
+, B.Title AS AlbumTitle
+, T.Name  AS TrackName
+FROM Artist A
+INNER JOIN Album B
+ON A.ArtistId  = B.ArtistId 
+INNER JOIN Track T ON T.AlbumId  = B.AlbumId   
+```
+
+2. "create view name as select" kullanarak görünüm oluşturma
+
+```sql
+CREATE VIEW ArtistTracks
+AS
+SELECT A.Name AS ArtistName
+, B.Title AS AlbumTitle
+, T.Name  AS TrackName
+FROM Artist A
+INNER JOIN Album B
+ON A.ArtistId  = B.ArtistId 
+INNER JOIN Track T ON T.AlbumId  = B.AlbumId   
+```
+
+3. select from view
+
+```sql
+select * from ArtistTracks;
+```
+
+
+:::{.callout-note}
+Kitaplardaki yaygın bir örnek erişim kontrolü (access control) üzerinedir.
+Tablolara kendisine erişim vermek yerine, görünümün kendisine erişim verebilirsiniz.
+Bu kullanımı hiç görmedim.
+:::
+
+
+:::{.callout-note}
+Kitaplardaki yaygın bir örnek erişim kontrolü (access control) üzerinedir.
+Tablolara kendisine erişim vermek yerine, görünümün kendisine erişim verebilirsiniz.
+Bu kullanımı hiç görmedim.
+:::
+
+
+
+:::{.callout-note}
+Görünümlerdeki satırlar, altta yatan tablolara 1'e 1 karşılık geliyorsa, görünümler INSERT ifadelerinin hedefi olabilir; örneğin, toplu sorgular (min,max) için asla çalışmayacaktır.
+Sqlite, görünüm yalnızca tek tablo olduğunda bu özelliğe izin verir.
+Ben bu özelliği sevmiyorum ve asla kullanmıyorum.
+:::
+
+
+
+{{< include ../course-contents/sql-views-materialized-tr.qmd >}}
+
+
+{{< include ../course-contents/sql-views-system-tr.qmd >}}
+

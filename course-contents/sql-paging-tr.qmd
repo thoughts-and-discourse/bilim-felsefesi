@@ -1,0 +1,21 @@
+# SQL Sayfalama (Paging)
+
+Sonuçları Sayfalama - OFFSET-FETCH komutu ORDER BY ile KULLANILARAK Yapılabilir.
+
+
+- ORDER BY kullanımına bağlıdır.
+- Kaç satırın atlanacağını ve kaç satırın getirileceğini belirterek kullanılır.
+- KULLANMAYIN. Veri tabanı istenen sayfaya gelinceye kadar tüm satırları saymak zorunda.
+- Performans sorunları var. [Bakınız](http://use-the-index-luke.com/sql/partial-results/fetch-next-page).
+
+
+
+```sql
+ORDER BY <order_by_list>
+OFFSET <offset_value> ROW(S)
+FETCH FIRST|NEXT <fetch_value> ROW(S) ONLY
+```
+
+
+
+

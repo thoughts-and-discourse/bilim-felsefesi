@@ -1,0 +1,11 @@
+# Veritabanı Sıralamaları ve Pazar Payları
+
+{{< include ../course-contents/database-market-share-tr.md >}}
+
+
+{{< include ../course-contents/database-ranking-tr.md >}}
+
+
+Aşağıdaki db-engines tablosuna bakınız.
+
+{{< include ../course-contents/tables/table-database-ranking-en.md >}}

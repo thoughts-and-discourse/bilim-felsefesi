@@ -1,0 +1,42 @@
+# Entity Relationship (ER) modelling 
+
+## Entity Relationship modeling Basics
+
+Entity Relationship (ER) modeling or diagramming is introduce by Peter Chen @Chen1976entity in 1976.
+ER-Models consists of three parts
+
+- Entity
+- Relations
+- Attributes
+
+Entities are basically tables in databases, like Student, Employee, Customer and Invoices.
+Relations shows the connections between entities.
+For example, a Customer has invoices.
+Attributes shows the values an entity have: For example, Customer entity will have name and phone.
+
+Original syntax is called Chen notation.
+Below is an figure from the original article @Chen1976entity.
+
+
+![Simple Er Diagram](images/Chen-1976-Figure-10-simple-er-diagram.png){width=80%}
+
+The diagramming syntax is evolved by then but the basics stayed same.
+
+
+
+## How it works
+
+
+
+ER-modelling work two ways, as below figure shows.
+First way, we could create diagrams then database tables.
+Second way, we could reverse engineer our diagrams from our database tables.
+
+{{< include ../course-contents/diagrams/er-model-working-en.md >}}
+
+{{< include ../course-contents/er-model-diagramming-tools-en.qmd >}}
+
+{{< include ../course-contents/er-model-reverse-engineering-tools-en.qmd >}}
+
+
+

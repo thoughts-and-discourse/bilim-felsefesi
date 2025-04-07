@@ -1,0 +1,53 @@
+# Server installations
+
+
+## Sqlite
+
+Sqlite has no server, sqlite is embedded file based database; therefore, only client tools are needed.
+Most, GUI tools, such as dbeaver, also include necessary files to run sqlite.
+Also every major programming language has necessary bindings, java, c#, python etc.
+
+If you only use sqlite from programming language or GUI tool, you may not have to download sqlite.
+But I suggest to download and use command line for learning purposes.
+
+[sqlite downloads](https://www.sqlite.org/download.html)
+
+### Demo  {.unnumbered .unlisted}
+
+1. Download sqlite
+2. open command line
+3. download [chinook db](https://github.com/ati-ozgur/course-database/raw/refs/heads/main/databases/Chinook-auto-increment.db).
+4. show contents in the command line.
+
+
+
+## Docker
+
+- [docker download](https://www.docker.com/products/docker-desktop/)
+
+We will use docker for our server installations due to ease of use.
+Normally, at least in my opinion, database production servers should not be docker containers.
+
+
+
+
+
+## Oracle
+
+Dockerfile for oracle and scripts are provided in the course github repository.
+
+- [Oracle docker course files](https://github.com/ati-ozgur/course-database/tree/main/databases/chinook-oracle)
+
+Oracle also provides virtual box developer images.
+
+- [Oracle virtual box](https://www.oracle.com/downloads/developer-vm/community-downloads.html)
+
+## SQL Server
+
+Dockerfile for Sql server and scripts are provided in the course github repository.
+
+- [Sqlserver docker course files](https://github.com/ati-ozgur/course-database/tree/main/databases/chinook-sqlserver)
+
+{{< include ../course-contents/server-installation-sqlserver-en.qmd >}}
+
+

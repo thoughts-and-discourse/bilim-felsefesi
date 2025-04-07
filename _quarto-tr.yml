@@ -1,0 +1,38 @@
+project:
+  output-dir: ./docs/tr
+book:
+  title: "Bilim Felsefesi"
+  navbar:
+    background: primary
+    left:
+      - text: "Yazar hakkinda"
+        href: about-tr.html
+    right:
+      - text: "English"
+        href: ../en/index.html
+      - text: "Türkçe"
+        href: ../tr/index.html
+
+  chapters:
+    - index.qmd
+    - about-tr.qmd
+    - part: "Matematik"
+      chapters:
+        - course-contents/course-introduction-tr.qmd
+        - course-contents/sql-why-learn-used-in-other-places-tr.md
+    - part: "İstatistik"
+      chapters:
+        - course-contents/databases-intro-tr.qmd
+        - course-contents/database-models-tr.qmd
+
+    - part: "Nedensellik"
+      chapters:
+        - course-contents/er-model-tr.qmd
+        - course-contents/er-model-mermaid-diagrams-tr.qmd
+
+    - references-tr.qmd
+
+
+
+
+

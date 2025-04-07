@@ -1,0 +1,202 @@
+# NULL ile çalışma
+
+- NULL bilinmeyen veya eksik veri için kullanılır.
+
+```sql
+SELECT * FROM Customer
+WHERE Company is NULL;
+```
+
+## Null Matematiksel İşlemler
+
+İşlem yaparken matematikte ki $\infty$ gibi bir sabit olarak düşünebilirsiniz.
+NULL ile yapılan matematiksel işlemler NULL döndürür.
+
+
+**Null ile toplama çıkarma çarpma bölme**
+
+Null’a herhangi bir şey toplama çıkarma çarpma bölme sonucu null olur.
+
+- 3 + NULL = NULL
+- NULL + 3 = NULL
+- 3 - NULL = NULL
+- NULL - 3 = NULL
+- 3 / NULL = NULL
+- NULL / 3 = NULL
+- 3 * NULL = NULL
+- NULL * 3 = NULL
+
+
+```sql
+select 3 + NULL as toplama1
+, NULL + 3 as toplama2
+, 3 - NULL as cıkarma1
+, NULL - 3 as cıkarma2
+, 3 / NULL as bolme1
+, NULL / 3 as bolme2
+, 3 * NULL as carpma1
+, NULL * 3 as carpma2;
+```
+
+
+- Null’u sıfırla çarpmak null’ı verir 
+
+
+```sql
+select 0 * null, null * 0;
+```
+
+**NULL ile betik birleştirme**
+
+- 'str degeri' + NULL = NULL
+
+```sql
+SELECT 'str degeri' + NULL;
+```
+**NULL eşitlik**
+
+Bir Sonsuz değeri, diğer bir sonsuz değere eşit değildir.
+
+- $\infty$ $!=$ $\infty$
+
+Aynı şekilde, bir NULL değeri, diğer bir NULL değere eşit değildir.
+
+- NULL $!=$ NULL
+
+```sql
+select null = null, null != null;
+```
+
+Karşılaştırmalar null değerleri için her zaman yanlış(false) döndürür
+
+    * NULL = NULL returns NULL
+    * NULL != NULL returns NULL
+
+```sql
+select null = null, null != null;
+```
+
+**Bir değerin null olup olmadığı IS NULL ile kontrol edilmelidir.**
+
+NULL IS NULL returns true
+
+
+```sql
+SELECT NULL IS NULL;
+```
+
+Aşağıdaki sorgu 0 satır döndürür.
+Çünkü Company değeri NULL olan satırlarda bile NULL karşılaştırmaları NULL döndürür.
+NULL ise doğru yanlış değeri olarak hep yanlış düşünülür.
+Bundan dolayı hiç satır gelmez.
+
+```sql
+SELECT * FROM Customer
+WHERE Company = NULL;
+```
+
+Bu sorgunun doğru yazımı IS NULL iledir.
+
+```sql
+SELECT * FROM Customer
+WHERE Company is NULL;
+```
+
+
+**NULL ve false**
+
+Null ve false karşılaştırması false sonucu verir çünkü AND işleminde bir taraf yanlış ise diğer tarafın ne olduğu önemli değildir.
+
+
+select 
+null AND false as NullVeYanlış1
+,NOT (null AND false) as NOT_NullVeYanlış
+,NOT NULL as NOT_NULL
+;
+
+
+**NULL veya Doğru**
+
+Null veya doğru karşılaştırması doğru sonucu verir çünkü OR işleminde bir taraf doğru ise diğer tarafın ne olduğu önemli değildir.
+
+```sql
+select null OR true;
+```
+
+**NULL ve Case**
+
+Case ifadesinde NULL kontrolü IS NULL ile yapılmalıdır.
+Aşağıdaki sorgu 0 sonucu verir.
+Case ifadesinde null sonucu elde edildiği için ELSE çalıştırılır.
+
+
+```sql
+select CASE WHEN null THEN 1 ELSE 0 END;
+```
+Yukarıdaki sorgunun aşağıdaki null karşılaştırmasından pek farkı yoktur.
+
+
+```sql
+select null = null, null != null;
+```
+
+**SELECT DISTINCT**
+
+NULL değerleri SELECT DISTINCT sorgularında 1 tane gibi gösterilir.
+Aşağıdaki sorguda bir tek NULL gelmektedir.
+
+
+```sql
+SELECT DISTINCT Company FROM Customer
+```
+
+Ama Firma değeri NULL olan 49 Müşteri vardır.
+
+```sql
+SELECT COUNT(*) FROM Customer
+WHERE Company IS NULL;
+```
+
+**UNION**
+
+NULL değerleri UNION sorgularında 1 tane gibi gösterilir.
+Aşağıdaki sorguda bir tek NULL gelmektedir.
+
+
+```sql
+SELECT State FROM Customer
+UNION
+SELECT State FROM Employee
+```
+
+Ama State değeri NULL olan 29 Müşteri vardır. 
+
+```sql
+SELECT COUNT(*) FROM Customer
+WHERE State IS NULL;
+```
+
+## 3 Değerli Mantık (NULL, True, False)
+
+{{< include ../course-contents/tables/table-null-3-valued-logic.md >}}
+
+{{< include ../course-contents/tables/table-null-not-operation.md >}}
+
+
+## NULL veri tabanlarında çalışma
+
+Aşağıdaki tablo [SQLite'da ve Diğer Veritabanı Motorlarında NULL İşleme](https://www.sqlite.org/nulls.html) dokumantasyonundan alınmış ve türkçeleştirilmiştir.
+
+
+{{< include ../course-contents/tables/table-null-handling-databases-tr.md >}}
+
+Yukarıdaki tabloda görülebileceği gibi çalıştığımız 3 veri tabanında da null hemen hemen aynı çalışmaktadır.
+Bir tek Tablolarda Unique değerler için SQL-Server farklı çalışmaktadır.
+
+
+
+
+
+
+
+

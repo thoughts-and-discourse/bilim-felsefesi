@@ -1,0 +1,37 @@
+# Sunucu Kurulumları Oracle
+
+
+## Docker
+
+- [docker indirmeler](https://www.docker.com/products/docker-desktop/)
+
+Kullanım kolaylığı nedeniyle sunucu kurulumlarımız için docker kullanacağız.
+Normalde, en azından benim görüşüme göre, veritabanı üretim sunucuları docker üzerinden çalıştırılmamalıdır.
+
+
+
+
+## Oracle Docker kurulum
+
+Oracle için Dockerfile ve komut dosyaları kurs github deposunda bulunmaktadır.
+
+- [Oracle docker course files](https://github.com/ati-ozgur/course-database/tree/main/databases/chinook-oracle)
+
+
+## Oracle Virtualbox kurulum
+
+Oracle ayrıca virtual box geliştirici görüntüleri de sağlamaktadır.
+
+
+- [Oracle virtual box görüntüleri](https://www.oracle.com/downloads/developer-vm/community-downloads.html)
+
+
+## Oracle XE kurulum
+
+TODO
+
+## Oracle Standard Edition kurulum
+
+TODO
+
+

@@ -1,0 +1,195 @@
+## SQL Standard string functions
+
+
+
+- **coalesce(x,y,...)**
+
+SQL standard.
+returns a copy of its first non-null argument.
+Useful, for replacing null values.
+
+- [oracle documentation for coalesce](https://docs.oracle.com/en/database/oracle/oracle-database/23/sqlrf/COALESCE.html)
+- [SQL Server documentation for coalesce](https://learn.microsoft.com/en-us/sql/t-sql/language-elements/coalesce-transact-sql?view=sql-server-ver16)
+- [sqlite documentation for coalesce](https://www.sqlite.org/lang_corefunc.html#coalesce)
+
+
+- **concat**
+
+Normally, string concatenation is accomplished using || operator but this function could also be used.
+SQL Server uses + for concatenation.
+
+SQL server has also CONCAT_WS function.
+
+
+- [oracle documentation for function](https://docs.oracle.com/en/database/oracle/oracle-database/23/sqlrf/CONCAT.html)
+- [SQL Server documentation for function](https://learn.microsoft.com/en-us/sql/t-sql/functions/concat-transact-sql?view=sql-server-ver16)
+- [sqlite documentation for function](https://www.sqlite.org/lang_corefunc.html#concat)
+
+
+
+- **length(X)**
+
+return number of characters (not bytes) of given string.
+
+For SQL server, LEN function is used.
+
+- [oracle documentation for length](https://docs.oracle.com/en/database/oracle/oracle-database/23/sqlrf/LENGTH.html)
+- [SQL Server documentation for length](https://learn.microsoft.com/en-us/sql/t-sql/functions/len-transact-sql?view=sql-server-ver16)
+- [sqlite documentation for length](https://www.sqlite.org/lang_corefunc.html#length)
+
+sqlite
+
+```sql
+SELECT LENGTH('atilla')
+```
+
+
+Oracle
+
+```sql
+SELECT LENGTH('atilla') from dual;
+```
+
+SQL Server
+
+```sql
+SELECT LEN('atilla')
+```
+
+```sql
+SELECT LENGTH(FirstName) from Customer c;
+```
+
+
+- **lower(X)**
+
+return lowercase of given string X
+
+- [oracle documentation for lower](https://docs.oracle.com/en/database/oracle/oracle-database/23/sqlrf/LOWER.html)
+- [SQL Server documentation for lower](https://learn.microsoft.com/en-us/sql/t-sql/functions/lower-transact-sql?view=sql-server-ver16)
+- [sqlite documentation for lower](https://www.sqlite.org/lang_corefunc.html#lower)
+
+
+
+**instr(X,Y)**
+
+Find the first occurrence of Y in the given string X and return position number of it.
+if it could not find, return 0.
+
+
+
+
+
+- **replace(X,Y,Z)**
+
+The replace(X,Y,Z) function returns a string formed by substituting string Z for every occurrence of string Y in string X. 
+
+- [oracle documentation for function]()
+- [SQL Server documentation for function]()
+- [sqlite documentation for function]()
+
+
+
+
+**soundex(X)**
+
+From SQL Server documentation
+
+> Returns a four-character (SOUNDEX) code to evaluate the similarity of two strings.
+
+
+- [oracle documentation for soundex](https://docs.oracle.com/en/database/oracle/oracle-database/23/sqlrf/SOUNDEX.html)
+- [SQL Server documentation for soundex](https://learn.microsoft.com/en-us/sql/t-sql/functions/soundex-transact-sql?view=sql-server-ver16)
+- [sqlite documentation for soundex](https://www.sqlite.org/lang_corefunc.html#soundex
+
+
+- **substr(X,Y,Z)**
+- **substr(X,Y)**
+- **substring(X,Y,Z)** (alias for substr)
+- **substring(X,Y)** (alias for substr)
+
+The substr(X,Y,Z) function returns a substring of input string X that begins with the Y-th character and which is Z characters long. If Z is omitted then substr(X,Y) returns all characters through the end of the string X beginning with the Y-th. The left-most character of X is number 1.
+
+SQL Server has substring only.
+
+- [oracle documentation for function](https://docs.oracle.com/en/database/oracle/oracle-database/23/sqlrf/SUBSTR.html)
+- [SQL Server documentation for function](https://learn.microsoft.com/en-us/sql/t-sql/functions/substring-transact-sql?view=sql-server-ver16)
+- [sqlite documentation for function](https://www.sqlite.org/lang_corefunc.html#substr)
+
+
+**trim(X)**
+**trim(X,Y)**
+
+    The trim(X,Y) function returns a string formed by removing any and all characters that appear in Y from both ends of X. If the Y argument is omitted, trim(X) removes spaces from both ends of X. 
+- **rtrim(X)**
+- **rtrim(X,Y)**
+
+right trim character values given in Y from the string X.
+If Y is not given, removes spaces
+
+- [oracle documentation for rtrim](https://docs.oracle.com/en/database/oracle/oracle-database/23/sqlrf/RTRIM.html)
+- [SQL Server documentation for rtrim](https://learn.microsoft.com/en-us/sql/t-sql/functions/rtrim-transact-sql?view=sql-server-ver16)
+- [sqlite documentation for rtrim](https://www.sqlite.org/lang_corefunc.html#rtrim)
+
+- **ltrim(X)**
+- **ltrim(X,Y)**
+
+left trim character values given in Y from the string X.
+If Y is not given, removes spaces
+
+- [oracle documentation for LTRIM](https://docs.oracle.com/en/database/oracle/oracle-database/23/sqlrf/LTRIM.html)
+- [SQL Server documentation for LTRIM](https://learn.microsoft.com/en-us/sql/t-sql/functions/ltrim-transact-sql?view=sql-server-ver16)
+- [sqlite documentation for LTRIM](https://www.sqlite.org/lang_corefunc.html#ltrim)
+
+
+```sql
+SELECT
+       '       Hello World        '  as A
+, TRIM('       Hello World        ') as TA
+,LTRIM('       Hello World        ') as LTA
+,RTRIM('       Hello World        ') as RTA
+```
+
+
+```sql
+SELECT
+       '@@@@@@@Hello World@@@@@@@@'  as B
+, TRIM('@@@@@@@Hello World@@@@@@@@') as TB
+,LTRIM('@@@@@@@Hello World@@@@@@@@') as LTB
+,RTRIM('@@@@@@@Hello World@@@@@@@@') as RTB
+```
+We need to use second argument for trim char.
+
+```sql
+SELECT
+       '@@@@@@@Hello World@@@@@@@@'  as C
+--, TRIM('@@@@@@@Hello World@@@@@@@@','@') as TC
+,LTRIM('@@@@@@@Hello World@@@@@@@@','@') as LTC
+,RTRIM('@@@@@@@Hello World@@@@@@@@','@') as RTC
+```
+SQLite normal trim does not accept second trim character but LTRIM and RTRIM accepts it.
+
+
+- [oracle documentation for function](https://docs.oracle.com/en/database/oracle/oracle-database/23/sqlrf/TRIM.html)
+- [SQL Server documentation for function](https://learn.microsoft.com/en-us/sql/t-sql/functions/trim-transact-sql?view=sql-server-ver16)
+- [sqlite documentation for function](https://www.sqlite.org/lang_corefunc.html#trim)
+
+
+
+
+
+**upper(X)**
+Uppercase of given string X.
+sqlite works with ascii only.
+
+
+```sql
+select UPPER('atilla özgür');
+```
+
+> ATILLA öZGüR     
+
+- [oracle documentation for function]()
+- [SQL Server documentation for function]()
+- [sqlite documentation for function]()
+

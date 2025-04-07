@@ -1,0 +1,12 @@
+# SQL string functions
+
+
+{{< include ../course-contents/sql-functions-string-sql-standard-en.qmd >}}
+
+{{< include ../course-contents/sql-functions-string-sqlite-en.qmd >}}
+{{< include ../course-contents/sql-functions-string-sql-server-en.qmd >}}
+{{< include ../course-contents/sql-functions-string-oracle-en.qmd >}}
+
+
+
+

@@ -1,0 +1,381 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Bilim Felsefesi",
+    "section": "",
+    "text": "İçerik\nBu sitede odaklanılacak başlıca konular:\n\nBilim felsefesi\nBilimsel yöntemde dilin (doğal ve formal) rolü\nMatematik\nMatematiğin bilimlerdeki rolü\nİslami felsefe\n\n\n\nİletişim\nYorumlarla veya siteye içerik olarak katkıda bulunmak için\nemail: thoughts.and.discourse@gmail.com",
+    "crumbs": [
+      "Yazar hakkinda",
+      "Preface (Önsöz)"
+    ]
+  },
+  {
+    "objectID": "intro.html",
+    "href": "intro.html",
+    "title": "1  Introduction",
+    "section": "",
+    "text": "This is a book created from markdown and executable code.\nSee Knuth (1984) for additional discussion of literate programming.\n\n\n\n\nKnuth, Donald E. 1984. “Literate Programming.” Comput. J. 27 (2): 97–111. https://doi.org/10.1093/comjnl/27.2.97.",
+    "crumbs": [
+      "Yazar hakkinda",
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Introduction</span>"
+    ]
+  },
+  {
+    "objectID": "references.html",
+    "href": "references.html",
+    "title": "References",
+    "section": "",
+    "text": "Asset Management, Office of. 2001. “Data Integration\nGlossary.” US Department of Transportation.\n\n\nChen, Peter Pin-Shan. 1976. “The Entity-Relationship Model—Toward\na Unified View of Data.” ACM Transactions on Database\nSystems 1 (1): 9–36. https://doi.org/10.1145/320434.320440.\n\n\nCodd, E. F. 1970. “A Relational Model of Data for Large Shared\nData Banks.” Communications of the ACM 13 (6): 377–87.\nhttps://doi.org/10.1145/362384.362685.\n\n\nKnuth, Donald E. 1984. “Literate Programming.” Comput.\nJ. 27 (2): 97–111. https://doi.org/10.1093/comjnl/27.2.97.",
+    "crumbs": [
+      "Yazar hakkinda",
+      "References"
+    ]
+  },
+  {
+    "objectID": "about-tr.html",
+    "href": "about-tr.html",
+    "title": "2  Yazar Hakkinda",
+    "section": "",
+    "text": "2.1 Felsefi ve Düşünsel Etkiler\nBu site, bilim felsefesi, matematik eğitimi ve mühendislik perspektiflerini bir araya getiren disiplinler arası bir düşünce alanı oluşturmayı amaçlamaktadır. İçerikler, hem akademik düzeyde kavramsal derinlik sunmakta hem de bilimsel düşüncenin epistemolojik boyutlarını ele almaktadır.\nYazar, mühendislik alanında doktora derecesine sahiptir ve özellikle matematiğin ve formal teorilerin bilimsel düşünce üzerindeki islevsel rolüne odaklanmaktadır.\nYazarın düşünsel dünyası, hem klasik İslam düşüncesinden hem de Batı felsefesinden beslenmektedir. Özellikle:\nönemli esin kaynakları arasında yer almaktadır.",
+    "crumbs": [
+      "Yazar hakkinda",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Yazar Hakkinda</span>"
+    ]
+  },
+  {
+    "objectID": "about-tr.html#felsefi-ve-düşünsel-etkiler",
+    "href": "about-tr.html#felsefi-ve-düşünsel-etkiler",
+    "title": "2  Yazar Hakkinda",
+    "section": "",
+    "text": "İmam Gazâlî’nin eleştirel akıl yürütme ve bilgi teorisine yaklaşımı,\n\nBediüzzaman Said Nursî’nin iman ile bilim arasındaki ilişkiyi kurma çabası,\n\nBatı’da ise özellikle empirisist (deneyci) filozofların, bilgi ve gözlem merkezli yaklaşımları, Mantiksal Empirisist’lerin bilimsel ifadelerin dilsel ve mantıksal yapısının açıklığa kavuşturulması cabasi\n\n\n\n2.1.1 İletişim\nGeri bildirim, katkı ya da sorularınız için iletişim:\nemail: thoughts.and.discourse@gmail.com",
+    "crumbs": [
+      "Yazar hakkinda",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Yazar Hakkinda</span>"
+    ]
+  },
+  {
+    "objectID": "course-contents/course-introduction-tr.html",
+    "href": "course-contents/course-introduction-tr.html",
+    "title": "3  Kurs Giriş",
+    "section": "",
+    "text": "3.1 teoriye karşı pratik\nKendimi çok farklı dillerde programcı, veritabanı geliştiricisi, devops ve araştırmacı olarak görüyorum. Elektrik Mühendisliğinden 2003 yılında mezun olmama rağmen programlamaya 1991 yılında başladım. 6 yılı Proje Yönetimi ve Takım Liderliği, 6 yılı Veritabanı Yöneticiliği olmak üzere 21 yıllık mesleki tecrübeye sahibim. Farklı web uygulama geliştirme platformları ve Veritabanı Sistemleri ile çalıştım. Çok sayıda Microsoft sertifikasına sahibim (MCPD, MCSD, MCT). Oracle (OCA 11g) ve SQL Server (2000-2008) Veritabanları konusunda sertifikalıyım.\nÖzgeçmişimi aşağıdaki bağlantıdan görebilirsiniz. Özgeçmiş",
+    "crumbs": [
+      "Yazar hakkinda",
+      "Matematik",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Kurs Giriş</span>"
+    ]
+  },
+  {
+    "objectID": "course-contents/course-introduction-tr.html#teoriye-karşı-pratik",
+    "href": "course-contents/course-introduction-tr.html#teoriye-karşı-pratik",
+    "title": "3  Kurs Giriş",
+    "section": "",
+    "text": "Kurs pratik odaklıdır.\nPratik kullanım ve örneklerden sonra ilgili teori de verilecektir.",
+    "crumbs": [
+      "Yazar hakkinda",
+      "Matematik",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Kurs Giriş</span>"
+    ]
+  },
+  {
+    "objectID": "course-contents/course-introduction-tr.html#ezberlemeye-karşı-anlama",
+    "href": "course-contents/course-introduction-tr.html#ezberlemeye-karşı-anlama",
+    "title": "3  Kurs Giriş",
+    "section": "3.2 Ezberlemeye karşı anlama",
+    "text": "3.2 Ezberlemeye karşı anlama\nChatGPT ve yapay zeka alanında, ezberleme giderek daha az anlamlı hale geliyor. Arama motoru veya yapay zeka sorgusu kullanılarak kolayca bulunabilecek gerçeklerin ezberlenmesine karşıyım.\nBu nedenle, kursta anlayış kazandırmayı hedefliyorum. Tam SQL komutlarını veya veritabanlarının ince detaylarını ezberlemenize gerek yoktur.",
+    "crumbs": [
+      "Yazar hakkinda",
+      "Matematik",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Kurs Giriş</span>"
+    ]
+  },
+  {
+    "objectID": "course-contents/course-introduction-tr.html#ders-malzemeleri-ve-web-sitesi",
+    "href": "course-contents/course-introduction-tr.html#ders-malzemeleri-ve-web-sitesi",
+    "title": "3  Kurs Giriş",
+    "section": "3.3 Ders malzemeleri ve Web Sitesi",
+    "text": "3.3 Ders malzemeleri ve Web Sitesi\n\ntüm ders malzemelerini aşağıdaki github deposunda bulabilirsiniz\ngithub depo",
+    "crumbs": [
+      "Yazar hakkinda",
+      "Matematik",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Kurs Giriş</span>"
+    ]
+  },
+  {
+    "objectID": "course-contents/sql-why-learn-used-in-other-places-tr.html",
+    "href": "course-contents/sql-why-learn-used-in-other-places-tr.html",
+    "title": "4  SQL, veritabanları dışında da kullanılır",
+    "section": "",
+    "text": "SQL, veri biliminde yaygın olarak kullanılır. Veri biliminde, SQL bellekte çalışan veri çerçevesi (data frames) içinde ve normal veritabanlarında kullanılır. Data frame’leri bellek tabloları olarak düşünebilirsiniz. Hem Python hem de R’nin farklı veri çerçevesi uygulamaları vardır. SQL’i veritabanlarından veri çerçeveleri oluşturmak ve veri çerçevelerinin kendisini sorgulamak için kullanabilirsiniz.\nBakınız:\n\nSorgula python pandas data frame\nSorgula R Data frame\n\nSQL aynı zamanda günlükleri sorgulamak gibi diğer kullanım durumları için de kullanılır.\n\nLog parser ile SQL kullanarak günlükleri (logs) sorgulama\n\nAyrıca SQL kullanarak csv ve excel dosyalarında sorgulama yapmak da mümkündür.\n\nSQL kullanarak csv dosyalarını sorgula\nSQL kullanarak excel dosyalarını sorgulayın\nosquery: SQL kullanarak sistem verilerini sorgula\n\n\nosquery, bir işletim sistemini yüksek performanslı ilişkisel bir veritabanı olarak ortaya koyar. Bu, işletim sistemi verilerini keşfetmek için SQL sorguları yazmanıza olanak tanır. osquery ile SQL tabloları, çalışan işlemler, yüklenen çekirdek modülleri, açık ağ bağlantıları, tarayıcı eklentileri, donanım olayları veya dosya karmaları gibi soyut kavramları temsil eder.",
+    "crumbs": [
+      "Yazar hakkinda",
+      "Matematik",
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>SQL, veritabanları dışında da kullanılır</span>"
+    ]
+  },
+  {
+    "objectID": "course-contents/databases-intro-tr.html",
+    "href": "course-contents/databases-intro-tr.html",
+    "title": "5  Veritabanlarına giriş",
+    "section": "",
+    "text": "5.1 Neden veritabanları hala önemli",
+    "crumbs": [
+      "Yazar hakkinda",
+      "İstatistik",
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Veritabanlarına giriş</span>"
+    ]
+  },
+  {
+    "objectID": "course-contents/databases-intro-tr.html#neden-veritabanları-hala-önemli",
+    "href": "course-contents/databases-intro-tr.html#neden-veritabanları-hala-önemli",
+    "title": "5  Veritabanlarına giriş",
+    "section": "",
+    "text": "5.1.1 İlişkisel Veritabanları Dinozor Değil, Köpekbalıklarıdır\nLütfen aşağıdaki tavsiye edilen yazıyı okuyunuz.\n\nRelational Databases Aren’t Dinosaurs, They’re Sharks\n\nBenim aynı yazı için yorum vidyom",
+    "crumbs": [
+      "Yazar hakkinda",
+      "İstatistik",
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Veritabanlarına giriş</span>"
+    ]
+  },
+  {
+    "objectID": "course-contents/databases-intro-tr.html#veri-tabanlarının-kısaca-tarihi",
+    "href": "course-contents/databases-intro-tr.html#veri-tabanlarının-kısaca-tarihi",
+    "title": "5  Veritabanlarına giriş",
+    "section": "5.2 Veri Tabanlarının Kısaca Tarihi",
+    "text": "5.2 Veri Tabanlarının Kısaca Tarihi\n\n\n\nYIL\nOLAYLAR\n\n\n\n\n1960s\nHiyerarşik ve Ağ Modelleri\n\n\n1970s\nİlişkisel Model (1970 by Edgar F. Codd,) önerildi.\n\n\n1978\nİlk Ticari İlişkisel Veri tabanı (Oracle)\n\n\n1990s\nNesneye Yönelik\n\n\n2000s\nNoSQL and NewSQL\n\n\n2010s\nÇizge (Graph) veritabanları\n\n\n2023s\nVektor veritabanları",
+    "crumbs": [
+      "Yazar hakkinda",
+      "İstatistik",
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Veritabanlarına giriş</span>"
+    ]
+  },
+  {
+    "objectID": "course-contents/database-models-tr.html",
+    "href": "course-contents/database-models-tr.html",
+    "title": "6  Veri Tabanı Modelleri",
+    "section": "",
+    "text": "6.1 Dosya tabanlı veri tabanları\nVerilerin düz dosyalarda tutulduğu veri tabanlarıdır. Hala verilerin çok karışık olmadığı durumlarda yaygın olarak kullanılır. Örneğin tüm yapılandırma (configuration) verileri bu anlamda düşünelebilir. CSV (Comma Separated Values, virgul ile ayrılmış değerl) dosyaları yine bu veri tabanları arasında sayılır. Özellikle veri tabanları arasında veri paylaşımı için yaygın olarak kullanılırlar.\nUnix türevi sistemlerde ki kullanıcı bilgilerin saklayan aşağıdaki dosyalar yine bu veri tabanlarına çok bilinen bir örnektir.\nAsset Management (2001)\nYapısı yüzünden ile tek bir tablo tutulması daha kolaydır.",
+    "crumbs": [
+      "Yazar hakkinda",
+      "İstatistik",
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Veri Tabanı Modelleri</span>"
+    ]
+  },
+  {
+    "objectID": "course-contents/database-models-tr.html#dosya-tabanlı-veri-tabanları",
+    "href": "course-contents/database-models-tr.html#dosya-tabanlı-veri-tabanları",
+    "title": "6  Veri Tabanı Modelleri",
+    "section": "",
+    "text": "/etc/passwd\n/etc/group",
+    "crumbs": [
+      "Yazar hakkinda",
+      "İstatistik",
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Veri Tabanı Modelleri</span>"
+    ]
+  },
+  {
+    "objectID": "course-contents/database-models-tr.html#sıra-düzenli-hierarchical-veri-tabanları",
+    "href": "course-contents/database-models-tr.html#sıra-düzenli-hierarchical-veri-tabanları",
+    "title": "6  Veri Tabanı Modelleri",
+    "section": "6.2 Sıra düzenli (hierarchical) veri tabanları",
+    "text": "6.2 Sıra düzenli (hierarchical) veri tabanları\n Asset Management (2001)\nBu veri tabanı yapısı ağaç mantığında verilerin aşağıya doğru birbirleribilgilerin\nHiyerarşik veri tabanı modeli, her kaydın tek bir ebeveyni ve birden fazla çocuğu olacak şekilde verileri ağaç benzeri bir yapıda, bakını yukarıdaki şekil, düzenler. Aşağıdaki kavramlar bu tip verilerin tutulması için en çok tercih edilenlerdir.\n\nAile Agaçı\nDosya sistemi\nOrganizasyon şemaları\n\nVerilerin bu şekilde tutulduğu modern bir örnek için digitalization unified namespace sayılabilir.\n\nUNS (Unified Namespace)\n\nUnified namespace sistemlerde veriler ISA95 standardında tutulur.\n\nMetal Fabrika (area)\n\nAnkara şube (site)\n\nKaynak Bölgesi (cell)\n\nRobot kolu 1",
+    "crumbs": [
+      "Yazar hakkinda",
+      "İstatistik",
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Veri Tabanı Modelleri</span>"
+    ]
+  },
+  {
+    "objectID": "course-contents/database-models-tr.html#ağ-network-model-veri-tabanları",
+    "href": "course-contents/database-models-tr.html#ağ-network-model-veri-tabanları",
+    "title": "6  Veri Tabanı Modelleri",
+    "section": "6.3 Ağ (Network) model veri tabanları",
+    "text": "6.3 Ağ (Network) model veri tabanları\n\n\n\nnetwork model veritabanı\n\n\nAsset Management (2001)\nAğ veritabanı modeli, kayıtlar arasında çoktan çoğa ilişkilere izin veren esnek bir veri düzenleme yoludur. Hiyerarşik modelin sorunlarını aşmak için önerilmiştir. Her kaydın yalnızca bir üst öğesi olduğu hiyerarşik modelin aksine, ağ modeli kayıtların birden fazla üst öğeye sahip olmasına izin vererek birbirine bağlı verilerden oluşan karmaşık bir ağ oluşturur. Ağ veritabanı modeli, sosyal ağlar veya tedarik zincirleri gibi gerçek dünya senaryolarını temsil etmek için özellikle yararlıdır.",
+    "crumbs": [
+      "Yazar hakkinda",
+      "İstatistik",
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Veri Tabanı Modelleri</span>"
+    ]
+  },
+  {
+    "objectID": "course-contents/database-models-tr.html#ilişkisel-veri-tabanı-modeli",
+    "href": "course-contents/database-models-tr.html#ilişkisel-veri-tabanı-modeli",
+    "title": "6  Veri Tabanı Modelleri",
+    "section": "6.4 İlişkisel veri tabanı modeli",
+    "text": "6.4 İlişkisel veri tabanı modeli\n\n\n\nilişkisel model veritabanı\n\n\nAsset Management (2001)\nİlişkisel veri tabanı modeli 1970 yılında IBM firmasında çalışan Dr. Codd tarafından önerilmiştir Codd (1970). İlişkisel veri tabanı modeli daha önce kullanılan 3 veri tabanı modelinde karşılamaktadır. Yani hem düz dosya tabanlı, hem hiyerarşik hem de ağ (network) model yapısı ilişkisel veri tabanı olarak modellenebilir. Bu modelin esnek yapısı sayesinde günümüzdeki yapısal (structured) verilerin çoğunluğu ilişkisel veri tabanlarında saklanmaktadır. Bu model dersimizin ana konusudur.",
+    "crumbs": [
+      "Yazar hakkinda",
+      "İstatistik",
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Veri Tabanı Modelleri</span>"
+    ]
+  },
+  {
+    "objectID": "course-contents/database-models-tr.html#nesneye-yönelik-object-oriented-veri-tabanı-modeli",
+    "href": "course-contents/database-models-tr.html#nesneye-yönelik-object-oriented-veri-tabanı-modeli",
+    "title": "6  Veri Tabanı Modelleri",
+    "section": "6.5 Nesneye yönelik (object oriented) veri tabanı modeli",
+    "text": "6.5 Nesneye yönelik (object oriented) veri tabanı modeli\n\n\n\nNesneye yönelik model veritabanı\n\n\nAsset Management (2001)\nNesneye yönelik veri tabanı modelleri nesneye yönelik programlamanın başarısı üzerine önerilmiş veri tabanlarıdır. Bir süre popular olmuş olmalarına rağmen günümüzde az kullanılırlar. Oracle ve postgres veri tabanları bu paradigmayı direk desteklemektedir.\n\nOracle Nesne-İlişkisel\npostgres bunu destekler\n\nBu modellemede veriler nesne (object), kalıtım (inheritance) ve diğer nesneye yönelik programlar özellikleri kullanılarak modellenir.\nBen, bu nesne özelliklerinin üretim Oracle veritabanlarında kullanıldığını hiç görmedim.",
+    "crumbs": [
+      "Yazar hakkinda",
+      "İstatistik",
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Veri Tabanı Modelleri</span>"
+    ]
+  },
+  {
+    "objectID": "course-contents/database-models-tr.html#xml-veritabanları",
+    "href": "course-contents/database-models-tr.html#xml-veritabanları",
+    "title": "6  Veri Tabanı Modelleri",
+    "section": "6.6 XML veritabanları",
+    "text": "6.6 XML veritabanları\nXML’in 2000’li yıllarda populer olması ile XML veri tabanları ortaya çıkmıştır. Diğer veri tipleri gibi XML verilerin kayıt edilmesi, sorgulanması bilinen veri tabanlarının bir kısmı tarafından yapılmıştır.\n\nOracle’ın yerel xml depolama ve sorgu yetenekleri vardır, bkz. Oracle XML DB.\nSQL Server’ın da yerel xml depolama ve sorgu yetenekleri vardır, bkz. Sql Server XML Data\n\nXML kullanımı artık çok azalmıştır. Bunun nedeni JSON veri tipinin çok daha populer olmasıdır. JSON’un bu populerliği, bir sonraki belge veri tabanı modelinin sunulmasına neden olacaktır.",
+    "crumbs": [
+      "Yazar hakkinda",
+      "İstatistik",
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Veri Tabanı Modelleri</span>"
+    ]
+  },
+  {
+    "objectID": "course-contents/database-models-tr.html#dokuman-belge-veritabanları",
+    "href": "course-contents/database-models-tr.html#dokuman-belge-veritabanları",
+    "title": "6  Veri Tabanı Modelleri",
+    "section": "6.7 Dokuman (Belge) veritabanları",
+    "text": "6.7 Dokuman (Belge) veritabanları\nBelge veritabanları çoğunlukla json belgelerini depolar. Bunlar şema içermeyen veri düzenlemeleridir. İlişkisel veritabanlarından farklı olarak, önceden veritabanı şemasını tasarlamak zorunda değilsinizdir. Bunun avantajları ve dezavantajları vardır. En bilinen örnek mongodb’dir.\nVeri tabanı (database) en üst seviyedeki veri tutma nesnesidir. Veri tabanı bir çok kolleksiyon içerebilir. Kolleksiyon (collection) ilişkisel veri tabanlarındaki tabloya denktir. Dokuman (document) ise bu kolleksiyon içindeki bir satır olarak json nesnesidir. Örnek olarak:\n\nveri tabanı = kütüphane\nKolleksiyon = Kitap rafı\nDokuman = kitap\n\n\n\n\n\n\nflowchart TB\n    subgraph database\n        subgraph collection\n            subgraph document\n                d1[\"{id:1,name:'Atilla'}\"]\n                d2[\"{id:2,name:'Duru'}\"]\n            end    \n        end    \n    end\n\n\n\n\n\n\nÖrnek Dokuman veri tabanları:\n\nMongoDB\nDatabricks\nAmazon DynamoDB\nMicrosoft Azure Cosmos DB\nCouchbase\nFirebase (google)\nOracle NoSQL\n\nSQL standardına eklenen json fonksiyonları sayesinde bütün modern ilişkisel veri tabanları dokuman veri tabanı olarak çalışabilmektedir.\n\noracle\nSQL-Server\nSQLite\nPostgres\nMySQL/MariaDB",
+    "crumbs": [
+      "Yazar hakkinda",
+      "İstatistik",
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Veri Tabanı Modelleri</span>"
+    ]
+  },
+  {
+    "objectID": "course-contents/database-models-tr.html#çizge-graph-veri-tabanları",
+    "href": "course-contents/database-models-tr.html#çizge-graph-veri-tabanları",
+    "title": "6  Veri Tabanı Modelleri",
+    "section": "6.8 Çizge (graph) veri tabanları",
+    "text": "6.8 Çizge (graph) veri tabanları\n\n\n\nWikipedia2016DatabaseModelsFigure\n\n\nÇizge modelleri ağ modellerinin daha genelleştirilmiş ve esnek bir biçimi olarak sunulmuştur. Ağ modellerinde nodlar arasında tek bir ilişki olabilirken, çizge modellerinde bu kısıtlama kaldırılmıştır. Verilerde gezinmek ve sorgulamak için yeni yöntemler önermişlerdir. Çizge model veri tabanları, sosyal ağlar, öneri (recommendation) motorları ve bilgi grafikleri (knowledge graphs) gibi karmaşık ve gelişen ilişkilerle ilgilenen uygulamalar için oldukça uygun hale getirir.\nGraph Query Language (çizge sorgu dili) bir standard olarak Nisan 2024’te sunulmuştur.\nSQL:2023 standardı “Property Graph Queries (SQL/PGQ)” eklemiştir. Bu sayede veriler çizge (graph) gibi sorgulanabilecektir.\n\nneo4j\noracle graph database",
+    "crumbs": [
+      "Yazar hakkinda",
+      "İstatistik",
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Veri Tabanı Modelleri</span>"
+    ]
+  },
+  {
+    "objectID": "course-contents/database-models-tr.html#vektor-veri-tabanları",
+    "href": "course-contents/database-models-tr.html#vektor-veri-tabanları",
+    "title": "6  Veri Tabanı Modelleri",
+    "section": "6.9 Vektor veri tabanları",
+    "text": "6.9 Vektor veri tabanları\nÜretken yapay zekanın (Generative AI) populer olması ile RAG (retrieval augmented generation) uygulamaları için vektpr veri tabanlarının populerliği artmıştır. Aşağıda bir RAG uygulaması için nasıl çalıştıklarına dair bir örnek görülebilir.\n\n\n\n\n\ngraph TD\n    A[Kullanıcı Sorgusu] --&gt; B[RAG Sistemi]\n    B --&gt; C[Sorgu Gömme]\n    C --&gt; D[Vektör Veritabanı]\n    D --&gt; E[Benzer Vektörleri Al]\n    E --&gt; F[İlgili Belgeleri Getir]\n    F --&gt; G[Orijinal Sorguyu Artır]\n    G --&gt; H[Büyük Dil Modeli]\n    H --&gt; I[Yanıt Oluştur]\n    I --&gt; J[Kullanıcıya Yanıt Dön]\n\n    subgraph \"Belge Alımı\"\n        K[Kaynak Belgeler] --&gt; L[Metin Yığınlama]\n        L --&gt; M[Gömme Üretimi]\n        M --&gt; N[Vektör Veritabanında Sakla]\n    end\n\n    D -.-&gt; N\n\n\n\n\n\n\n\nBu veri tabanlarında veriler bir vektor olarak tutulmakta ve vektor operasyonları daha hızlı olarak yapılmaktadır. Bilinen veri tabanları bu özellikleri sunmaya başlamıştır.\n\npostgres\noracle\nMariaDb\nMongoDb\nCouchbase\nNeo4J\nRedis\n\nAma ayrıca sadece vektor veri tabanı olarak çalışan ürünlerde vardır.\n\nPinecone\nMilvus\nQdrant\nChroma\n\nAşağıdaki yazı vector veritabanlarının yanlış soyutlama olduğunu iddia ediyor. Vector veri tabanı kullanmak yerine, vector gömülü verilerinin (embeddings) indeks mantığında veri tabanı tarafından yönetilmesinin daha mantıklı olduğunu söylüyor.\nvector veritabanları yanlış soyutlamadır\nSQL-Server vektor veri tipi\nOracle vektor veri tipi\nSqlite vektor arama genişlemesi\n\n\n\n\nAsset Management, Office of. 2001. “Data Integration Glossary.” US Department of Transportation.\n\n\nCodd, E. F. 1970. “A Relational Model of Data for Large Shared Data Banks.” Communications of the ACM 13 (6): 377–87. https://doi.org/10.1145/362384.362685.",
+    "crumbs": [
+      "Yazar hakkinda",
+      "İstatistik",
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Veri Tabanı Modelleri</span>"
+    ]
+  },
+  {
+    "objectID": "course-contents/er-model-tr.html",
+    "href": "course-contents/er-model-tr.html",
+    "title": "7  Varlık İlişki (ER) Modellemesi Giriş",
+    "section": "",
+    "text": "7.1 Entity Relationship Model Temelleri\nVarlık İlişki ingilizce Entity Relationship (ER) modellemesi veya diyagramı, Peter Chen Chen (1976) tarafından 1976 yılında önerilmiştir. ER-Modelleri üç bölümden oluşur:\nVarlıklar (Entity) temel olarak veritabanlarındaki tablolardır, Öğrenci, Çalışan, Müşteri ve Faturalar gibi. İlişkiler varlıklar arasındaki bağlantıları gösterir. Örneğin, bir Müşterinin faturaları vardır. Nitelikler bir varlığın sahip olduğu değerleri gösterir. Örneğin, Müşteri varlığının adı ve telefonu olacaktır.\nOrijinal diagramlar Chen gösterimi olarak adlandırılır. Aşağıda orijinal makaleden bir şekil bulunmaktadır Chen (1976).\nDiyagram sözdizimi o zamandan beri gelişmiştir ama temeller aynı kalmıştır.",
+    "crumbs": [
+      "Yazar hakkinda",
+      "Nedensellik",
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Varlık İlişki (ER) Modellemesi Giriş</span>"
+    ]
+  },
+  {
+    "objectID": "course-contents/er-model-tr.html#entity-relationship-model-temelleri",
+    "href": "course-contents/er-model-tr.html#entity-relationship-model-temelleri",
+    "title": "7  Varlık İlişki (ER) Modellemesi Giriş",
+    "section": "",
+    "text": "Entity (Varlık)\nRelations (İlişkiler)\nAttributes (Nitelikler)\n\n\n\n\n\n\nSimple Er Diagram",
+    "crumbs": [
+      "Yazar hakkinda",
+      "Nedensellik",
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Varlık İlişki (ER) Modellemesi Giriş</span>"
+    ]
+  },
+  {
+    "objectID": "course-contents/er-model-tr.html#nasıl-çalışır",
+    "href": "course-contents/er-model-tr.html#nasıl-çalışır",
+    "title": "7  Varlık İlişki (ER) Modellemesi Giriş",
+    "section": "7.2 Nasıl çalışır?",
+    "text": "7.2 Nasıl çalışır?\nER modellemesi aşağıdaki şekilde gösterildiği gibi iki şekilde çalışır.\nBirinci yol, diyagramlar ve ardından veritabanı tabloları oluşturulmasıdır.\nİkinci yol, diyagramlarımızı veritabanı tablolarımızdan tersine mühendislikle elde edebiliriz.\n\n\n\n\n\nflowchart TD\n    GUI[GUI Tasarım E-R Model] --&gt;|Fiziksel Model| DB1(Oluşturulan tablolar)\n    DB2(Oluşturulan tablolar) --&gt; |Tersine Mühendislik| Diyagram[E-R Model]",
+    "crumbs": [
+      "Yazar hakkinda",
+      "Nedensellik",
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Varlık İlişki (ER) Modellemesi Giriş</span>"
+    ]
+  },
+  {
+    "objectID": "course-contents/er-model-tr.html#er-modelleme-araçları",
+    "href": "course-contents/er-model-tr.html#er-modelleme-araçları",
+    "title": "7  Varlık İlişki (ER) Modellemesi Giriş",
+    "section": "7.3 ER Modelleme araçları",
+    "text": "7.3 ER Modelleme araçları\nBirinci yol için, diyagramlardan veritabanı betiklerinin oluşturulması için çok sayıda araç vardır.\nÖrnekler:\n\nEnterprise Architect\nToad\nLucidChart ER Diyagram\n\nBir aracın nasıl çalıştığını görmek için aşağıdaki videoyu izleyin.\n\nLucidChart Tutorial: How to Create an ERD",
+    "crumbs": [
+      "Yazar hakkinda",
+      "Nedensellik",
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Varlık İlişki (ER) Modellemesi Giriş</span>"
+    ]
+  },
+  {
+    "objectID": "course-contents/er-model-tr.html#er-model-tersine-mühendislik-araçları",
+    "href": "course-contents/er-model-tr.html#er-model-tersine-mühendislik-araçları",
+    "title": "7  Varlık İlişki (ER) Modellemesi Giriş",
+    "section": "7.4 ER model tersine mühendislik araçları",
+    "text": "7.4 ER model tersine mühendislik araçları\nİkinci çalışma şekli, mevcut veritabanının tersine mühendisliği daha yaygındır. Mevcut bir veritabanının tersine mühendisliğini yaparız ve onun ER Diyagramını elde ederiz. Örneğin, DBeaver’ın ER Diyagramları vardır.\n\n\n\nDBeaver ER Diagram\n\n\n\nBir bağlantı açın\ntabloları seçin\naçılan pencerede ER Diyagram sekmesini seçin\n\nER diyagramlarını okumak, mevcut veritabanı yapısını daha kolay anlamanızı sağladığı için faydalı bir beceridir.\nOracle örnek HR ve OE örneğini kendi dokümanlarında görün\nOracle SQL Developer genişlemesi Oracle Data Modeler, Oracle veritabanı için kendi tersine mühendislik araçlarına sahiptir.\nBu amaç için bir diğer araç ise Schema Spy’dır.\n\n\n\n\nChen, Peter Pin-Shan. 1976. “The Entity-Relationship Model—Toward a Unified View of Data.” ACM Transactions on Database Systems 1 (1): 9–36. https://doi.org/10.1145/320434.320440.",
+    "crumbs": [
+      "Yazar hakkinda",
+      "Nedensellik",
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Varlık İlişki (ER) Modellemesi Giriş</span>"
+    ]
+  },
+  {
+    "objectID": "course-contents/er-model-mermaid-diagrams-tr.html",
+    "href": "course-contents/er-model-mermaid-diagrams-tr.html",
+    "title": "8  Mermaid ER Diyagramları",
+    "section": "",
+    "text": "8.1 Varlık (Entity)\nER modelleme için mermaid Entity Relationship Diagram kullanacağız. Çünkü mermaid’in markdown sözdizimi daha kolay anlaşılmaktadır. Ayrıca markdown düz metin olarak git gibi kaynak kontrol araçlarıyla sürüm kontrolü yapılabilir. Ek olarak mermaid diyagramları github, gitlab ve azure devops gibi kaynak kontrol araçlarının web sürümleri tarafından otomatik olarak gösterilir.\nVarlıklar diyagramlardaki en temel kısımdır. Normalde veritabanı tablolarına karşılık gelirler. Ayrıca diyagramda niteliklerini veya sütunlarını da verebiliriz. Aşağıdaki örneğe bakınız.\nerDiagram\n    Ogrenci {\n        int ogrenci_id PK\n        string adi\n    }\n\n\n\n\nerDiagram\n    Ogrenci {\n        int ogrenci_id PK\n        string adi\n    }",
+    "crumbs": [
+      "Yazar hakkinda",
+      "Nedensellik",
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Mermaid ER Diyagramları</span>"
+    ]
+  },
+  {
+    "objectID": "course-contents/er-model-mermaid-diagrams-tr.html#varlık-ilişkileri",
+    "href": "course-contents/er-model-mermaid-diagrams-tr.html#varlık-ilişkileri",
+    "title": "8  Mermaid ER Diyagramları",
+    "section": "8.2 Varlık İlişkileri",
+    "text": "8.2 Varlık İlişkileri\nVarlıkların ilişkileri olmalıdır. Diğer varlıklarla etkileşimleri bu şekildedir. Bunun sözdizimi aşağıdadır:\n&lt;birinci-varlık&gt; [&lt;ilişki&gt; &lt;ikinci-varlık&gt; : &lt;ilişki-etiketi&gt;]\nİlişki etiketi, gereksinimlerde veya sahada nasıl çalıştığını göstermelidir. Lütfen buna göre seçmeye çalışın.\nBir öğrencinin birçok derse kaydolduğu bir örnek. Bunu aşağıdaki gibi yazabiliriz.\n\nerDiagram\n    Ogrenci ||--o{ Ders : \"kayıt_olur\"\n\n\n\n\nerDiagram\n    Ogrenci ||--o{ Ders : \"kayıt_olur\"\n\n\n\n\n\n\nBu sözdiziminde, aşağıdaki tablo varlıkların kardinalitesini nasıl modelleyebileceğimizi göstermektedir. Bu, varlıklar arasında 0,1 veya çok olduğu bilgisidir.\n\n\n\nDeğer (Sol)\nDeğer (Sağ)\nAnlamı\n\n\n\n\n|o\no|\nSıfır veya bir\n\n\n||\n||\nTam olarak bir\n\n\n}o\no{\nSıfır veya çok (Üst limit yok)\n\n\n}|\n|{\nOne veya çok (Üst limit yok)\n\n\n\nBu bilgiyi şu şekilde okuyabiliriz:\n\nÖğrencinin sıfırdan bire kadar danışmanı var\nÖğrencinin tam olarak bir danışmanı var\nÖğrenci 0’dan çoka kadar derse kaydoluyor\nÖğrenci 1’den çoka kadar derse kaydoluyor",
+    "crumbs": [
+      "Yazar hakkinda",
+      "Nedensellik",
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Mermaid ER Diyagramları</span>"
+    ]
+  },
+  {
+    "objectID": "course-contents/er-model-mermaid-diagrams-tr.html#tam-örnek-1",
+    "href": "course-contents/er-model-mermaid-diagrams-tr.html#tam-örnek-1",
+    "title": "8  Mermaid ER Diyagramları",
+    "section": "8.3 Tam Örnek 1",
+    "text": "8.3 Tam Örnek 1\n\nerDiagram\n    Ogrenci ||--o{ Kurs : \"kayıt_olur\"\n    Kurs ||--|{ Ders : \"içerir\"\n    Ogretmen ||--o{ Kurs : \"Ögretir\"\n    Ogretmen ||--o{ Ders : verir\n    Ogrenci ||--o{ Ders : \"katılır\"\n\n\n    Ogrenci {\n        int id PK\n        string adi\n        date olusturuldugu_tarih\n        date guncellendigi_tarih\n    }\n    Kurs {\n        int id PK\n        string baslik\n        string tanim\n        date olusturuldugu_tarih\n        date guncellendigi_tarih\n    }\n    Ders {\n        int id PK\n        int Kurs_id FK\n        string baslik\n        date planlanan_tarih\n        date olusturuldugu_tarih\n        date guncellendigi_tarih\n    }\n    Ogretmen {\n        int id PK\n        string adi\n        string eposta\n        date olusturuldugu_tarih\n        date guncellendigi_tarih\n    }\n\n\n\n\nerDiagram\n    Ogrenci ||--o{ Kurs : \"kayıt_olur\"\n    Kurs ||--|{ Ders : \"içerir\"\n    Ogretmen ||--o{ Kurs : \"Ögretir\"\n    Ogretmen ||--o{ Ders : verir\n    Ogrenci ||--o{ Ders : \"katılır\"\n\n\n    Ogrenci {\n        int id PK\n        string adi\n        date olusturuldugu_tarih\n        date guncellendigi_tarih\n    }\n    Kurs {\n        int id PK\n        string baslik\n        string tanim\n        date olusturuldugu_tarih\n        date guncellendigi_tarih\n    }\n    Ders {\n        int id PK\n        int Kurs_id FK\n        string baslik\n        date planlanan_tarih\n        date olusturuldugu_tarih\n        date guncellendigi_tarih\n    }\n    Ogretmen {\n        int id PK\n        string adi\n        string eposta\n        date olusturuldugu_tarih\n        date guncellendigi_tarih\n    }",
+    "crumbs": [
+      "Yazar hakkinda",
+      "Nedensellik",
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Mermaid ER Diyagramları</span>"
+    ]
+  },
+  {
+    "objectID": "course-contents/er-model-mermaid-diagrams-tr.html#er-diyagramları-oluşturmak-için-llmleri-kullanın",
+    "href": "course-contents/er-model-mermaid-diagrams-tr.html#er-diyagramları-oluşturmak-için-llmleri-kullanın",
+    "title": "8  Mermaid ER Diyagramları",
+    "section": "8.4 ER diyagramları oluşturmak için LLM’leri kullanın",
+    "text": "8.4 ER diyagramları oluşturmak için LLM’leri kullanın\nMermaid normal bir markdown kodu olduğundan taslak diyagramlarımızı oluşturmak için ChatGPT, Gemini veya Perplexity gibi LLM’leri kullanabiliriz.\nAşağıdaki AI istemi (prompt), başlamak için taslak bir mermaid diyagramı oluşturur.\n\nLütfen bana öğrencileri, kursları, dersleri ve öğretmenleri gösteren basit bir mermaid entity relationship diyagramı oluşturun. Tüm varlıkların ortak sütunları olmalıdır.\n\nSonucu görmek için AI araçlarında deneyin.",
+    "crumbs": [
+      "Yazar hakkinda",
+      "Nedensellik",
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Mermaid ER Diyagramları</span>"
+    ]
+  }
+]

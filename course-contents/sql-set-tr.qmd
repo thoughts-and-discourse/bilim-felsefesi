@@ -1,0 +1,39 @@
+# SQL KÜME-SET Komutları 
+
+- UNION [ALL] - BİRLEŞİM
+- EXCEPT/MINUS - FARK
+- INTERSECT - KESİŞİM 
+
+![set-operations-union-intersect-except](./images/set-operations-union-intersect-except.png)
+
+{{< include ../course-contents/sql-set-union-tr.qmd >}}
+
+
+
+
+{{< include ../course-contents/sql-set-except-tr.qmd >}}
+
+
+
+{{< include ../course-contents/sql-set-intersect-tr.qmd >}}
+
+{{< include ../course-contents/sql-set-intersect-questions-tr.qmd >}}
+
+
+
+
+## Oracle MINUS 
+
+Except ifadesi, SQL standardıdır.
+Ancak Oracle ayrıca MINUS anahtar sözcüğünü de kabul eder.
+İşlevselliği aynıdır.
+Oracle ayrıca ALL'ı EXCEPT ALL ve MINUS ALL olarak kabul eder, böylece çoğaltılmış olanlar kaldırılmaz, UNION ALL ile aynıdır.
+Aşağıdaki [Oracle öğretici Set işlemleri](https://oracle-base.com/articles/21c/sql-set-operator-enhancements-21c)'ye bakın
+
+
+
+
+## Diğer öğreticiler
+
+- [SQL Server'daki EXCEPT ve INTERSECT Operatörleri](https://www.red-gate.com/simple-talk/databases/sql-server/performance-sql-server/the-except-and-intersect-operators-in-sql-server/)
+

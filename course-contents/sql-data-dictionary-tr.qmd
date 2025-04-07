@@ -1,0 +1,9 @@
+# Veri Sözlüğü (Data Dictionary)
+
+DDL Veri tanım dili komutlarının sonuçları veri sözlüğünde saklanır.
+Her veri tabanı veri sözlüğünü nasıl oluşturucağı konusunda serbesttir.
+Bu bilgilere ulaşmak için her veritabanı tablo ve görünümler sunar.
+
+
+{{< include ../course-contents/sql-views-system-information-schema-tr.qmd >}}
+

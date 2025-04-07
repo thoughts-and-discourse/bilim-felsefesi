@@ -1,0 +1,95 @@
+# SQL Betikler ve Betik Birleştirme
+
+## SQL Betik tanımı
+
+SQL dilinde betik tanımı ' tırnak karakterleri arasında istenilen karakterlerin yazımı ile yapılır, örneğin: 'Atilla'
+
+
+Aşağıdaki sorguda 'Atilla' bir betik tanımıdır.
+Veritabanlarından FROM kullanımına göre her veri tabanında bu betik tanımı ve sorgu geçerlidir.
+Aşağıdaki sorgu SQLite ve SQL-Server'da çalışır.
+
+```sql
+SELECT 'Atilla';
+```
+
+Aynı sorgunun Oracle'da çalışması için dummy tablo olan dual kulanılmalıdır.
+
+```sql
+SELECT 'Atilla' FROM dual;
+```
+
+Bazı veritabanlar "" ilede betik tanımını izin verirler.
+Bu sadece bazı veritabanlarında örneğin, SQLite ve MySQL, çalışır.
+Bu betik tanımını kullanmayınız.
+Aşağıdaki sorgu SQLite çalışır.
+
+```sql
+SELECT 'Atilla', "Atilla";
+```
+
+Ama SQL-Server'da hata mesajı verir.
+
+> SQL Error [207] [S0001]: Invalid column name 'Atilla'.
+
+Aynı şekilde aşağıdaki sorgu 
+
+```sql
+SELECT 'Atilla', "Atilla" FROM dual;
+```
+
+Oracle'da hata mesajı verir.
+
+> SQL Error [904] [42000]: ORA-00904: "Atilla": invalid identifier
+
+:::{.callout-tip}
+Betik (string) tanımlarında her zaman **''** karakterlerini kullanınız.
+:::
+
+
+
+## SQL Betik Birleştirme (String concat)
+
+
+SQL ile çalışırken betik birleştirme çok ihtiyaç duyarız.
+Bir çok veritabanında iki boru **||** işareti bu amaçla kullanılır.
+Aşağıdaki sorgu, Oracle ve SQLite üzerinde betik birleştirmeyi göstermektedir.
+
+```sql
+SELECT C.FirstName || ' ' || C.LastName AS TamAdi  FROM Customer AS C;
+```
+
+Aynı özelliği SQL-Server'da **+** işareti ile yaparız.
+
+
+```sql
+SELECT C.FirstName + ' ' + C.LastName AS TamAdi  FROM Customer AS C;
+```
+
+Kullanılan veritabanında göre bu 2 işaretten biri yaygındır.
+
+Aynı işlem CONCAT fonksiyonu ilede yapılabilir.
+
+- **concat(X,...)**
+
+Bu fonksiyon kendisine verilen argumanları birleştirerek döndürür.
+Aşağıdaki sorgu, SQLite ve SQL-Server veritabanlarında çalışır.
+
+```sql
+SELECT CONCAT(C.FirstName,' ',C.LastName) AS TamAdi  FROM Customer AS C;
+```
+
+Ama Oracle'da ne yazıkki CONCAT sadece 2 arguman ile çalışıyor.
+
+```sql
+SELECT CONCAT(CONCAT(C."FirstName",' '),C."LastName") AS TamAdi
+FROM "Customer"  C;
+```
+
+Oracle için CONCAT kullanışsız bir fonksiyondur.
+
+
+:::{.callout-tip}
+Eğer veritabanı bağımsız SQL yazmanız gerekiyorsa CONCAT fonksiyonunu tercih edebiliriz.
+Ama ne yazık ki CONCAT bile tam veri tabanı bağımsız kod yazmaya yeterli değil.
+:::

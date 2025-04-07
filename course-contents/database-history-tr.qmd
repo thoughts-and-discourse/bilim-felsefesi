@@ -1,0 +1,4 @@
+## Veri Tabanlarının Kısaca Tarihi 
+
+{{< include ../course-contents/tables/table-databases-history-tr.md >}}
+

@@ -1,0 +1,28 @@
+project:
+  output-dir: ./docs/en
+
+book:
+  title: "Philosophy of Science"
+  navbar:
+    background: primary
+    right:
+      - text: "English"
+        href: ../en/index.html
+      - text: "Türkçe"
+        href: ../tr/index.html  
+  chapters:
+    - part: "Mathematics"
+      chapters:
+        - index.qmd
+        - Syllabus-en.qmd
+        - course-contents/course-introduction-en.qmd
+    - part: "Statistics"
+      chapters:        
+        - course-contents/databases-intro-en.qmd
+        - course-contents/database-models-en.qmd
+
+    - part: "Causality"
+      chapters:
+        - course-contents/er-model-en.qmd
+        - course-contents/er-model-mermaid-diagrams-en.qmd
+    - references-en.qmd

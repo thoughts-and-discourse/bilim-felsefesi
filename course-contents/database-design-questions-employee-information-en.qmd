@@ -1,0 +1,3 @@
+### Employee information
+
+{{< include ../course-contents/tables/table-database-design-example-employee-information-en.md >}}

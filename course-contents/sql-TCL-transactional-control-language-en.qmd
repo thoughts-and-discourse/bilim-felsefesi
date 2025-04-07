@@ -1,0 +1,39 @@
+# TCL (Transactional control language)
+
+[sqlite Transaction](https://www.sqlite.org/lang_transaction.html)
+
+## Transaction Demo 1
+
+show rollback
+
+```sql
+BEGIN TRANSACTION;
+INSERT INTO Playlist (PlaylistId, Name) VALUES(0, '');
+select * from Playlist;
+ROLLBACK TRANSACTION;
+```
+
+show commit;
+
+```sql
+BEGIN TRANSACTION;
+INSERT INTO Playlist (PlaylistId, Name) VALUES(0, '');
+select * from Playlist;
+ROLLBACK TRANSACTION;
+```
+
+## Transaction Demo 2
+
+Demo: 2 command line, show 
+
+- Show if another session could insert to same table;
+- Show if another session could insert to another table;
+
+
+
+
+
+
+
+
+

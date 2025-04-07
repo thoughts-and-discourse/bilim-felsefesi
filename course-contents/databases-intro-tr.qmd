@@ -1,0 +1,12 @@
+# Veritabanlarına giriş
+
+
+{{< include ../course-contents/why-databases-still-important-tr.qmd >}}
+
+
+{{< include ../course-contents/database-history-tr.qmd >}}
+
+
+
+
+

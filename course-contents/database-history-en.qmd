@@ -1,0 +1,14 @@
+## Short History of databases
+
+{{< include ../course-contents/tables/table-databases-history-en.md >}}
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,103 @@
+# SQL WHERE
+
+
+{{< include ../course-contents/tables/table-where-operators-en.md >}}
+
+
+## Examples
+
+Chinook
+
+```sql
+select * from Employee where EmployeeId = 5;
+```
+
+```sql
+select * from Employee where EmployeeId != 5;
+```
+
+```sql
+select * from Employee where EmployeeId <> 5;
+```
+
+```sql
+select * from Employee where EmployeeId < 5;
+```
+```sql
+select * from Employee where EmployeeId <= 5;
+```
+```sql
+select * from Employee where EmployeeId > 5;
+```
+
+```sql
+select * from Employee where EmployeeId >= 5;
+```
+## logical operators
+
+- AND
+- OR
+- NOT
+
+{{< include ../course-contents/tables/table-truth-table-and.md >}}
+
+
+{{< include ../course-contents/tables/table-truth-table-or.md >}}
+
+
+## IN Operator
+
+```sql
+select * from Employee where EmployeeId IN (2,5,9);  
+```
+
+## Between operator
+
+## LIKE Operator
+
+We use the so called wild cards while searching.
+The characters % and _ are supported by almost all databases while others are supported less.
+
+
+
+- [sql server wild cards](https://learn.microsoft.com/en-us/sql/t-sql/language-elements/wildcard-character-s-to-match-transact-sql?view=sql-server-ver16)
+- [oracle wild cards](https://docs.oracle.com/cd/B13789_01/server.101/b10759/conditions016.htm)
+- [sqlite wild cards](https://sqlite.org/lang_expr.html#like)
+
+
+{{< include ../course-contents/tables/table-sql-wildcards-en.md >}}
+
+
+**examples in Chinook**
+
+```sql
+SELECT * from Customer c WHERE C.FirstName LIKE 'L%';
+```
+
+```sql
+SELECT * from Customer c WHERE C.FirstName LIKE 'Lu_s'
+```
+
+Works in SQL Server
+
+```sql
+SELECT * from Customer c WHERE C.Address LIKE '%[12]%'
+```
+
+
+```sql
+-- second character is a
+SELECT * from Customer c WHERE  C.FirstName LIKE '_[a]%'
+
+-- second character is NOT a
+--SELECT * from Customer c WHERE C.FirstName LIKE '_[^a]%'
+```
+
+## Chaining of conditions
+
+- Use parentheses when you need to chain more than 3 conditions.
+Like mathematics, parentheses change the order of operations.
+
+- (2+3)*5
+- 2+3*5
+

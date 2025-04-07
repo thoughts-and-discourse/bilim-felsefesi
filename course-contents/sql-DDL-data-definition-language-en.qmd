@@ -1,0 +1,60 @@
+# DDL (data definition language)
+
+Data definition language (DDL) statements are Create, drop, alter statements.
+Database objects are created using **create object** statements, then stored in data dictionary of database.
+We can drop these objects using **drop object** statements.
+We can also alter these objects using **alter object** statements.
+Alter statements typically do not allow every change.
+According to database engine, we may have to drop the object and create it from the scratch.
+But most if database engine allows it alter statements are always more preferable and more performant.
+
+The objects we could create again change according to database engine.
+Sqlite allows following common database objects:
+
+- Tables
+- Views
+- Index
+- Trigger
+
+Sqlite also allows [virtual tables](sql-virtual-tables-en.qmd) but this virtual table is a bit different from the sql server and oracle versions.
+
+
+In addition to above common objects, Sql Server and Oracle allows following common objects:
+
+
+- Functions
+- Procedures
+- User
+
+The sqlite does not need user object being a file-based database but oracle and sql server both require a user for database connection.
+Therefore, they have variety of commands to handle security, roles, and privileges for users.
+
+These databases also allows creation of custom function and procedures.
+
+
+For sqlite
+
+- [Create Table](https://www.sqlite.org/lang_createtable.html)
+- [Create Trigger](https://www.sqlite.org/lang_createtrigger.html)
+- [Create Index](https://www.sqlite.org/lang_createindex.html)
+- [Create View](https://www.sqlite.org/lang_createview.html)
+
+You do not have to memorize their exact definition since most modern GUI tools help you to create these statements.
+
+1. DBeaver Demo Create Table
+2. DBeaver Demo Alter Table
+3. DBeaver Demo Drop Table
+
+1. DBeaver Demo Create View
+2. DBeaver Demo Alter View
+3. DBeaver Demo Drop View
+
+
+Being an open source and free tool, DBeaver is not very powerful.
+But SQL Developer Oracle and Sql Server Management Studio allows creation, alteration and dropping of every object mentioned above using GUI tools.
+
+## Generated/Virtual Columns
+
+[Generated Columns in sqlite](https://www.sqlite.org/gencol.html)
+
+

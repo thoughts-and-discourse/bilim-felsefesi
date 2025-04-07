@@ -1,0 +1,96 @@
+# SQL Paging
+
+Paging means that bringing partial results from a table or result set.
+Since bringing all of the rows to the customer application is expensive, customer applications, for example web pages, show the rows in pages.
+A web page could show 100 rows per page, while a mobile application could show 10 rows per page.
+You can see google paging of search results in the below image.
+
+
+![Google paging](images/google-paging.png)
+
+
+
+
+## SQL Standard Offset Fetch Commands
+
+Paging Results - Can be done by using the OFFSET-FETCH command with ORDER BY.
+
+Note that this usage is easy to use but problematic.
+Offset usage has large performance problems.
+Read about it [here](https://use-the-index-luke.com/sql/partial-results/fetch-next-page).
+
+
+In the below example, in oracle database, we select 3rd page with 10 rows.
+This query will not work on sql server since sql server mandates usage of order by while using offset and fetch.
+
+```sql
+SELECT * FROM "Customer" 
+OFFSET 20 ROWS
+FETCH FIRST 10 ROWS ONLY;
+```
+
+
+- 0-10 1st page
+- 10-20 2nd page
+- 20-30 3rd page
+
+
+- OFFSET is used to specify how many rows to skip 
+- FETCH is used to specify how many rows to fetch.
+
+
+- Better to use ORDER BY.
+
+Since this result is dependent on how Customer is stored, it is better to give order by always, like below example.
+Below query works both oracle and sql server databases.
+It should also work on DB2 and postgres with small or no modifications.  
+
+
+```sql
+SELECT * FROM "Customer" 
+ORDER BY "FirstName" 
+OFFSET 20 ROWS
+FETCH FIRST 10 ROWS ONLY;
+
+```
+
+Since database has to fetch all rows until it gets to desired result, this usage has performance problems.
+See following pages: [fetch-next-page](http://use-the-index-luke.com/sql/partial-results/fetch-next-page) and [no offset](https://use-the-index-luke.com/no-offset).
+
+But for a quick and dirty paging, it is better than client side paging.
+That is getting all rows in the client application and filtering there.
+
+We do not have to select from single table only.
+We could have complex queries and better yet we could use sub-queries or with expression with this syntax.
+
+```sql
+WITH P AS
+(
+	SELECT C."CustomerId",C."FirstName",C."LastName" FROM "Customer" C
+	WHERE C."SupportRepId" IS NOT NULL
+)
+SELECT * FROM P
+ORDER BY "FirstName"
+OFFSET 20 ROWS
+FETCH FIRST 10 ROWS ONLY;
+```
+
+## SQLITE
+
+sqlite supports offset keyword with limit.
+
+```sql
+WITH P AS
+(
+	SELECT C.CustomerId,C.FirstName,C.LastName FROM Customer C
+	WHERE C.SupportRepId IS NOT NULL
+)
+SELECT * FROM P
+ORDER BY FirstName
+LIMIT 10 OFFSET 20;
+```
+
+
+## Others
+
+- [Video API Pagination: Making Billions of Products Scrolling Possible ](https://www.youtube.com/watch?v=14K_a2kKTxU)

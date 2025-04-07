@@ -1,0 +1,93 @@
+# SQL Group by
+
+## Group by giriş
+
+SQL'deki GROUP BY ifadesi, belirtilen sütunlarda aynı değerlere sahip satırları gruplamak için kullanılır.
+GROUP by genellikle aşağıdaki gibi toplama fonksiyonları ile kullanılır:
+
+- avg
+- sum
+- min
+- max
+- count
+
+Basit bir örnek olarak hangi şehirlerde kaç müşterimiz var.
+
+```sql
+SELECT COUNT(*),City FROM Customer
+GROUP BY City
+```
+
+Yukarıdaki sorgu
+
+- Tüm Müşterileri şehir (city) değerine göre gruplandırır
+- Her şehir için müşteri sayısını bulur.
+
+
+Biraz daha karışık bir örnek olarak, müşterilerimize göre fatura sayımız ve toplam fatura değeri:
+
+```sql
+SELECT CustomerId , 
+COUNT(*) as invoice_count, 
+SUM(Total) as total_sales
+FROM Invoice
+GROUP BY CustomerId;
+```
+
+Sonuç aşağıdaki gibi olacaktır:
+
+![Count Total invoices](images/count-sum-invoices.png)
+
+
+Yukarıdaki sorgu
+
+- Tüm faturaları CustomerId'ye göre gruplandırır
+- Her müşteri için fatura sayısını sayar
+- Her müşteri için fatura toplamını hesaplar
+
+Bu sorguda aşağıdaki gibi ORDER BY kullanırsak hangi müşterilerin en çok alışveriş yaptığını görebiliriz.
+
+
+```sql
+SELECT CustomerId , COUNT(*) as invoice_count, SUM(Total) as total_sales
+FROM Invoice
+GROUP BY CustomerId
+order By total_sales desc; 
+```
+
+Fatura verilerine ilişkin daha fazla bilgi edinmek için diğer toplama (aggregate)fonksiyonları kullanılabilir.
+
+Aşağıdaki sorgu her albumdeki parça sayısını göstermektedir.
+
+```sql
+SELECT 
+t.AlbumId,
+COUNT(t.TrackId) AS ParcaSayisi
+FROM Track t 
+GROUP BY t.AlbumId 
+ORDER BY 2
+```
+
+
+Aşağıdaki sorgu parça sayısı 15 ile 20 arasında olan albumleri göstermektedir.
+
+```sql
+SELECT 
+t.AlbumId,
+COUNT(t.TrackId) AS ParcaSayisi
+FROM Track t 
+GROUP BY t.AlbumId 
+HAVING ParcaSayisi BETWEEN 15 and 20
+ORDER BY 2 DESC
+```
+
+
+**GROUP BY gerçek yaşam örneği**
+
+
+- Çalışma ve Sosyal Güvenlik Bakanlığı'ndan
+- her şehirde kaç şirket var?
+- her farklı şehirdeki şirketlerde kaç kişi çalışıyor?
+
+
+

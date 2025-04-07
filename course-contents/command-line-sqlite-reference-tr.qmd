@@ -1,0 +1,431 @@
+# Komut satırı SQLite Referans
+
+
+:::{.callout-important}
+Lütfen ilk önce Komut satırı SQLite Giriş [Bölüm -@sec-command-line-sqlite-intro] 
+bölümüne bakınız.
+:::
+
+
+:::{.callout-important}
+Aşağıdaki komutlarının tümünü derse başlarken öğrenmenize gerek yoktur.
+:::
+
+[SQLite CLI](https://sqlite.org/cli.html) dokumantosyonunda daha farklı örnekler vardır.
+Bu dokumanın üstünden de geçmek isteyebilirsiniz.
+
+
+SQLite komut satırı programı ile zip dosyalarıda sanki bir veritabanı imiş gibi sorgulanabilirler ama biz bu komutları hiç incelemeyeceğiz.
+Sadece veritabanı komutları aşağıda verilmiştir.
+
+SQLite komutları normalde ; noktalı virgül kullanılarak bitirilmelidir.
+
+
+## Komut girdisi
+
+SQLite CLI 3 çeşit komut kabul eder.
+
+- SQL cümleleri
+- . nokta komutları
+- CLI yorumları (comments)
+
+SQL cümleleri bildiğimiz SELECT, INSERT.. SQL cümleleridir.
+Normalde ; noktalı virgül ile bitirilmeliri beklenir.
+Ama Oracle ve SQL-Server uyumluluğu için "/" ve tek başına **go** kelimeside kabul edilir.
+Noktalı virgül tercih ediniz.
+
+
+
+## Yardım ve Yapılandırma
+
+- **.help**
+Yardım alınabilecek komut listesini verir.
+.help komut adı ile komut hakkında ayrıntılı bilgi verir.
+
+
+- **.exit**
+- **.quit**
+- **.q**
+
+Komut satırından çıkış.
+
+- **.version**
+
+Versiyon bilgisi, özellikle bazı komutlar çalışmadığı zaman ilk kontrol edilmesi gereken bilgi.
+
+- **.show**
+
+Çok kullanılan bazı özelliklerin değerlerini gösterir.
+En önemli bağlı bulunduğunu veritabanı dosyasınıda gösterir.
+
+- **.dbconfig**
+
+veri tabanı yapılandırmasını gösterir.
+
+Örneğin buradaki dqs_ddl "" çift tırnak (double quotes) karakterlerinin DDL ve DML komutlarında izin verilip verilmediğini kontrol eder.
+[Bakınız SQLite derleme](https://www.sqlite.org/compile.html)
+
+
+## Çıktı kontrolü
+
+- **.changes**
+
+SQL tarafında etkilenen satır sayısını göster/gösterme
+
+Aşağıdaki komutu deneyin.
+
+
+```sql
+.changes on
+SELECT FirstName FROM Employee;
+```
+
+- **.echo**
+
+Çalıştırılan SQL komutunu göster/gösterme
+Varsayılan off, göstermez.
+
+- **.headers**
+
+select komutunda başlıkların çıktısını kontrol eder.
+Aşağıdaki komutu deneyin.
+
+
+```sql
+SELECT * FROM Employee;
+.headers on
+SELECT * FROM Employee;
+```
+- **.separator**
+
+Satır ve kolon ayraçlarını yönetir.
+
+Aşağıdaki komutu deneyin.
+
+
+```sql
+SELECT EmployeeId,FirstName FROM Employee;
+.separator , 
+SELECT EmployeeId,FirstName FROM Employee;
+```
+
+
+- **.output**
+Komut çıktılarının ekrana (stdout) veya bir dosyaya olmasını yönetir.
+
+**.once**
+Sadece bir sonraki komut çıktısını dosyaya aktarır.
+
+
+- **.mode**
+
+Çıktının nasıl olacağını kontrol eder.
+.mode eğer bir argumanı yoksa o anda seçili çıktı modunu gösterir.
+
+|            |          |
+|------------|----------|
+| ascii      | line     |
+| **box**    | list     |
+| **csv**    | **markdown** |
+| column     | quote    |
+| html       | table    |
+| **insert** | tabs     |
+| **json**   | tcl      |
+
+Yukarıdaki tabloda kalın ile işaretli çıktı modları özellikle yararlıdır.
+
+
+Aşağıdaki komutları deneyin.
+
+
+```sql
+.mode box
+.headers on
+SELECT EmployeeId,FirstName FROM Employee;
+```
+
+```sql
+.mode json
+.headers on
+SELECT EmployeeId,FirstName FROM Employee;
+```
+
+```sql
+.mode insert
+.headers on
+SELECT EmployeeId,FirstName FROM Employee;
+```
+
+column, box, table ve markdown modunda çıktının kolon uzunlunkları otomatik ayarlanır.
+Ama .width vererek bunu değiştirebilirsiniz.
+verilen değer kaç karakter atandığı gösterir.
+Negatif değerler, sağa yaslamayı sağlar.
+Aşağıdaki komutta 1. kolon 4 karakter 2.kolon 20 karakter sağ yaslama yapılmıştır.
+
+```sql
+.mode column
+SELECT EmployeeId,FirstName FROM Employee;
+.width 4 -20
+SELECT EmployeeId,FirstName FROM Employee;
+```
+
+
+.width 0 veya .width arguman olmadan çalıştırıldığında genişlik değerleri sıfırlanır ve yine otomatik hesaplanmaya başlar
+
+
+- **.excel**
+
+Bir sonraki komut sonucunu excel'de açmanızı sağlar.
+Aşağıdaki komutu deneyin.
+
+```sql
+.excel
+.headers on
+SELECT EmployeeId,FirstName FROM Employee;
+```
+
+- **.print**
+
+Normal yazı yazılmasını sağlar.
+bir select komutu ile yazı yazmak yerine bu kullanılabilir.
+Aşağıdaki komutu deneyin.
+
+```sql
+.print Merhaba Dünya
+```
+
+## Dosyalardan komut çalıştırma
+
+- **.read**
+SQL veya sqlite komutlarını bir dosyadan okumanızı sağlar.
+Aynı zamanda komutları boru(pipe) | ile gönderebilirsiniz.
+
+Aşağıdaki komutu, komut satırında deneyiniz.
+
+```bash
+echo .dump | sqlite3 chinook.sqlite
+```
+
+Aşağıdaki komutu sqlite3 ile deneyiniz
+
+```bash
+.read ornek.sql
+```
+
+## Şema Bilgisi
+
+- **.tables**
+tablo listesi gösterir.
+
+- **.schema**
+veritabanı SQL DDL (veri tanım dili) komut listesini verir.
+
+- **.fullschema**
+
+Eğer sqlite istatistikleri açılmışsa o tablolarında şemasını verir.
+
+
+- **.dump** 
+.schema sonucu artı INSERT betiklerini gösterir.
+
+- **.indexes**
+
+indeks listesini verir.
+Tabloya göre filtreleme yapılabilir.
+
+
+
+
+- **.databases**
+sqlite komut satırını kullanarak birden fazla veri tabanı dosyasına bağlanabilir.
+Aşağıdaki komut ekstra bir veri tabanı dosyasına bağlanmamıza izin verir.
+
+```sql
+ATTACH DATABASE filename AS database_name;
+```
+
+
+Bu bağlantı sonrasında, SQL Standardı ŞEMA_ADI.NESNE_ADI isimlendirmesini kullanmamıza izin verir.
+
+.databases komutu hangi veri tabanı dosyalarına bağlı olduğumuzu gösterir.
+İlk bağlanılan dosya her zaman main şeması olarak görülür.
+
+
+## Yedekleme
+
+- **.save**
+- **.backup**
+
+Veritabanı yedeği alınmasını sağlar.
+.save komutu .backup'un takma adıdır.
+dosya ismi verilirken
+Aşağıdaki komutu deneyin.
+
+- **.clone**
+Bu komutta veritabanı yedeği alınmasını sağlar ama bunu yaparken SQL komutlarını kullanır.
+.backup daha güvenlidir, onu tercih ediniz.
+
+
+```bash
+.save yedek.sqlite
+```
+
+
+
+Aşağıdaki komut ile veritabanının tarih ve saat ile yedeğini alıyoruz.
+sqlite komut satırı parametre kavramına sahip olmadığı için .once ile çalıştırmak istediğimiz komutu bir dosyaya yazıyor.
+Arkasında .read ile bu komutu çalıştırıyoruz.
+Aşağıdaki komutu deneyin.
+
+
+```sql
+.once yedekkomutu;
+SELECT '.save ' || 
+replace(file,'.sqlite',
+REPLACE(REPLACE(datetime('now'), ':', '-'),' ','-') 
+|| '.sqlite') 
+FROM pragma_database_list WHERE seq = 0; 
+.read yedekkomutu;
+```
+
+- **.restore**
+
+Verilen dosyadan main veya diğer veritabanına geri yükleme yapar.
+Buradaki problem, SQLite dosya tabanlı olduğu için bu dosyaya direk bağlanıp kullanmada bir çözümdür.
+
+- **.recover**
+
+Eğer veritabanı dosyası bozulmuş ise bu komut ile mümkün olduğunca onarma yapılır.
+
+- **.sha3sum**
+
+Tüm veritabanının özetlem (hash) değerini gösterir.
+Sabit diskteki verilerden çok, içeriğin özetlemi çıkarıldığı için vacuum komutundan etkilenmez.
+Bu komut büyük veri tabanlarında sadece değişen verinin yedeğini almak için kullanılabilir.
+
+- **.selftest**
+
+Veritabanının bozulup bozulmadığını kontrol eder.
+
+Aşağıdaki komut selftest tablosunu oluşturur.
+Bu tabloya veritabanı içindeki tabloların sha hash değerleri yazılır.
+Daha sonraki selftest komutları bu tabloya göre veri tabanının değişip değişmediğini kontrol eder.
+Eğer değişmesini istemediğiniz tablolar var ise, bu komutu çalıştırıp, bu tablo içindeki diğer değişecek tablolar için olan satırları silin.
+
+```sql
+.selftest --init
+```
+
+
+
+## Komut satırı özellikleri 
+
+- **.shell**
+- **.system**
+çalıştırıldığu komut satırında komut çalıştırmanıza izin verir.
+Örneği
+
+
+
+```bash
+.shell pwd
+```
+-- **CD dizinadi**
+
+Bulunduğunuz dizini değiştirir.
+Aşağıdaki komutu deneyin.
+
+```bash
+.shell pwd
+.cd ..
+.shell pwd
+```
+
+
+
+## Veri içeri alma/Dışarı çıkarm
+
+- **.import**
+
+Örneğin bir csv dosyasını veritabanında bir tabloya yüklemenizi sağlar.
+Aşağıdaki komutu deneyin.
+
+```sql
+.headers on
+.mode csv
+.once emp.csv
+SELECT EmployeeId,FirstName FROM Employee;
+.import emp.csv Emp --csv -v
+```
+
+
+## Diğer
+
+**.load**
+
+genişleme(extension) yüklemenize izin verir.
+Genişlemeler SQLite ana çekirdekte olmayan özelliklerin yüklenmesine izin verir.
+Bu sayede bu özellikler kullanılabilir.
+Genişlemeleri ayrı bir bölümde inceleyeceğiz.
+
+## SQL Ayarlama
+
+- **.eqp**
+
+Sorgu planlama açıklamalarını (EXPLAIN QUERY PLAN) yönetir.
+
+- **.explain**
+
+Explain (Açıklama) çıktısını yönetir.
+
+- **.expert**
+
+Otomatik indeks tavsiyesi verir.
+Deneysel olduğunu unutmayın.
+
+
+Aşağıdaki komutu deneyin.
+
+```sql
+SELECT * FROM Customer where FirstName LIKE 'A%';
+.eqp on
+.explain on
+SELECT * FROM Customer where FirstName LIKE 'A%';
+.expert
+SELECT * FROM Customer where FirstName LIKE 'A%';
+
+```
+
+## normal komut satırında kullanma
+
+sqlite3 bash, cmd veya powershell üstünde çağırarak kullanabilirsiniz.
+Bu tür kullanımda sonuçlar stdout'a yazılacaktır.
+Daha sonra bu sonuçlar başka shell komutları tarafından daha fazla işlenebilir.
+
+```bash
+sqlite3 chinook.sqlite 'SELECT EmployeeId,FirstName FROM Employee;' 
+```
+
+Aşağıdaki komut awk kullanarak gelen sonucu html tabloya çevirir.
+SQLite zaten html döndürebildiği için anlamsız bir örnekte olsa kullanımı göstermektedir.
+
+```bash
+sqlite3 chinook.sqlite 'SELECT EmployeeId,FirstName FROM Employee;' | awk -F "|" '{printf "<tr><td>%s</td><td>%s</td></tr>\n",$1,$2 }'
+```
+
+sqlite3 --help komutu kullanılarak komut satırında yapılabilecekler görülebilir.
+Örneğin sqlite3 --csv çıktının csv olmasını sağlar.
+Özellikle çıktı ile ilgili kontrollerin (.mode, .separator.. ) bu şekilde kontrolü vardır.
+
+
+Örneğin yukarıdaki, html çıktısı için olan komutlar çok daha kolay olarak aşağıdaki gibi çalıştırılabilir.
+
+```bash
+sqlite3 --html chinook.sqlite 'SELECT EmployeeId,FirstName FROM Employee;' 
+```
+
+**--safe**
+
+SQLite veritabanını bu arguman ile açarsanız, tek bir veri tabanı dosyası haricindeki SQLite çalışma özelliklerini kapatırsınız.
+Örneğin bu şekilde açılmış olan bir veri tabanı .shell ile shell üzerinde komut çalıştıramaz.
+Buradaki ana fikir güvenilir olmayan kaynaklardan alınan betiklerin (scripts) derece kontröllü test edilebilmesidir.

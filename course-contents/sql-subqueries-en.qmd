@@ -1,0 +1,210 @@
+# SQL Subqueries
+
+## Subquery single value
+
+If a query returns only a single value, we could use this as subquery in sql staments where we would use a scalar value.
+
+**Example 1**
+
+Lets say, we would like to find second largest invoice in our system.
+We could write below two queries to find this information
+
+```sql
+SELECT MAX(Total) FROM Invoice
+```
+This would return value of 25.86.
+That is largest invoice.
+Using this we could write following query to find second largest invoice.
+
+```sql
+SELECT MAX(Total) FROM Invoice
+WHERE Total < 25.86
+```
+
+With this query, we get our second largest invoice total as 23.86.
+
+But we could write this two queries as one query.
+Since we are using < operator, we could first query as subquery in the second query.
+In the second query, we replace invoice total of **25.86**, with parentheses and put first query inside them.
+
+
+```sql
+SELECT MAX(Total) FROM Invoice
+WHERE Total < (SELECT MAX(Total) FROM Invoice)
+```
+This query will bring us same information as before.
+
+
+
+## Subquery list of values
+
+For IN operator which expect list of values , we could use also sub queries.
+These type of queries, sometimes replace joins for more readable versions.
+
+I would like to know top 10 customers who are making the most purchases.
+
+First lets write two query version and change it to sub query.
+
+```sql
+SELECT CustomerId,SUM(Total) as TotalInvoice FROM Invoice
+GROUP BY CustomerId
+ORDER BY TotalInvoice DESC
+```
+This gives me following result.
+
+![top customers with most purchases](images/top-customers-with-most-purchases.png)
+
+I could copy paste, customer id values and put them in a list, like following.
+
+> (6, 26, 57, 45, 46, 24, 28, 37, 7, 25)
+
+Then I could use this list in a second query.
+
+```sql
+SELECT * FROM Customer c WHERE c.CustomerId  IN (6, 26, 57, 45, 46, 24, 28, 37, 7, 25)
+```
+
+But we could also, write this one in sub query.
+First query  will be inputted to second query IN().
+We also modify first query to use limit so that only top 10 customers will be shown.
+
+```sql
+SELECT * FROM Customer c WHERE c.CustomerId  IN (
+SELECT CustomerId, SUM(Total) as TotalInvoice FROM Invoice
+GROUP BY CustomerId
+ORDER BY  TotalInvoice DESC
+LIMIT 10
+)
+```
+
+Well, if we run this query, we get following error.
+
+```sql
+SQL Error [1]: [SQLITE_ERROR] SQL error or missing database (sub-select returns 2 columns - expected 1)
+```
+
+Our first query returns 2 columns but IN expects only one.
+We could change our first query so that it returns only customer id in following way.
+We do not have to also select SUM(Total), we could only use it ORDER BY like following sql.
+
+```sql
+SELECT CustomerId FROM Invoice
+GROUP BY CustomerId
+ORDER BY  SUM(Total) DESC
+LIMIT 10
+```
+
+Then, our complete query will be following.
+
+
+```sql
+SELECT * FROM Customer c WHERE c.CustomerId  IN (
+SELECT CustomerId FROM Invoice
+GROUP BY CustomerId
+ORDER BY  SUM(Total) DESC
+LIMIT 10
+)
+```
+
+## Subquery for column in select
+
+We could also write a subquery in select statement.
+Then our subquery will be run for every row in our result.
+This could be used to replace a join with a subquery.
+
+**Example 1* 
+
+We would like to show Employee information together with how many customer they support.
+Same way, lets start with two queries and then combine them in sub-query way.
+s
+
+```sql
+SELECT E.EmployeeId,e.FirstName,e.LastName,e.Title FROM Employee e 
+```
+
+Second query will be to find customer count.
+
+```sql
+SELECT * FROM Customer c where c.SupportRepId  = 3
+```
+
+This query gives us every column in Customer table but we need only count.
+
+```sql
+SELECT COUNT(*) FROM Customer c 
+where c.SupportRepId  = 3
+```
+
+Okay, lets put this into first query.
+
+```sql
+SELECT e.EmployeeId,e.FirstName
+,e.LastName,e.Title 
+, (SELECT COUNT(*) FROM Customer c 
+where c.SupportRepId  = 3) AS SupportedCustomerCount
+FROM Employee e 
+```
+
+
+![supported customer count wrong](images/supported-customer-count-wrong.png)
+
+Supported customer count is 21 for all of the rows.
+This is normal since we are using **c.SupportRepId  = 3** in our where clause.
+Lets replace that one with EmployeeId from outer query.
+That is **c.SupportRepId  = e.EmployeeId**
+
+
+```sql
+SELECT e.EmployeeId,e.FirstName
+,e.LastName,e.Title 
+, (SELECT COUNT(*) FROM Customer c 
+where c.SupportRepId  = e.EmployeeId) AS SupportedCustomerCount
+FROM Employee e 
+```
+
+![supported customer count correct](images/supported-customer-count-correct.png)
+
+- [Sub-query for column in select lesson video](https://www.youtube.com/watch?v=5yhLcSI09wE)
+
+## Sub-query FROM
+
+This is the most powerful form of sub-query.
+We could use sub-query where we would write a FROM statement.
+
+**simple example 1**
+
+
+```sql
+SELECT * FROM
+(
+SELECT * FROM Customer c 
+WHERE c.Company IS NULL
+)
+```
+
+We are selecting Customers who has no company.
+This is very simple example but shows the usage.
+We could write almost any query between the parentheses and treat query result like view or virtual table.
+
+** simple example 2 **
+
+In the below query, we use self join in Employee table to find Employee and their manager information together.
+Then we filter this result set to find those employees whose Manager Last Name start with 'A'.
+
+```sql
+SELECT * FROM 
+(
+SELECT E.EmployeeID
+      ,E.LastName AS EmployerLastName
+      ,E.FirstName AS EmployerFirstName
+      ,E.ReportsTo
+      , M.EmployeeID as ManagerID
+      , M.LastName AS ManagerLastName
+      ,M.FirstName AS ManagerFirstName
+  FROM Employee E 
+  INNER JOIN Employee M
+  ON E.ReportsTo = M.EmployeeID 
+)
+WHERE ManagerLastName LIKE 'A%'
+```
+

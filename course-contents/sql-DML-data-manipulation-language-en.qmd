@@ -1,0 +1,35 @@
+# DML (data manipulation language)
+
+Data manipulation language statements are the statements that change the values in the tables.
+Most common three are following statements.
+
+1. [Insert](sql-DML-insert-en.qmd)
+2. [Update](sql-DML-update-en.qmd)
+3. [Delete](sql-DML-delete-en.qmd)
+
+
+These statements are C,U,D of CRUD (Create Read Update Delete) statements.
+But following statements are also considered data manipulation language statements
+
+- Upsert
+- [Truncate Table](sql-truncate-table-en.qmd)
+- [Create Table AS Select or SELECT INTO](sql-DML-create-table-as-select-select-into.qmd)
+
+
+
+## UPSERT
+
+INSERT OR REPLACE
+https://www.sqlite.org/lang_replace.html
+https://www.sqlite.org/lang_conflict.html
+https://www.sqlite.org/lang_upsert.html
+
+
+
+
+
+
+
+## Data Import/Export
+
+

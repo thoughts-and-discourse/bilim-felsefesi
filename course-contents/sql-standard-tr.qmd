@@ -1,0 +1,8 @@
+## SQL Standart tarihçesi
+
+{{< include ../course-contents/tables/table-sql-standard-history-tr.md >}}
+
+## Modern SQL
+
+[Modern SQL web sitesi](https://modern-sql.com/) hangi SQL özelliğinin hangi veri tabanları tarafından desteklendiğini takip etmektedir.
+

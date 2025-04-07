@@ -1,0 +1,28 @@
+# SQL Komut tipleri
+
+[5 farklı komut tipi](https://www.geeksforgeeks.org/sql-ddl-dql-dml-dcl-tcl-commands/) tanımlanır.
+
+- DDL (Data Definition Language: Veri tanım dili)
+- DQL (Data Query Language: Veri sorgu dili)
+- DML (Data Manipulation Language: Veri İşleme Dili)
+- DCL (Data Control Language: Veri Kontrol Dili (DCL))
+- TCL (Transaction Control Language: İşlem Kontrol dili)
+
+
+
+{{< include ../course-contents/tables/table-sql-command-types-tr.md >}}
+
+
+## DQL vs DML
+
+Normal SELECT komutu açıkça DQL'dir ancak diğer select kullanımları söz konusu olduğunda DQL ve DML arasındaki ayrım net değildir.
+Bazıları joins, group by ve diğer komutların eklenmesinin bu komutları DML yaptığını söylüyor.
+
+Ancak INSERT/UPDATE/DELETE ve diğer ifadeler açıkça DML'dir.
+
+Ayrıca SQL lehçeleri komutları farklı yorumlayabilir.
+Örneğin TRUNCATE Table komutu SQL Server'da DML iken Oracle'da DDL'dir.
+
+
+
+

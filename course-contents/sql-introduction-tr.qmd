@@ -1,0 +1,13 @@
+# SQL Giriş
+
+
+{{< include ../course-contents/sql-introduction-contents-tr.md >}}
+
+{{< include ../course-contents/sql-knowledge-among-developers-tr.md >}}
+
+
+
+
+
+
+

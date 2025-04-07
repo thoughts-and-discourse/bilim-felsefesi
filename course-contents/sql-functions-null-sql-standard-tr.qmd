@@ -1,0 +1,66 @@
+# SQL NULL Fonksiyonları SQL Standard
+
+## Coalesce(X,Y,...)
+
+- coalesce() işlevi, NULL olmayan ilk bağımsız değişkenini döndürür.
+- Tüm bağımsız değişkenler null ise, NULL döndürür.
+- En az iki bağımsız değişken gerektirir.
+
+
+coalesce tek başına null içeren birçok kullanım durumunu karşılar.
+coalesce, sqlite, oracle, sql server, postgres, mysql .... gibi birçok farklı veritabanı tarafından desteklendiğinden, null işleme için coalesce her zaman daha iyi bir seçimdir.
+
+
+**NULL ile çalışma - COALESCE örneği**
+
+
+```sql
+    SELECT 
+    COALESCE(FirstName + ' ' + SecondName + ' ' + LastName
+    ,FirstName + ' ' + LastName
+     ) AS FullName FROM COMMON.PERSON;
+```
+
+```sql
+SELECT C.CustomerId,
+COALESCE (C.Company,'Firma bilgisi yok') AS Company 
+FROM Customer c
+```
+
+
+## nullif(X,Y)
+
+- Eğer X ve Y farklıysa, ilk argüman olan X'i döndürür.
+- Eğer X ve Y aynı ise null döndürür.
+
+Coalesce her durumda bu fonksiyondan daha anlaşılılır ve kullanışlıdır.
+
+
+```sql
+SELECT 
+NULLIF('Merhaba','Dünya'),
+NULLIF('Merhaba',NULL),
+NULLIF('Merhaba','Merhaba'),
+NULLIF(NULL,'Dünya'),
+NULLIF(NULL,NULL)
+;
+```
+
+
+## Case
+
+Yukarıda kullanılan coalesce ifadesi case kullanılarak ta yazılabilir.
+
+```sql
+SELECT C.CustomerId,
+(case 
+    when C.Company IS NULL then 'Firma bilgisi yok'
+    else C.Company
+end
+) AS Company 
+FROM Customer C
+```
+
+İlgili kolon veya ifade için IS NULL when kullanımı içinde istenildiği gibi yazılabilir.
+Yukarıdaki gibi basit null değişimleri için, daha kısa ve anlaşılır olduğu için coalesce kullanımı tavsiye edilir.
+
