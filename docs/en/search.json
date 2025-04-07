@@ -1,0 +1,307 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Philosophy of Science",
+    "section": "",
+    "text": "Content\nThis site will feature discussions on\n\nPhilosophy of science\nThe use of language (formal, and natural) in sciences\nMathematics\nThe use of mathematics in sciences\nThe Islamic philosophy\n\n\n\nContact\nTo send your comments or to contribute to this website with content,\nemail: thoughts.and.discourse@gmail.com",
+    "crumbs": [
+      "Preface (Önsöz)"
+    ]
+  },
+  {
+    "objectID": "intro.html",
+    "href": "intro.html",
+    "title": "1  Introduction",
+    "section": "",
+    "text": "This is a book created from markdown and executable code.\nSee Knuth (1984) for additional discussion of literate programming.\n\n\n\n\nKnuth, Donald E. 1984. “Literate Programming.” Comput. J. 27 (2): 97–111. https://doi.org/10.1093/comjnl/27.2.97.",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Introduction</span>"
+    ]
+  },
+  {
+    "objectID": "references.html",
+    "href": "references.html",
+    "title": "References",
+    "section": "",
+    "text": "Chen, Peter Pin-Shan. 1976. “The Entity-Relationship Model—Toward\na Unified View of Data.” ACM Transactions on Database\nSystems 1 (1): 9–36. https://doi.org/10.1145/320434.320440.\n\n\nKnuth, Donald E. 1984. “Literate Programming.” Comput.\nJ. 27 (2): 97–111. https://doi.org/10.1093/comjnl/27.2.97.\n\n\nWikipedia. 2016. “DatabaseModelsFigure — Wikipedia,\nthe Free Encyclopedia.”",
+    "crumbs": [
+      "References"
+    ]
+  },
+  {
+    "objectID": "Syllabus-en.html",
+    "href": "Syllabus-en.html",
+    "title": "2  Syllabus",
+    "section": "",
+    "text": "2.1 Brief Course Contents",
+    "crumbs": [
+      "Mathematics",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Syllabus</span>"
+    ]
+  },
+  {
+    "objectID": "Syllabus-en.html#brief-course-contents",
+    "href": "Syllabus-en.html#brief-course-contents",
+    "title": "2  Syllabus",
+    "section": "",
+    "text": "- Relational model\n- Database design, ER diagrams, 1NF, 2NF, 3NF\n- SQL query language\n- Transaction management\n- Relational algebra: select, project, join, division\n- Integrity constraints, Primary keys, Foreign keys\n- Files \n- indexing\n- Serializability, Deadlock",
+    "crumbs": [
+      "Mathematics",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Syllabus</span>"
+    ]
+  },
+  {
+    "objectID": "Syllabus-en.html#expectations-and-goals",
+    "href": "Syllabus-en.html#expectations-and-goals",
+    "title": "2  Syllabus",
+    "section": "2.2 Expectations and Goals",
+    "text": "2.2 Expectations and Goals\n\nCourse Student Requirement\n\nStudents have entry level computer knowledge\nStudents have at least one programming language course\n\nTarget Audience\n\nApplication Developers\nThose who want to work on database\nPreparing for SQL Database Certification exams, like oracle or SQL Server",
+    "crumbs": [
+      "Mathematics",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Syllabus</span>"
+    ]
+  },
+  {
+    "objectID": "Syllabus-en.html#course-materials",
+    "href": "Syllabus-en.html#course-materials",
+    "title": "2  Syllabus",
+    "section": "2.3 Course Materials",
+    "text": "2.3 Course Materials\n\nVideos\nCourse Notes\nSome Presentation Files\nLab Files\nShort Quizzes",
+    "crumbs": [
+      "Mathematics",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Syllabus</span>"
+    ]
+  },
+  {
+    "objectID": "Syllabus-en.html#subjects-by-week",
+    "href": "Syllabus-en.html#subjects-by-week",
+    "title": "2  Syllabus",
+    "section": "2.4 Subjects by week",
+    "text": "2.4 Subjects by week\n\n\n\n\n\n\n\nWeeks\nSubjects\n\n\n\n\nWeek 01\nCourse, databases, tools introduction\n\n\nWeek 02\nRelational model, ER diagrams introduction\n\n\nWeek 03\nSQL Part 1\n\n\nWeek 04\nSQL Part 2\n\n\nWeek 05\nSQL Part 3\n\n\nWeek 06\nReview before the exam\n\n\nWeek 07\nMidterm exam\n\n\nWeek 08\nSQL Part 4\n\n\nWeek 09\nSQL Part 5\n\n\nWeek 10\nSQL Part 6\n\n\nWeek 11\nTransaction management: commit, rollback, serializability\n\n\nWeek 12\nSchema definition, Primary keys, Foreign keys, Constraints, data types\n\n\nWeek 13\nDatabase design, 1NF, 2NF, 3NF\n\n\nWeek 14\nIndexing, SQL Tuning\n\n\nWeek 14\nReview before the exam\n\n\nWeek 15\nFinal Exam",
+    "crumbs": [
+      "Mathematics",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Syllabus</span>"
+    ]
+  },
+  {
+    "objectID": "course-contents/course-introduction-en.html",
+    "href": "course-contents/course-introduction-en.html",
+    "title": "3  Course introduction",
+    "section": "",
+    "text": "3.1 Lecturer Atilla Özgür (PhD)\nI consider myself: polyglot programmer, database developer, build engineer and researcher. Although I graduated in 2003 from Electrical Engineering, I started programming in 1991. I have 20+ years of professional experience, with 6 years of Project Management and Team Leading experience and 7 years of Database Administration. I worked with different web application development platforms and Database Systems. I have numerous Microsoft certifications (MCPD,MCSD,MCT). I am certified in Oracle (OCA 11g) and SQL Server (2000-2008) Databases.\nYou can find my short resume in following link.",
+    "crumbs": [
+      "Mathematics",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Course introduction</span>"
+    ]
+  },
+  {
+    "objectID": "course-contents/course-introduction-en.html#practice-vs-theory",
+    "href": "course-contents/course-introduction-en.html#practice-vs-theory",
+    "title": "3  Course introduction",
+    "section": "3.2 practice vs theory",
+    "text": "3.2 practice vs theory\nThe course is practically oriented. The relevant theory will also be given after the practical usage and examples.",
+    "crumbs": [
+      "Mathematics",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Course introduction</span>"
+    ]
+  },
+  {
+    "objectID": "course-contents/course-introduction-en.html#memorization-vs-understanding",
+    "href": "course-contents/course-introduction-en.html#memorization-vs-understanding",
+    "title": "3  Course introduction",
+    "section": "3.3 Memorization vs understanding",
+    "text": "3.3 Memorization vs understanding\nIn the area of search engines and GenAI (ChatGPT and derivatives), memorization is becoming less and less useful. I am against the memorization of facts that could be easily found using search engine or AI query.\nThus, I aim impart understanding in the course. You do not need to memorize exact SQL commands or minutiae of databases.",
+    "crumbs": [
+      "Mathematics",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Course introduction</span>"
+    ]
+  },
+  {
+    "objectID": "course-contents/course-introduction-en.html#course-materials-and-web-site",
+    "href": "course-contents/course-introduction-en.html#course-materials-and-web-site",
+    "title": "3  Course introduction",
+    "section": "3.4 Course Materials and Web Site",
+    "text": "3.4 Course Materials and Web Site\n\nyou will find every materials in the following github repo: https://github.com/ati-ozgur/course-database",
+    "crumbs": [
+      "Mathematics",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Course introduction</span>"
+    ]
+  },
+  {
+    "objectID": "course-contents/databases-intro-en.html",
+    "href": "course-contents/databases-intro-en.html",
+    "title": "4  Databases introduction",
+    "section": "",
+    "text": "4.1 Why databases are still important",
+    "crumbs": [
+      "Statistics",
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Databases introduction</span>"
+    ]
+  },
+  {
+    "objectID": "course-contents/databases-intro-en.html#why-databases-are-still-important",
+    "href": "course-contents/databases-intro-en.html#why-databases-are-still-important",
+    "title": "4  Databases introduction",
+    "section": "",
+    "text": "4.1.1 Databases aren’t dinosaurs they are sharks\nPlease read following suggested reading:\n\nRelational Databases Aren’t Dinosaurs, They’re Sharks",
+    "crumbs": [
+      "Statistics",
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Databases introduction</span>"
+    ]
+  },
+  {
+    "objectID": "course-contents/databases-intro-en.html#short-history-of-databases",
+    "href": "course-contents/databases-intro-en.html#short-history-of-databases",
+    "title": "4  Databases introduction",
+    "section": "4.2 Short History of databases",
+    "text": "4.2 Short History of databases\n\n\n\nYear\nEvents\n\n\n\n\n1960s\nHierarchical ve Network models\n\n\n1970s\nRelational Model (1970 by Edgar F. Codd)\n\n\n1978\nFirst commercial relational database (Oracle)\n\n\n1990s\nObject Oriented\n\n\n2000s\nNoSQL and NewSQL\n\n\n2010s\nGraph databases\n\n\n2023s\nVector databases",
+    "crumbs": [
+      "Statistics",
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Databases introduction</span>"
+    ]
+  },
+  {
+    "objectID": "course-contents/database-models-en.html",
+    "href": "course-contents/database-models-en.html",
+    "title": "5  Database models",
+    "section": "",
+    "text": "5.1 Document databases\nWikipedia (2016)\nMost well known example is mongodb. Document databases mostly store json documents. They are schema-free organization of data. That is unlike the relational databases, you do not upfront have to design database schema.\nThis has advantages and disadvantages.\nExamples include",
+    "crumbs": [
+      "Statistics",
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Database models</span>"
+    ]
+  },
+  {
+    "objectID": "course-contents/database-models-en.html#document-databases",
+    "href": "course-contents/database-models-en.html#document-databases",
+    "title": "5  Database models",
+    "section": "",
+    "text": "MongoDB\nDatabricks\nAmazon DynamoDB\nMicrosoft Azure Cosmos DB\nCouchbase\nFirebase (google)\nOracle NoSQL",
+    "crumbs": [
+      "Statistics",
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Database models</span>"
+    ]
+  },
+  {
+    "objectID": "course-contents/database-models-en.html#graph-database",
+    "href": "course-contents/database-models-en.html#graph-database",
+    "title": "5  Database models",
+    "section": "5.2 Graph Database",
+    "text": "5.2 Graph Database\n\n\n\nWikipedia2016DatabaseModelsFigure",
+    "crumbs": [
+      "Statistics",
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Database models</span>"
+    ]
+  },
+  {
+    "objectID": "course-contents/database-models-en.html#vector-databases",
+    "href": "course-contents/database-models-en.html#vector-databases",
+    "title": "5  Database models",
+    "section": "5.3 Vector databases",
+    "text": "5.3 Vector databases\n\n\n\n\n\ngraph TD\n    A[User Query] --&gt; B[RAG System]\n    B --&gt; C[Query Embedding]\n    C --&gt; D[Vector Database]\n    D --&gt; E[Retrieve Similar Vectors]\n    E --&gt; F[Fetch Corresponding Documents]\n    F --&gt; G[Augment Original Query]\n    G --&gt; H[LLM]\n    H --&gt; I[Generate Response]\n    I --&gt; J[Return Answer to User]\n\n    subgraph \"Document Ingestion\"\n        K[Source Documents] --&gt; L[Text Chunking]\n        L --&gt; M[Embedding Generation]\n        M --&gt; N[Store in Vector Database]\n    end\n\n    D -.-&gt; N\n\n\n\n\n\n\n\n\n\n\n\nWikipedia. 2016. “DatabaseModelsFigure — Wikipedia, the Free Encyclopedia.”",
+    "crumbs": [
+      "Statistics",
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Database models</span>"
+    ]
+  },
+  {
+    "objectID": "course-contents/er-model-en.html",
+    "href": "course-contents/er-model-en.html",
+    "title": "6  Entity Relationship (ER) modelling",
+    "section": "",
+    "text": "6.1 Entity Relationship modeling Basics\nEntity Relationship (ER) modeling or diagramming is introduce by Peter Chen Chen (1976) in 1976. ER-Models consists of three parts\nEntities are basically tables in databases, like Student, Employee, Customer and Invoices. Relations shows the connections between entities. For example, a Customer has invoices. Attributes shows the values an entity have: For example, Customer entity will have name and phone.\nOriginal syntax is called Chen notation. Below is an figure from the original article Chen (1976).\nThe diagramming syntax is evolved by then but the basics stayed same.",
+    "crumbs": [
+      "Causality",
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Entity Relationship (ER) modelling</span>"
+    ]
+  },
+  {
+    "objectID": "course-contents/er-model-en.html#entity-relationship-modeling-basics",
+    "href": "course-contents/er-model-en.html#entity-relationship-modeling-basics",
+    "title": "6  Entity Relationship (ER) modelling",
+    "section": "",
+    "text": "Entity\nRelations\nAttributes\n\n\n\n\n\n\nSimple Er Diagram",
+    "crumbs": [
+      "Causality",
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Entity Relationship (ER) modelling</span>"
+    ]
+  },
+  {
+    "objectID": "course-contents/er-model-en.html#how-it-works",
+    "href": "course-contents/er-model-en.html#how-it-works",
+    "title": "6  Entity Relationship (ER) modelling",
+    "section": "6.2 How it works",
+    "text": "6.2 How it works\nER-modelling work two ways, as below figure shows. First way, we could create diagrams then database tables. Second way, we could reverse engineer our diagrams from our database tables.\n\n\n\n\n\nflowchart TD\n    GUI[GUI Design E-R Model] --&gt;|Physical Model| DB1(Created Tables)\n    DB2(Created Tables) --&gt; |Reverse Engineer| Diagram[E-R Model]",
+    "crumbs": [
+      "Causality",
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Entity Relationship (ER) modelling</span>"
+    ]
+  },
+  {
+    "objectID": "course-contents/er-model-en.html#er-modelling-tools",
+    "href": "course-contents/er-model-en.html#er-modelling-tools",
+    "title": "6  Entity Relationship (ER) modelling",
+    "section": "6.3 ER Modelling tools",
+    "text": "6.3 ER Modelling tools\nFor first way, there are a lot of tools exits. Examples:\n\nEnterprise Architect\nToad\nLucidChart ER Diagrams\n\nSee following video for how one tool works. LucidChart Tutorial: How to Create an ERD",
+    "crumbs": [
+      "Causality",
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Entity Relationship (ER) modelling</span>"
+    ]
+  },
+  {
+    "objectID": "course-contents/er-model-en.html#er-model-reverse-engineering-tools",
+    "href": "course-contents/er-model-en.html#er-model-reverse-engineering-tools",
+    "title": "6  Entity Relationship (ER) modelling",
+    "section": "6.4 ER model reverse engineering tools",
+    "text": "6.4 ER model reverse engineering tools\nSecond way of working, reverse engineering existing database is more common. We reverse engineer an already existing database and get ER Diagram of it. For example, DBeaver has ER Diagrams.\n\n\n\nDBeaver ER Diagram\n\n\n\nOpen a connection\nselect tables\nin the opened window, select ER Diagram tab\n\nReading ER diagrams is useful skill to have since it allows you to more easily understand existing database structure.\nSee oracle sample HR and OE example in their documentation\nOracle SQL Developer has its own reverse engineering tools for oracle database. TODO add links.\nAnother tool for this purpose is Schema Spy.\n\n\n\n\nChen, Peter Pin-Shan. 1976. “The Entity-Relationship Model—Toward a Unified View of Data.” ACM Transactions on Database Systems 1 (1): 9–36. https://doi.org/10.1145/320434.320440.",
+    "crumbs": [
+      "Causality",
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Entity Relationship (ER) modelling</span>"
+    ]
+  },
+  {
+    "objectID": "course-contents/er-model-mermaid-diagrams-en.html",
+    "href": "course-contents/er-model-mermaid-diagrams-en.html",
+    "title": "7  Mermaid ER Diagrams",
+    "section": "",
+    "text": "7.1 Entity\nWe use mermaid Entity Relationship Diagram for diagramming since markdown syntax of mermaid is more easily understood and markdown as plain text is version controllable with source control tools like git. Also mermaid diagrams are automatically rendered by web versions of source control tools such as github, gitlab and azure devops.\nEntities are most basic part in the diagrams. They correspond to database tables normally. We can also give their attributes or columns in the diagram too. See below example.\nerDiagram\n    Student {\n        int student_id PK\n        string name\n    }\n\n\n\n\nerDiagram\n    Student {\n        int student_id PK\n        string name\n    }",
+    "crumbs": [
+      "Causality",
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Mermaid ER Diagrams</span>"
+    ]
+  },
+  {
+    "objectID": "course-contents/er-model-mermaid-diagrams-en.html#entity-relationships",
+    "href": "course-contents/er-model-mermaid-diagrams-en.html#entity-relationships",
+    "title": "7  Mermaid ER Diagrams",
+    "section": "7.2 Entity Relationships",
+    "text": "7.2 Entity Relationships\nEntities should have relationships. That is how they interact with other entities. The syntax for it is below:\n&lt;first-entity&gt; [&lt;relationship&gt; &lt;second-entity&gt; : &lt;relationship-label&gt;]\nRelationship label should show how it works in the requirements or domain. Please try to choose it accordingly.\nAn example a student enrolls in many courses. We could write it like below.\n\nerDiagram\n    Student ||--o{ Course : enrolls\n\n\n\n\nerDiagram\n    Student ||--o{ Course : enrolls\n\n\n\n\n\n\nIn this syntax, following table shows how we can model cardinality of the entities. That is 0,1 or many information between the entities.\n\n\n\nValue (left)\nValue (right)\nMeaning\n\n\n\n\n|o\no|\nZero or one\n\n\n||\n||\nExactly one\n\n\n}o\no{\nZero or more (no upper limit)\n\n\n}|\n|{\nOne or more (no upper limit)\n\n\n\nWe can read this information following way then\n\nStudent has zero to one advisor\nStudent has exactly one advisor\nStudent enrolls in 0-to-many courses\nStudent enrolls in 1-to-many courses",
+    "crumbs": [
+      "Causality",
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Mermaid ER Diagrams</span>"
+    ]
+  },
+  {
+    "objectID": "course-contents/er-model-mermaid-diagrams-en.html#full-example-1",
+    "href": "course-contents/er-model-mermaid-diagrams-en.html#full-example-1",
+    "title": "7  Mermaid ER Diagrams",
+    "section": "7.3 Full example 1",
+    "text": "7.3 Full example 1\n\nerDiagram\n    STUDENT ||--o{ COURSE : enrolls\n    COURSE ||--|{ LESSON : contains\n    TEACHER ||--o{ COURSE : teaches\n    TEACHER ||--o{ LESSON : conducts\n    STUDENT ||--o{ LESSON : attends\n\n\n    STUDENT {\n        int id PK\n        string name\n        date created_at\n        date updated_at\n    }\n    COURSE {\n        int id PK\n        string title\n        string description\n        date created_at\n        date updated_at\n    }\n    LESSON {\n        int id PK\n        int course_id FK\n        string title\n        date scheduled_date\n        date created_at\n        date updated_at\n    }\n    TEACHER {\n        int id PK\n        string name\n        string email\n        date created_at\n        date updated_at\n    }\n\n\n\n\nerDiagram\n    STUDENT ||--o{ COURSE : enrolls\n    COURSE ||--|{ LESSON : contains\n    TEACHER ||--o{ COURSE : teaches\n    TEACHER ||--o{ LESSON : conducts\n    STUDENT ||--o{ LESSON : attends\n\n\n    STUDENT {\n        int id PK\n        string name\n        date created_at\n        date updated_at\n    }\n    COURSE {\n        int id PK\n        string title\n        string description\n        date created_at\n        date updated_at\n    }\n    LESSON {\n        int id PK\n        int course_id FK\n        string title\n        date scheduled_date\n        date created_at\n        date updated_at\n    }\n    TEACHER {\n        int id PK\n        string name\n        string email\n        date created_at\n        date updated_at\n    }\n\n\n\n\n\n\nhttps://mermaid.live/",
+    "crumbs": [
+      "Causality",
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Mermaid ER Diagrams</span>"
+    ]
+  },
+  {
+    "objectID": "course-contents/er-model-mermaid-diagrams-en.html#use-llms-to-generate-er-diagrams",
+    "href": "course-contents/er-model-mermaid-diagrams-en.html#use-llms-to-generate-er-diagrams",
+    "title": "7  Mermaid ER Diagrams",
+    "section": "7.4 Use LLMs to generate ER diagrams",
+    "text": "7.4 Use LLMs to generate ER diagrams\nWe can use LLMs like ChatGPT, Gemini or Perplexity to create our draft diagrams since mermaid is normal markdown code.\nBelow AI prompt creates a draft mermaid diagram to start from.\n\nPlease create me a simple mermaid entity relationship diagram which shows students, courses, lessons and teachers. All of the entities should have common columns in it.\n\nTry it in AI tools to see the result.",
+    "crumbs": [
+      "Causality",
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Mermaid ER Diagrams</span>"
+    ]
+  }
+]
