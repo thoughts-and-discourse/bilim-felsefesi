@@ -26,6 +26,9 @@ format:
     link-external-icon: true
     toc-location: left
     toc-expand: false
+    #theme: cosmo
+    #theme: minty
+    #theme: pulse
     theme: cosmo
     mermaid:
       theme: forest
