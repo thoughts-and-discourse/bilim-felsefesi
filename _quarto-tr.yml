@@ -18,7 +18,6 @@ book:
     - about-tr.qmd
     - part: "Matematik"
       chapters:
-        - course-contents/course-introduction-tr.qmd
         - course-contents/sql-why-learn-used-in-other-places-tr.md
     - part: "İstatistik"
       chapters:

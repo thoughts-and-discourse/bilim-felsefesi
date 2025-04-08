@@ -2,9 +2,6 @@
 title: "Yazar Hakkinda"
 ---
 
-
-Bu site, bilim felsefesi, matematik eğitimi ve mühendislik perspektiflerini bir araya getiren disiplinler arası bir düşünce alanı oluşturmayı amaçlamaktadır. İçerikler, hem akademik düzeyde kavramsal derinlik sunmakta hem de bilimsel düşüncenin epistemolojik boyutlarını ele almaktadır.
-
 Yazar, mühendislik alanında doktora derecesine sahiptir ve özellikle matematiğin ve formal teorilerin bilimsel düşünce üzerindeki islevsel rolüne odaklanmaktadır. 
 
 ## Felsefi ve Düşünsel Etkiler

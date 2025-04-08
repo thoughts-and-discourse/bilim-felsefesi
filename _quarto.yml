@@ -1,3 +1,7 @@
+
+#[ "ğ", "ç", "ş", "ü", "ö", "ı" ]
+#[ "Ğ", "Ç", "Ş", "Ü", "Ö", "İ" ] 
+
 project:
   type: book
   execute-dir: "project"
@@ -8,13 +12,11 @@ book:
   date: today
   chapters:
     - index.qmd
-    - intro.qmd
-    - references.qmd
 
 bibliography: references.bib
 
 profile:
-  default: tr
+  default: def
   group: 
     - [def,en,tr]
 

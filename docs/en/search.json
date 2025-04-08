@@ -4,304 +4,403 @@
     "href": "index.html",
     "title": "Philosophy of Science",
     "section": "",
-    "text": "Content\nThis site will feature discussions on\n\nPhilosophy of science\nThe use of language (formal, and natural) in sciences\nMathematics\nThe use of mathematics in sciences\nThe Islamic philosophy\n\n\n\nContact\nTo send your comments or to contribute to this website with content,\nemail: thoughts.and.discourse@gmail.com",
+    "text": "Content\nThis site aims to create an interdisciplinary space of thought that brings together philosophy of science and mathematical reasoning. It is important that the content maintains a certain academic standard while also being accessible to a broad audience.\nThis site will feature discussions on\n\nPhilosophy of science\nThe use of language (formal, and natural) in sciences\nMathematics\nThe use of mathematics in sciences\nThe Islamic philosophy\n\n\n\nContact\nTo send your comments or to contribute to this website with content,\nemail: thoughts.and.discourse@gmail.com",
     "crumbs": [
+      "About",
       "Preface (Önsöz)"
     ]
   },
   {
-    "objectID": "intro.html",
-    "href": "intro.html",
-    "title": "1  Introduction",
+    "objectID": "about-en.html",
+    "href": "about-en.html",
+    "title": "About",
     "section": "",
-    "text": "This is a book created from markdown and executable code.\nSee Knuth (1984) for additional discussion of literate programming.\n\n\n\n\nKnuth, Donald E. 1984. “Literate Programming.” Comput. J. 27 (2): 97–111. https://doi.org/10.1093/comjnl/27.2.97.",
+    "text": "Philosophical Influences\nThe author of this website holds a Ph.D. in engineering and focuses particularly on the functional role of mathematics and formal theories in scientific thought.\nThe author’s thoughts are influenced by both classical Islamic thought and Western philosophy. In particular:\nstand out as key sources of inspiration.",
     "crumbs": [
-      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Introduction</span>"
+      "About",
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>About</span>"
     ]
   },
   {
-    "objectID": "references.html",
-    "href": "references.html",
-    "title": "References",
+    "objectID": "about-en.html#philosophical-influences",
+    "href": "about-en.html#philosophical-influences",
+    "title": "About",
     "section": "",
-    "text": "Chen, Peter Pin-Shan. 1976. “The Entity-Relationship Model—Toward\na Unified View of Data.” ACM Transactions on Database\nSystems 1 (1): 9–36. https://doi.org/10.1145/320434.320440.\n\n\nKnuth, Donald E. 1984. “Literate Programming.” Comput.\nJ. 27 (2): 97–111. https://doi.org/10.1093/comjnl/27.2.97.\n\n\nWikipedia. 2016. “DatabaseModelsFigure — Wikipedia,\nthe Free Encyclopedia.”",
+    "text": "Imam al-Ghazālī’s approach to critical reasoning and epistemology,\nBediüzzaman Said Nursî’s efforts to establish a relationship between faith and science,\nIn the West, especially the empiricist philosophers’ knowledge- and observation-centered approaches, as well as the Logical Empiricists’ attempts to clarify the linguistic and logical structure of scientific statements,\n\n\n\nContact\nTo send your comments or to contribute to this website with content,\nemail: thoughts.and.discourse@gmail.com",
     "crumbs": [
-      "References"
+      "About",
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>About</span>"
     ]
   },
   {
-    "objectID": "Syllabus-en.html",
-    "href": "Syllabus-en.html",
-    "title": "2  Syllabus",
+    "objectID": "course-contents/output-en.html",
+    "href": "course-contents/output-en.html",
+    "title": "2  Notation",
     "section": "",
-    "text": "2.1 Brief Course Contents",
+    "text": "2.1 Common mathematical symbols\nIt is very difficult to come up with a single, consistent notation to cover the wide variety of data, models and algorithms that we discuss in this book. Furthermore, conventions differ between different fields (such as machine learning, statistics and optimization), and between different books and papers within the same field. Nevertheless, we have tried to be as consistent as possible. Below we summarize most of the notation used in this book, although individual sections may introduce new notation. Note also that the same symbol may have different meanings depending on the context, although we try to avoid this where possible.\nWe list some common symbols below.",
     "crumbs": [
+      "About",
       "Mathematics",
-      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Syllabus</span>"
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Notation</span>"
     ]
   },
   {
-    "objectID": "Syllabus-en.html#brief-course-contents",
-    "href": "Syllabus-en.html#brief-course-contents",
-    "title": "2  Syllabus",
+    "objectID": "course-contents/output-en.html#common-mathematical-symbols",
+    "href": "course-contents/output-en.html#common-mathematical-symbols",
+    "title": "2  Notation",
     "section": "",
-    "text": "- Relational model\n- Database design, ER diagrams, 1NF, 2NF, 3NF\n- SQL query language\n- Transaction management\n- Relational algebra: select, project, join, division\n- Integrity constraints, Primary keys, Foreign keys\n- Files \n- indexing\n- Serializability, Deadlock",
+    "text": "Symbol\nMeaning\n\n\n\n\n\\(\\infty\\)\nInfinity\n\n\n\\(\\rightarrow\\)\nTends towards, e.g., \\(n \\rightarrow \\infty\\)\n\n\n\\(\\propto\\)\nProportional to, so \\(y=a x\\) can be written as \\(y \\propto x\\)\n\n\n\\(\\triangleq\\)\nDefined as\n\n\n\\(O(\\cdot)\\)\nBig-O: roughly means order of magnitude\n\n\n\\(\\mathbb{Z}_{+}\\)\nThe positive integers\n\n\n\\(\\mathbb{R}\\)\nThe real numbers\n\n\n\\(\\mathbb{R}_{+}\\)\nThe positive reals\n\n\n\\(\\mathcal{S}_{K}\\)\nThe \\(K\\)-dimensional probability simplex\n\n\n\\(\\mathcal{S}_{++}^{D}\\)\nCone of positive definite \\(D \\times D\\) matrices\n\n\n\\(\\approx\\)\nApproximately equal to\n\n\n\\(\\{1, \\ldots, N\\}\\)\nThe finite set \\(\\{1,2, \\ldots, N\\}\\)\n\n\n\\(1: N\\)\nThe finite set \\(\\{1,2, \\ldots, N\\}\\)\n\n\n\\([\\ell, u]\\)\nThe continuous interval \\(\\{\\ell \\leq x \\leq u\\}\\).",
     "crumbs": [
+      "About",
       "Mathematics",
-      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Syllabus</span>"
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Notation</span>"
     ]
   },
   {
-    "objectID": "Syllabus-en.html#expectations-and-goals",
-    "href": "Syllabus-en.html#expectations-and-goals",
-    "title": "2  Syllabus",
-    "section": "2.2 Expectations and Goals",
-    "text": "2.2 Expectations and Goals\n\nCourse Student Requirement\n\nStudents have entry level computer knowledge\nStudents have at least one programming language course\n\nTarget Audience\n\nApplication Developers\nThose who want to work on database\nPreparing for SQL Database Certification exams, like oracle or SQL Server",
+    "objectID": "course-contents/output-en.html#functions",
+    "href": "course-contents/output-en.html#functions",
+    "title": "2  Notation",
+    "section": "2.2 Functions",
+    "text": "2.2 Functions\nGeneric functions will be denoted by \\(f\\) (and sometimes \\(g\\) or \\(h\\) ). We will encounter many named functions, such as \\(\\tanh (x)\\) or \\(\\sigma(x)\\). A scalar function applied to a vector is assumed to be applied elementwise, e.g., \\(\\boldsymbol{x}^{2}=\\left[x_{1}^{2}, \\ldots, x_{D}^{2}\\right]\\). Functionals (functions of a function) are written using \"blackboard\" font, e.g., \\(\\mathbb{H}(p)\\) for the entropy of a distribution \\(p\\). A function parameterized by fixed parameters \\(\\boldsymbol{\\theta}\\) will be denoted by \\(f(\\boldsymbol{x} ; \\boldsymbol{\\theta})\\) or sometimes \\(f_{\\boldsymbol{\\theta}}(\\boldsymbol{x})\\). We list some common functions (with no free parameters) below.",
     "crumbs": [
+      "About",
       "Mathematics",
-      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Syllabus</span>"
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Notation</span>"
     ]
   },
   {
-    "objectID": "Syllabus-en.html#course-materials",
-    "href": "Syllabus-en.html#course-materials",
-    "title": "2  Syllabus",
-    "section": "2.3 Course Materials",
-    "text": "2.3 Course Materials\n\nVideos\nCourse Notes\nSome Presentation Files\nLab Files\nShort Quizzes",
+    "objectID": "course-contents/output-en.html#common-functions-of-one-argument",
+    "href": "course-contents/output-en.html#common-functions-of-one-argument",
+    "title": "2  Notation",
+    "section": "2.3 Common functions of one argument",
+    "text": "2.3 Common functions of one argument\n\n\n\n\nSymbol\nMeaning\n\n\n\n\n\\(\\lfloor x\\rfloor\\)\nFloor of \\(x\\), i.e., round down to nearest integer\n\n\n\\(\\lceil x\\rceil\\)\nCeiling of \\(x\\), i.e., round up to nearest integer\n\n\n\\(\\neg a\\)\nlogical NOT\n\n\n\\(\\mathbb{I}(x)\\)\nIndicator function, \\(\\mathbb{I}(x)=1\\) if \\(x\\) is true, else \\(\\mathbb{I}(x)=0\\)\n\n\n\\(\\delta(x)\\)\nDirac delta function, \\(\\delta(x)=\\infty\\) if \\(x=0\\), else \\(\\delta(x)=0\\)\n\n\n\\(|x|\\)\nAbsolute value\n\n\n\\(|\\mathcal{S}|\\)\nSize (cardinality) of a set\n\n\n\\(n !\\)\nFactorial function\n\n\n\\(\\log (x)\\)\nNatural logarithm of \\(x\\)\n\n\n\\(\\exp (x)\\)\nExponential function \\(e^{x}\\)\n\n\n\\(\\Gamma(x)\\)\nGamma function, \\(\\Gamma(x)=\\int_{0}^{\\infty} u^{x-1} e^{-u} d u\\)\n\n\n\\(\\Psi(x)\\)\nDigamma function, \\(\\Psi(x)=\\frac{d}{d x} \\log \\Gamma(x)\\)\n\n\n\\(\\sigma(x)\\)\nSigmoid (logistic) function, \\(\\frac{1}{1+e^{-x}}\\)",
     "crumbs": [
+      "About",
       "Mathematics",
-      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Syllabus</span>"
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Notation</span>"
     ]
   },
   {
-    "objectID": "Syllabus-en.html#subjects-by-week",
-    "href": "Syllabus-en.html#subjects-by-week",
-    "title": "2  Syllabus",
-    "section": "2.4 Subjects by week",
-    "text": "2.4 Subjects by week\n\n\n\n\n\n\n\nWeeks\nSubjects\n\n\n\n\nWeek 01\nCourse, databases, tools introduction\n\n\nWeek 02\nRelational model, ER diagrams introduction\n\n\nWeek 03\nSQL Part 1\n\n\nWeek 04\nSQL Part 2\n\n\nWeek 05\nSQL Part 3\n\n\nWeek 06\nReview before the exam\n\n\nWeek 07\nMidterm exam\n\n\nWeek 08\nSQL Part 4\n\n\nWeek 09\nSQL Part 5\n\n\nWeek 10\nSQL Part 6\n\n\nWeek 11\nTransaction management: commit, rollback, serializability\n\n\nWeek 12\nSchema definition, Primary keys, Foreign keys, Constraints, data types\n\n\nWeek 13\nDatabase design, 1NF, 2NF, 3NF\n\n\nWeek 14\nIndexing, SQL Tuning\n\n\nWeek 14\nReview before the exam\n\n\nWeek 15\nFinal Exam",
+    "objectID": "course-contents/output-en.html#common-functions-of-two-arguments",
+    "href": "course-contents/output-en.html#common-functions-of-two-arguments",
+    "title": "2  Notation",
+    "section": "2.4 Common functions of two arguments",
+    "text": "2.4 Common functions of two arguments\n\n\n\n\nSymbol\nMeaning\n\n\n\n\n\\(a \\wedge b\\)\nlogical AND\n\n\n\\(a \\vee b\\)\nlogical OR\n\n\n\\(B(a, b)\\)\nBeta function, \\(B(a, b)=\\frac{\\Gamma(a) \\Gamma(b)}{\\Gamma(a+b)}\\)\n\n\n\\(n \\choose k\\)\n\\(n\\) choose \\(k\\), equal to \\(n ! /(k !(n-k) !)\\)\n\n\n\\(\\delta_{i j}\\)\nKronecker delta, equals \\(\\mathbb{I}(i=j)\\)\n\n\n\\(\\boldsymbol{u} \\odot \\boldsymbol{v}\\)\nElementwise product of two vectors\n\n\n\\(\\boldsymbol{u} \\circledast \\boldsymbol{v}\\)\nConvolution of two vectors",
     "crumbs": [
+      "About",
       "Mathematics",
-      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Syllabus</span>"
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Notation</span>"
     ]
   },
   {
-    "objectID": "course-contents/course-introduction-en.html",
-    "href": "course-contents/course-introduction-en.html",
-    "title": "3  Course introduction",
-    "section": "",
-    "text": "3.1 Lecturer Atilla Özgür (PhD)\nI consider myself: polyglot programmer, database developer, build engineer and researcher. Although I graduated in 2003 from Electrical Engineering, I started programming in 1991. I have 20+ years of professional experience, with 6 years of Project Management and Team Leading experience and 7 years of Database Administration. I worked with different web application development platforms and Database Systems. I have numerous Microsoft certifications (MCPD,MCSD,MCT). I am certified in Oracle (OCA 11g) and SQL Server (2000-2008) Databases.\nYou can find my short resume in following link.",
+    "objectID": "course-contents/output-en.html#common-functions-of-2-arguments",
+    "href": "course-contents/output-en.html#common-functions-of-2-arguments",
+    "title": "2  Notation",
+    "section": "2.5 Common functions of \\(>2\\) arguments",
+    "text": "2.5 Common functions of \\(&gt;2\\) arguments\n\n\n\n\nSymbol\nMeaning\n\n\n\n\n\\(B(\\boldsymbol{x})\\)\nMultivariate beta function, \\(\\frac{\\prod_{k} \\Gamma\\left(x_{k}\\right)}{\\Gamma\\left(\\sum_{k} x_{k}\\right)}\\)\n\n\n\\(\\Gamma(\\boldsymbol{x})\\)\nMulti. gamma function, \\(\\pi^{D(D-1) / 4} \\prod_{d=1}^{D} \\Gamma(x+(1-d) / 2)\\)\n\n\n\n\nDraft of \"Probabilistic Machine Learning: An Introduction\". May 9, 2022\n\\[\\mathcal{S}(\\boldsymbol{x}) \\quad \\text { Softmax function, }\\left[\\frac{e^{x_{c}}}{\\sum_{c^{\\prime}=1}^{C} e^{x^{\\prime}}}\\right]_{c=1}^{C}\\]",
     "crumbs": [
+      "About",
       "Mathematics",
-      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Course introduction</span>"
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Notation</span>"
     ]
   },
   {
-    "objectID": "course-contents/course-introduction-en.html#practice-vs-theory",
-    "href": "course-contents/course-introduction-en.html#practice-vs-theory",
-    "title": "3  Course introduction",
-    "section": "3.2 practice vs theory",
-    "text": "3.2 practice vs theory\nThe course is practically oriented. The relevant theory will also be given after the practical usage and examples.",
+    "objectID": "course-contents/output-en.html#linear-algebra",
+    "href": "course-contents/output-en.html#linear-algebra",
+    "title": "2  Notation",
+    "section": "2.6 Linear algebra",
+    "text": "2.6 Linear algebra\nIn this section, we summarize the notation we use for linear algebra (see Chapter 7 for details).",
     "crumbs": [
+      "About",
       "Mathematics",
-      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Course introduction</span>"
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Notation</span>"
     ]
   },
   {
-    "objectID": "course-contents/course-introduction-en.html#memorization-vs-understanding",
-    "href": "course-contents/course-introduction-en.html#memorization-vs-understanding",
-    "title": "3  Course introduction",
-    "section": "3.3 Memorization vs understanding",
-    "text": "3.3 Memorization vs understanding\nIn the area of search engines and GenAI (ChatGPT and derivatives), memorization is becoming less and less useful. I am against the memorization of facts that could be easily found using search engine or AI query.\nThus, I aim impart understanding in the course. You do not need to memorize exact SQL commands or minutiae of databases.",
+    "objectID": "course-contents/output-en.html#general-notation",
+    "href": "course-contents/output-en.html#general-notation",
+    "title": "2  Notation",
+    "section": "2.7 General notation",
+    "text": "2.7 General notation\nVectors are bold lower case letters such as \\(\\boldsymbol{x}, \\boldsymbol{w}\\). Matrices are bold upper case letters, such as \\(\\mathbf{X}\\), W. Scalars are non-bold lower case. When creating a vector from a list of \\(N\\) scalars, we write \\(\\boldsymbol{x}=\\left[x_{1}, \\ldots, x_{N}\\right]\\); this may be a column vector or a row vector, depending on the context. (Vectors are assumed to be column vectors, unless noted otherwise.) When creating an \\(M \\times N\\) matrix from a list of vectors, we write \\(\\mathbf{X}=\\left[\\boldsymbol{x}_{1}, \\ldots, \\boldsymbol{x}_{N}\\right]\\) if we stack along the columns, or \\(\\mathbf{X}=\\left[\\boldsymbol{x}_{1} ; \\ldots ; \\boldsymbol{x}_{M}\\right]\\) if we stack along the rows.",
     "crumbs": [
+      "About",
       "Mathematics",
-      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Course introduction</span>"
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Notation</span>"
     ]
   },
   {
-    "objectID": "course-contents/course-introduction-en.html#course-materials-and-web-site",
-    "href": "course-contents/course-introduction-en.html#course-materials-and-web-site",
-    "title": "3  Course introduction",
-    "section": "3.4 Course Materials and Web Site",
-    "text": "3.4 Course Materials and Web Site\n\nyou will find every materials in the following github repo: https://github.com/ati-ozgur/course-database",
+    "objectID": "course-contents/output-en.html#vectors",
+    "href": "course-contents/output-en.html#vectors",
+    "title": "2  Notation",
+    "section": "2.8 Vectors",
+    "text": "2.8 Vectors\nHere is some standard notation for vectors. (We assume \\(\\boldsymbol{u}\\) and \\(\\boldsymbol{v}\\) are both \\(N\\)-dimensional vectors.)\n\n\n\n\nSymbol\nMeaning\n\n\n\n\n\\(\\boldsymbol{u}^{\\top} \\boldsymbol{v}\\)\nInner (scalar) product, \\(\\sum_{i=1}^{N} u_{i} v_{i}\\)\n\n\n\\(\\boldsymbol{u} \\boldsymbol{v}^{\\top}\\)\nOuter product \\((N \\times N\\) matrix)\n\n\n\\(\\boldsymbol{u} \\odot \\boldsymbol{v}\\)\nElementwise product, \\(\\left[u_{1} v_{1}, \\ldots, u_{N} v_{N}\\right]\\)\n\n\n\\(\\boldsymbol{v}^{\\top}\\)\nTranspose of \\(\\boldsymbol{v}\\)\n\n\n\\(\\operatorname{dim}(\\boldsymbol{v})\\)\nDimensionality of \\(\\boldsymbol{v}\\) (namely \\(N\\) )\n\n\n\\(\\operatorname{diag}(\\boldsymbol{v})\\)\nDiagonal \\(N \\times N\\) matrix made from vector \\(\\boldsymbol{v}\\)\n\n\n\\(\\mathbf{1}\\) or \\(\\mathbf{1}_{N}\\)\nVector of ones (of length \\(N\\) )\n\n\n\\(\\mathbf{0}\\) or \\(\\mathbf{0}_{N}\\)\nVector of zeros (of length \\(N\\) )\n\n\n\\(\\|\\boldsymbol{v}\\|=\\|\\boldsymbol{v}\\|_{2}\\)\nEuclidean or \\(\\ell_{2}\\) norm \\(\\sqrt{\\sum_{i=1}^{N} v_{i}^{2}}\\)\n\n\n\\(\\|\\boldsymbol{v}\\|_{1}\\)\n\\(\\ell_{1}\\) norm \\(\\sum_{i=1}^{N}\\left|v_{i}\\right|\\)",
     "crumbs": [
+      "About",
       "Mathematics",
-      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Course introduction</span>"
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Notation</span>"
+    ]
+  },
+  {
+    "objectID": "course-contents/output-en.html#matrices",
+    "href": "course-contents/output-en.html#matrices",
+    "title": "2  Notation",
+    "section": "2.9 Matrices",
+    "text": "2.9 Matrices\ncheck what Here is some standard notation for matrices. (We assume \\(\\mathbf{S}\\) is a square \\(N \\times N\\) matrix, \\(\\mathbf{X}\\) and \\(\\mathbf{Y}\\) are of size \\(M \\times N\\), and \\(\\mathbf{Z}\\) is of size \\(M^{\\prime} \\times N^{\\prime}\\).)\n\n\n\n\nSymbol\nMeaning\n\n\n\n\n\\(\\mathbf{X}_{:, j}\\)\n\\(j^{\\prime}\\) th column of matrix\n\n\n\\(\\mathbf{X}_{i,:}\\)\n\\(i\\) ’th row of matrix (treated as a column vector)\n\n\n\\(X_{i j}\\)\nElement \\((i, j)\\) of matrix\n\n\n\\(\\mathbf{S} \\succ 0\\)\nTrue iff \\(\\mathbf{S}\\) is a positive definite matrix\n\n\n\\(\\operatorname{tr}(\\mathbf{S})\\)\nTrace of a square matrix\n\n\n\\(\\operatorname{det}(\\mathbf{S})\\)\nDeterminant of a square matrix\n\n\n\\(|\\mathbf{S}|\\)\nDeterminant of a square matrix\n\n\n\n\n\n\n\n\n\\(\\mathbf{S}^{-1}\\)\nInverse of a square matrix\n\n\n\\(\\mathbf{X}^{\\dagger}\\)\nPseudo-inverse of a matrix\n\n\n\\(\\mathbf{X}^{\\top}\\)\nTranspose of a matrix\n\n\n\\(\\operatorname{diag}(\\mathbf{S})\\)\nDiagonal vector extracted from square matrix\n\n\n\\(\\mathbf{I}\\) or \\(\\mathbf{I}_{N}\\)\nIdentity matrix of size \\(N \\times N\\)\n\n\n\\(\\mathbf{X} \\odot \\mathbf{Y}\\)\nElementwise product\n\n\n\\(\\mathbf{X} \\otimes \\mathbf{Z}\\)\nKronecker product (see Section 7.2.5)",
+    "crumbs": [
+      "About",
+      "Mathematics",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Notation</span>"
+    ]
+  },
+  {
+    "objectID": "course-contents/output-en.html#matrix-calculus",
+    "href": "course-contents/output-en.html#matrix-calculus",
+    "title": "2  Notation",
+    "section": "2.10 Matrix calculus",
+    "text": "2.10 Matrix calculus\nIn this section, we summarize the notation we use for matrix calculus (see Section 7.8 for details).\nLet \\(\\boldsymbol{\\theta} \\in \\mathbb{R}^{N}\\) be a vector and \\(f: \\mathbb{R}^{N} \\rightarrow \\mathbb{R}\\) be a scalar valued function. The derivative of \\(f\\) wrt its argument is denoted by the following:\n\\[\\nabla_{\\boldsymbol{\\theta}} f(\\boldsymbol{\\theta}) \\triangleq \\nabla f(\\boldsymbol{\\theta}) \\triangleq \\nabla f \\triangleq\\left(\\begin{array}{ccc}\n        \\frac{\\partial f}{\\partial \\theta_{1}} & \\cdots & \\frac{\\partial f}{\\partial \\theta_{N}}\n    \\end{array}\\right)\\]\nThe gradient is a vector that must be evaluated at a point in space. To emphasize this, we will sometimes write\n\\[\\left.\\boldsymbol{g}_{t} \\triangleq \\boldsymbol{g}\\left(\\boldsymbol{\\theta}_{t}\\right) \\triangleq \\nabla f(\\boldsymbol{\\theta})\\right|_{\\boldsymbol{\\theta}_{t}}\\]\nWe can also compute the (symmetric) \\(N \\times N\\) matrix of second partial derivatives, known as the Hessian:\n\\[\\nabla^{2} f \\triangleq\\left(\\begin{array}{ccc}\n        \\frac{\\partial^{2} f}{\\partial \\theta_{1}^{2}} & \\cdots & \\frac{\\partial^{2} f}{\\partial \\theta_{1} \\partial \\theta_{N}} \\\\\n        & \\vdots & \\\\\n        \\frac{\\partial^{2} f}{\\partial \\theta_{N} \\theta_{1}} & \\cdots & \\frac{\\partial^{2} f}{\\partial \\theta_{N}^{2}}\n    \\end{array}\\right)\\]\nThe Hessian is a matrix that must be evaluated at a point in space. To emphasize this, we will sometimes write\n\\[\\left.\\mathbf{H}_{t} \\triangleq \\mathbf{H}\\left(\\boldsymbol{\\theta}_{t}\\right) \\triangleq \\nabla^{2} f(\\boldsymbol{\\theta})\\right|_{\\boldsymbol{\\theta}_{t}}\\]",
+    "crumbs": [
+      "About",
+      "Mathematics",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Notation</span>"
+    ]
+  },
+  {
+    "objectID": "course-contents/output-en.html#optimization",
+    "href": "course-contents/output-en.html#optimization",
+    "title": "2  Notation",
+    "section": "2.11 Optimization",
+    "text": "2.11 Optimization\nIn this section, we summarize the notation we use for optimization (see Chapter 8 for details).\nWe will often write an objective or cost function that we wish to minimize as \\(\\mathcal{L}(\\boldsymbol{\\theta})\\), where \\(\\boldsymbol{\\theta}\\) are the variables to be optimized (often thought of as parameters of a statistical model). We denote the parameter value that achieves the minimum as \\(\\boldsymbol{\\theta}_{*}=\\operatorname{argmin}_{\\boldsymbol{\\theta} \\in \\Theta} \\mathcal{L}(\\boldsymbol{\\theta})\\), where \\(\\Theta\\) is the set we are optimizing over. (Note that there may be more than one such optimal value, so we should really write \\(\\boldsymbol{\\theta}_{*} \\in \\operatorname{argmin}_{\\boldsymbol{\\theta} \\in \\Theta} \\mathcal{L}(\\boldsymbol{\\theta})\\).)\nWhen performing iterative optimization, we use \\(t\\) to index the iteration number. We use \\(\\eta\\) as a step size (learning rate) parameter. Thus we can write the gradient descent algorithm (explained in Section 8.4) as follows: \\(\\boldsymbol{\\theta}_{t+1}=\\boldsymbol{\\theta}_{t}-\\eta_{t} \\boldsymbol{g}_{t}\\).\nDraft of \"Probabilistic Machine Learning: An Introduction\". May 9, 2022 We often use a hat symbol to denote an estimate or prediction (e.g., \\(\\hat{\\boldsymbol{\\theta}}, \\hat{y})\\), a star subscript or superscript to denote a true (but usually unknown) value (e.g., \\(\\boldsymbol{\\theta}_{*}\\) or \\(\\boldsymbol{\\theta}^{*}\\) ), an overline to denote a mean value (e.g., \\(\\overline{\\boldsymbol{\\theta}}\\) ).",
+    "crumbs": [
+      "About",
+      "Mathematics",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Notation</span>"
+    ]
+  },
+  {
+    "objectID": "course-contents/output-en.html#probability",
+    "href": "course-contents/output-en.html#probability",
+    "title": "2  Notation",
+    "section": "2.12 Probability",
+    "text": "2.12 Probability\nIn this section, we summarize the notation we use for probability theory (see Chapter 2 for details).\nWe denote a probability density function (pdf) or probability mass function (pmf) by \\(p\\), a cumulative distribution function (cdf) by \\(P\\), and the probability of a binary event by \\(\\operatorname{Pr}\\). We write \\(p(X)\\) for the distribution for random variable \\(X\\), and \\(p(Y)\\) for the distribution for random variable \\(Y\\) - these refer to different distributions, even though we use the same \\(p\\) symbol in both cases. (In cases where confusion may arise, we write \\(p_{X}(\\cdot)\\) and \\(p_{Y}(\\cdot)\\).) Approximations to a distribution \\(p\\) will often be represented by \\(q\\), or sometimes \\(\\hat{p}\\).\nIn some cases, we distinguish between a random variable (rv) and the values it can take on. In this case, we denote the variable in upper case (e.g., \\(X\\) ), and its value in lower case (e.g., \\(x\\) ). However, we often ignore this distinction between variables and values. For example, we sometimes write \\(p(x)\\) to denote either the scalar value (the distribution evaluated at a point) or the distribution itself, depending on whether \\(X\\) is observed or not.\nWe write \\(X \\sim p\\) to denote that \\(X\\) is distributed according to distribution \\(p\\). We write \\(X \\perp Y \\mid Z\\) to denote that \\(X\\) is conditionally independent of \\(Y\\) given \\(Z\\). If \\(X \\sim p\\), we denote the expected value of \\(f(X)\\) using\n\\[\\mathbb{E}[f(X)]=\\mathbb{E}_{p(X)}[f(X)]=\\mathbb{E}_{X}[f(X)]=\\int_{x} f(x) p(x) d x\\]\nIf \\(f\\) is the identity function, we write \\(\\bar{X} \\triangleq \\mathbb{E}[X]\\). Similarly, the variance is denoted by\n\\[\\mathbb{V}[f(X)]=\\mathbb{V}_{p(X)}[f(X)]=\\mathbb{V}_{X}[f(X)]=\\int_{x}(f(x)-\\mathbb{E}[f(X)])^{2} p(x) d x\\]\nIf \\(\\boldsymbol{x}\\) is a random vector, the covariance matrix is denoted\n\\[\\operatorname{Cov}[\\boldsymbol{x}]=\\mathbb{E}\\left[(\\boldsymbol{x}-\\overline{\\boldsymbol{x}})(\\boldsymbol{x}-\\overline{\\boldsymbol{x}})^{\\top}\\right]\\]\nIf \\(X \\sim p\\), the mode of a distribution is denoted by\n\\[\\hat{x}=\\operatorname{mode}[p]=\\underset{x}{\\operatorname{argmax}} p(x)\\]\nWe denote parametric distributions using \\(p(\\boldsymbol{x} \\mid \\boldsymbol{\\theta})\\), where \\(\\boldsymbol{x}\\) are the random variables, \\(\\boldsymbol{\\theta}\\) are the parameters and \\(p\\) is a pdf or pmf. For example, \\(\\mathcal{N}\\left(x \\mid \\mu, \\sigma^{2}\\right)\\) is a Gaussian (normal) distribution with mean \\(\\mu\\) and standard deviation \\(\\sigma\\).",
+    "crumbs": [
+      "About",
+      "Mathematics",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Notation</span>"
+    ]
+  },
+  {
+    "objectID": "course-contents/output-en.html#information-theory",
+    "href": "course-contents/output-en.html#information-theory",
+    "title": "2  Notation",
+    "section": "2.13 Information theory",
+    "text": "2.13 Information theory\nIn this section, we summarize the notation we use for information theory (see Chapter 6 for details).\nIf \\(X \\sim p\\), we denote the (differential) entropy of the distribution by \\(\\mathbb{H}(X)\\) or \\(\\mathbb{H}(p)\\). If \\(Y \\sim q\\), we denote the KL divergence from distribution \\(p\\) to \\(q\\) by \\(D_{\\mathbb{K K} L}(p \\| q)\\). If \\((X, Y) \\sim p\\), we denote the mutual information between \\(X\\) and \\(Y\\) by \\(\\mathbb{I}(X ; Y)\\).",
+    "crumbs": [
+      "About",
+      "Mathematics",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Notation</span>"
     ]
   },
   {
     "objectID": "course-contents/databases-intro-en.html",
     "href": "course-contents/databases-intro-en.html",
-    "title": "4  Databases introduction",
+    "title": "3  Databases introduction",
     "section": "",
-    "text": "4.1 Why databases are still important",
+    "text": "3.1 Why databases are still important",
     "crumbs": [
+      "About",
       "Statistics",
-      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Databases introduction</span>"
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Databases introduction</span>"
     ]
   },
   {
     "objectID": "course-contents/databases-intro-en.html#why-databases-are-still-important",
     "href": "course-contents/databases-intro-en.html#why-databases-are-still-important",
-    "title": "4  Databases introduction",
+    "title": "3  Databases introduction",
     "section": "",
-    "text": "4.1.1 Databases aren’t dinosaurs they are sharks\nPlease read following suggested reading:\n\nRelational Databases Aren’t Dinosaurs, They’re Sharks",
+    "text": "3.1.1 Databases aren’t dinosaurs they are sharks\nPlease read following suggested reading:\n\nRelational Databases Aren’t Dinosaurs, They’re Sharks",
     "crumbs": [
+      "About",
       "Statistics",
-      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Databases introduction</span>"
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Databases introduction</span>"
     ]
   },
   {
     "objectID": "course-contents/databases-intro-en.html#short-history-of-databases",
     "href": "course-contents/databases-intro-en.html#short-history-of-databases",
-    "title": "4  Databases introduction",
-    "section": "4.2 Short History of databases",
-    "text": "4.2 Short History of databases\n\n\n\nYear\nEvents\n\n\n\n\n1960s\nHierarchical ve Network models\n\n\n1970s\nRelational Model (1970 by Edgar F. Codd)\n\n\n1978\nFirst commercial relational database (Oracle)\n\n\n1990s\nObject Oriented\n\n\n2000s\nNoSQL and NewSQL\n\n\n2010s\nGraph databases\n\n\n2023s\nVector databases",
+    "title": "3  Databases introduction",
+    "section": "3.2 Short History of databases",
+    "text": "3.2 Short History of databases\n\n\n\nYear\nEvents\n\n\n\n\n1960s\nHierarchical ve Network models\n\n\n1970s\nRelational Model (1970 by Edgar F. Codd)\n\n\n1978\nFirst commercial relational database (Oracle)\n\n\n1990s\nObject Oriented\n\n\n2000s\nNoSQL and NewSQL\n\n\n2010s\nGraph databases\n\n\n2023s\nVector databases",
     "crumbs": [
+      "About",
       "Statistics",
-      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Databases introduction</span>"
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Databases introduction</span>"
     ]
   },
   {
     "objectID": "course-contents/database-models-en.html",
     "href": "course-contents/database-models-en.html",
-    "title": "5  Database models",
+    "title": "4  Database models",
     "section": "",
-    "text": "5.1 Document databases\nWikipedia (2016)\nMost well known example is mongodb. Document databases mostly store json documents. They are schema-free organization of data. That is unlike the relational databases, you do not upfront have to design database schema.\nThis has advantages and disadvantages.\nExamples include",
+    "text": "4.1 Document databases\nWikipedia (2016)\nMost well known example is mongodb. Document databases mostly store json documents. They are schema-free organization of data. That is unlike the relational databases, you do not upfront have to design database schema.\nThis has advantages and disadvantages.\nExamples include",
     "crumbs": [
+      "About",
       "Statistics",
-      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Database models</span>"
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Database models</span>"
     ]
   },
   {
     "objectID": "course-contents/database-models-en.html#document-databases",
     "href": "course-contents/database-models-en.html#document-databases",
-    "title": "5  Database models",
+    "title": "4  Database models",
     "section": "",
     "text": "MongoDB\nDatabricks\nAmazon DynamoDB\nMicrosoft Azure Cosmos DB\nCouchbase\nFirebase (google)\nOracle NoSQL",
     "crumbs": [
+      "About",
       "Statistics",
-      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Database models</span>"
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Database models</span>"
     ]
   },
   {
     "objectID": "course-contents/database-models-en.html#graph-database",
     "href": "course-contents/database-models-en.html#graph-database",
-    "title": "5  Database models",
-    "section": "5.2 Graph Database",
-    "text": "5.2 Graph Database\n\n\n\nWikipedia2016DatabaseModelsFigure",
+    "title": "4  Database models",
+    "section": "4.2 Graph Database",
+    "text": "4.2 Graph Database\n\n\n\nWikipedia2016DatabaseModelsFigure",
     "crumbs": [
+      "About",
       "Statistics",
-      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Database models</span>"
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Database models</span>"
     ]
   },
   {
     "objectID": "course-contents/database-models-en.html#vector-databases",
     "href": "course-contents/database-models-en.html#vector-databases",
-    "title": "5  Database models",
-    "section": "5.3 Vector databases",
-    "text": "5.3 Vector databases\n\n\n\n\n\ngraph TD\n    A[User Query] --&gt; B[RAG System]\n    B --&gt; C[Query Embedding]\n    C --&gt; D[Vector Database]\n    D --&gt; E[Retrieve Similar Vectors]\n    E --&gt; F[Fetch Corresponding Documents]\n    F --&gt; G[Augment Original Query]\n    G --&gt; H[LLM]\n    H --&gt; I[Generate Response]\n    I --&gt; J[Return Answer to User]\n\n    subgraph \"Document Ingestion\"\n        K[Source Documents] --&gt; L[Text Chunking]\n        L --&gt; M[Embedding Generation]\n        M --&gt; N[Store in Vector Database]\n    end\n\n    D -.-&gt; N\n\n\n\n\n\n\n\n\n\n\n\nWikipedia. 2016. “DatabaseModelsFigure — Wikipedia, the Free Encyclopedia.”",
+    "title": "4  Database models",
+    "section": "4.3 Vector databases",
+    "text": "4.3 Vector databases\n\n\n\n\n\ngraph TD\n    A[User Query] --&gt; B[RAG System]\n    B --&gt; C[Query Embedding]\n    C --&gt; D[Vector Database]\n    D --&gt; E[Retrieve Similar Vectors]\n    E --&gt; F[Fetch Corresponding Documents]\n    F --&gt; G[Augment Original Query]\n    G --&gt; H[LLM]\n    H --&gt; I[Generate Response]\n    I --&gt; J[Return Answer to User]\n\n    subgraph \"Document Ingestion\"\n        K[Source Documents] --&gt; L[Text Chunking]\n        L --&gt; M[Embedding Generation]\n        M --&gt; N[Store in Vector Database]\n    end\n\n    D -.-&gt; N\n\n\n\n\n\n\n\n\n\n\n\nWikipedia. 2016. “DatabaseModelsFigure — Wikipedia, the Free Encyclopedia.”",
     "crumbs": [
+      "About",
       "Statistics",
-      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Database models</span>"
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Database models</span>"
     ]
   },
   {
     "objectID": "course-contents/er-model-en.html",
     "href": "course-contents/er-model-en.html",
-    "title": "6  Entity Relationship (ER) modelling",
+    "title": "5  Entity Relationship (ER) modelling",
     "section": "",
-    "text": "6.1 Entity Relationship modeling Basics\nEntity Relationship (ER) modeling or diagramming is introduce by Peter Chen Chen (1976) in 1976. ER-Models consists of three parts\nEntities are basically tables in databases, like Student, Employee, Customer and Invoices. Relations shows the connections between entities. For example, a Customer has invoices. Attributes shows the values an entity have: For example, Customer entity will have name and phone.\nOriginal syntax is called Chen notation. Below is an figure from the original article Chen (1976).\nThe diagramming syntax is evolved by then but the basics stayed same.",
+    "text": "5.1 Entity Relationship modeling Basics\nEntity Relationship (ER) modeling or diagramming is introduce by Peter Chen Chen (1976) in 1976. ER-Models consists of three parts\nEntities are basically tables in databases, like Student, Employee, Customer and Invoices. Relations shows the connections between entities. For example, a Customer has invoices. Attributes shows the values an entity have: For example, Customer entity will have name and phone.\nOriginal syntax is called Chen notation. Below is an figure from the original article Chen (1976).\nThe diagramming syntax is evolved by then but the basics stayed same.",
     "crumbs": [
+      "About",
       "Causality",
-      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Entity Relationship (ER) modelling</span>"
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Entity Relationship (ER) modelling</span>"
     ]
   },
   {
     "objectID": "course-contents/er-model-en.html#entity-relationship-modeling-basics",
     "href": "course-contents/er-model-en.html#entity-relationship-modeling-basics",
-    "title": "6  Entity Relationship (ER) modelling",
+    "title": "5  Entity Relationship (ER) modelling",
     "section": "",
     "text": "Entity\nRelations\nAttributes\n\n\n\n\n\n\nSimple Er Diagram",
     "crumbs": [
+      "About",
       "Causality",
-      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Entity Relationship (ER) modelling</span>"
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Entity Relationship (ER) modelling</span>"
     ]
   },
   {
     "objectID": "course-contents/er-model-en.html#how-it-works",
     "href": "course-contents/er-model-en.html#how-it-works",
-    "title": "6  Entity Relationship (ER) modelling",
-    "section": "6.2 How it works",
-    "text": "6.2 How it works\nER-modelling work two ways, as below figure shows. First way, we could create diagrams then database tables. Second way, we could reverse engineer our diagrams from our database tables.\n\n\n\n\n\nflowchart TD\n    GUI[GUI Design E-R Model] --&gt;|Physical Model| DB1(Created Tables)\n    DB2(Created Tables) --&gt; |Reverse Engineer| Diagram[E-R Model]",
+    "title": "5  Entity Relationship (ER) modelling",
+    "section": "5.2 How it works",
+    "text": "5.2 How it works\nER-modelling work two ways, as below figure shows. First way, we could create diagrams then database tables. Second way, we could reverse engineer our diagrams from our database tables.\n\n\n\n\n\nflowchart TD\n    GUI[GUI Design E-R Model] --&gt;|Physical Model| DB1(Created Tables)\n    DB2(Created Tables) --&gt; |Reverse Engineer| Diagram[E-R Model]",
     "crumbs": [
+      "About",
       "Causality",
-      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Entity Relationship (ER) modelling</span>"
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Entity Relationship (ER) modelling</span>"
     ]
   },
   {
     "objectID": "course-contents/er-model-en.html#er-modelling-tools",
     "href": "course-contents/er-model-en.html#er-modelling-tools",
-    "title": "6  Entity Relationship (ER) modelling",
-    "section": "6.3 ER Modelling tools",
-    "text": "6.3 ER Modelling tools\nFor first way, there are a lot of tools exits. Examples:\n\nEnterprise Architect\nToad\nLucidChart ER Diagrams\n\nSee following video for how one tool works. LucidChart Tutorial: How to Create an ERD",
+    "title": "5  Entity Relationship (ER) modelling",
+    "section": "5.3 ER Modelling tools",
+    "text": "5.3 ER Modelling tools\nFor first way, there are a lot of tools exits. Examples:\n\nEnterprise Architect\nToad\nLucidChart ER Diagrams\n\nSee following video for how one tool works. LucidChart Tutorial: How to Create an ERD",
     "crumbs": [
+      "About",
       "Causality",
-      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Entity Relationship (ER) modelling</span>"
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Entity Relationship (ER) modelling</span>"
     ]
   },
   {
     "objectID": "course-contents/er-model-en.html#er-model-reverse-engineering-tools",
     "href": "course-contents/er-model-en.html#er-model-reverse-engineering-tools",
-    "title": "6  Entity Relationship (ER) modelling",
-    "section": "6.4 ER model reverse engineering tools",
-    "text": "6.4 ER model reverse engineering tools\nSecond way of working, reverse engineering existing database is more common. We reverse engineer an already existing database and get ER Diagram of it. For example, DBeaver has ER Diagrams.\n\n\n\nDBeaver ER Diagram\n\n\n\nOpen a connection\nselect tables\nin the opened window, select ER Diagram tab\n\nReading ER diagrams is useful skill to have since it allows you to more easily understand existing database structure.\nSee oracle sample HR and OE example in their documentation\nOracle SQL Developer has its own reverse engineering tools for oracle database. TODO add links.\nAnother tool for this purpose is Schema Spy.\n\n\n\n\nChen, Peter Pin-Shan. 1976. “The Entity-Relationship Model—Toward a Unified View of Data.” ACM Transactions on Database Systems 1 (1): 9–36. https://doi.org/10.1145/320434.320440.",
+    "title": "5  Entity Relationship (ER) modelling",
+    "section": "5.4 ER model reverse engineering tools",
+    "text": "5.4 ER model reverse engineering tools\nSecond way of working, reverse engineering existing database is more common. We reverse engineer an already existing database and get ER Diagram of it. For example, DBeaver has ER Diagrams.\n\n\n\nDBeaver ER Diagram\n\n\n\nOpen a connection\nselect tables\nin the opened window, select ER Diagram tab\n\nReading ER diagrams is useful skill to have since it allows you to more easily understand existing database structure.\nSee oracle sample HR and OE example in their documentation\nOracle SQL Developer has its own reverse engineering tools for oracle database. TODO add links.\nAnother tool for this purpose is Schema Spy.\n\n\n\n\nChen, Peter Pin-Shan. 1976. “The Entity-Relationship Model—Toward a Unified View of Data.” ACM Transactions on Database Systems 1 (1): 9–36. https://doi.org/10.1145/320434.320440.",
     "crumbs": [
+      "About",
       "Causality",
-      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Entity Relationship (ER) modelling</span>"
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Entity Relationship (ER) modelling</span>"
     ]
   },
   {
     "objectID": "course-contents/er-model-mermaid-diagrams-en.html",
     "href": "course-contents/er-model-mermaid-diagrams-en.html",
-    "title": "7  Mermaid ER Diagrams",
+    "title": "6  Mermaid ER Diagrams",
     "section": "",
-    "text": "7.1 Entity\nWe use mermaid Entity Relationship Diagram for diagramming since markdown syntax of mermaid is more easily understood and markdown as plain text is version controllable with source control tools like git. Also mermaid diagrams are automatically rendered by web versions of source control tools such as github, gitlab and azure devops.\nEntities are most basic part in the diagrams. They correspond to database tables normally. We can also give their attributes or columns in the diagram too. See below example.\nerDiagram\n    Student {\n        int student_id PK\n        string name\n    }\n\n\n\n\nerDiagram\n    Student {\n        int student_id PK\n        string name\n    }",
+    "text": "6.1 Entity\nWe use mermaid Entity Relationship Diagram for diagramming since markdown syntax of mermaid is more easily understood and markdown as plain text is version controllable with source control tools like git. Also mermaid diagrams are automatically rendered by web versions of source control tools such as github, gitlab and azure devops.\nEntities are most basic part in the diagrams. They correspond to database tables normally. We can also give their attributes or columns in the diagram too. See below example.\nerDiagram\n    Student {\n        int student_id PK\n        string name\n    }\n\n\n\n\nerDiagram\n    Student {\n        int student_id PK\n        string name\n    }",
     "crumbs": [
+      "About",
       "Causality",
-      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Mermaid ER Diagrams</span>"
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Mermaid ER Diagrams</span>"
     ]
   },
   {
     "objectID": "course-contents/er-model-mermaid-diagrams-en.html#entity-relationships",
     "href": "course-contents/er-model-mermaid-diagrams-en.html#entity-relationships",
-    "title": "7  Mermaid ER Diagrams",
-    "section": "7.2 Entity Relationships",
-    "text": "7.2 Entity Relationships\nEntities should have relationships. That is how they interact with other entities. The syntax for it is below:\n&lt;first-entity&gt; [&lt;relationship&gt; &lt;second-entity&gt; : &lt;relationship-label&gt;]\nRelationship label should show how it works in the requirements or domain. Please try to choose it accordingly.\nAn example a student enrolls in many courses. We could write it like below.\n\nerDiagram\n    Student ||--o{ Course : enrolls\n\n\n\n\nerDiagram\n    Student ||--o{ Course : enrolls\n\n\n\n\n\n\nIn this syntax, following table shows how we can model cardinality of the entities. That is 0,1 or many information between the entities.\n\n\n\nValue (left)\nValue (right)\nMeaning\n\n\n\n\n|o\no|\nZero or one\n\n\n||\n||\nExactly one\n\n\n}o\no{\nZero or more (no upper limit)\n\n\n}|\n|{\nOne or more (no upper limit)\n\n\n\nWe can read this information following way then\n\nStudent has zero to one advisor\nStudent has exactly one advisor\nStudent enrolls in 0-to-many courses\nStudent enrolls in 1-to-many courses",
+    "title": "6  Mermaid ER Diagrams",
+    "section": "6.2 Entity Relationships",
+    "text": "6.2 Entity Relationships\nEntities should have relationships. That is how they interact with other entities. The syntax for it is below:\n&lt;first-entity&gt; [&lt;relationship&gt; &lt;second-entity&gt; : &lt;relationship-label&gt;]\nRelationship label should show how it works in the requirements or domain. Please try to choose it accordingly.\nAn example a student enrolls in many courses. We could write it like below.\n\nerDiagram\n    Student ||--o{ Course : enrolls\n\n\n\n\nerDiagram\n    Student ||--o{ Course : enrolls\n\n\n\n\n\n\nIn this syntax, following table shows how we can model cardinality of the entities. That is 0,1 or many information between the entities.\n\n\n\nValue (left)\nValue (right)\nMeaning\n\n\n\n\n|o\no|\nZero or one\n\n\n||\n||\nExactly one\n\n\n}o\no{\nZero or more (no upper limit)\n\n\n}|\n|{\nOne or more (no upper limit)\n\n\n\nWe can read this information following way then\n\nStudent has zero to one advisor\nStudent has exactly one advisor\nStudent enrolls in 0-to-many courses\nStudent enrolls in 1-to-many courses",
     "crumbs": [
+      "About",
       "Causality",
-      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Mermaid ER Diagrams</span>"
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Mermaid ER Diagrams</span>"
     ]
   },
   {
     "objectID": "course-contents/er-model-mermaid-diagrams-en.html#full-example-1",
     "href": "course-contents/er-model-mermaid-diagrams-en.html#full-example-1",
-    "title": "7  Mermaid ER Diagrams",
-    "section": "7.3 Full example 1",
-    "text": "7.3 Full example 1\n\nerDiagram\n    STUDENT ||--o{ COURSE : enrolls\n    COURSE ||--|{ LESSON : contains\n    TEACHER ||--o{ COURSE : teaches\n    TEACHER ||--o{ LESSON : conducts\n    STUDENT ||--o{ LESSON : attends\n\n\n    STUDENT {\n        int id PK\n        string name\n        date created_at\n        date updated_at\n    }\n    COURSE {\n        int id PK\n        string title\n        string description\n        date created_at\n        date updated_at\n    }\n    LESSON {\n        int id PK\n        int course_id FK\n        string title\n        date scheduled_date\n        date created_at\n        date updated_at\n    }\n    TEACHER {\n        int id PK\n        string name\n        string email\n        date created_at\n        date updated_at\n    }\n\n\n\n\nerDiagram\n    STUDENT ||--o{ COURSE : enrolls\n    COURSE ||--|{ LESSON : contains\n    TEACHER ||--o{ COURSE : teaches\n    TEACHER ||--o{ LESSON : conducts\n    STUDENT ||--o{ LESSON : attends\n\n\n    STUDENT {\n        int id PK\n        string name\n        date created_at\n        date updated_at\n    }\n    COURSE {\n        int id PK\n        string title\n        string description\n        date created_at\n        date updated_at\n    }\n    LESSON {\n        int id PK\n        int course_id FK\n        string title\n        date scheduled_date\n        date created_at\n        date updated_at\n    }\n    TEACHER {\n        int id PK\n        string name\n        string email\n        date created_at\n        date updated_at\n    }\n\n\n\n\n\n\nhttps://mermaid.live/",
+    "title": "6  Mermaid ER Diagrams",
+    "section": "6.3 Full example 1",
+    "text": "6.3 Full example 1\n\nerDiagram\n    STUDENT ||--o{ COURSE : enrolls\n    COURSE ||--|{ LESSON : contains\n    TEACHER ||--o{ COURSE : teaches\n    TEACHER ||--o{ LESSON : conducts\n    STUDENT ||--o{ LESSON : attends\n\n\n    STUDENT {\n        int id PK\n        string name\n        date created_at\n        date updated_at\n    }\n    COURSE {\n        int id PK\n        string title\n        string description\n        date created_at\n        date updated_at\n    }\n    LESSON {\n        int id PK\n        int course_id FK\n        string title\n        date scheduled_date\n        date created_at\n        date updated_at\n    }\n    TEACHER {\n        int id PK\n        string name\n        string email\n        date created_at\n        date updated_at\n    }\n\n\n\n\nerDiagram\n    STUDENT ||--o{ COURSE : enrolls\n    COURSE ||--|{ LESSON : contains\n    TEACHER ||--o{ COURSE : teaches\n    TEACHER ||--o{ LESSON : conducts\n    STUDENT ||--o{ LESSON : attends\n\n\n    STUDENT {\n        int id PK\n        string name\n        date created_at\n        date updated_at\n    }\n    COURSE {\n        int id PK\n        string title\n        string description\n        date created_at\n        date updated_at\n    }\n    LESSON {\n        int id PK\n        int course_id FK\n        string title\n        date scheduled_date\n        date created_at\n        date updated_at\n    }\n    TEACHER {\n        int id PK\n        string name\n        string email\n        date created_at\n        date updated_at\n    }\n\n\n\n\n\n\nhttps://mermaid.live/",
     "crumbs": [
+      "About",
       "Causality",
-      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Mermaid ER Diagrams</span>"
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Mermaid ER Diagrams</span>"
     ]
   },
   {
     "objectID": "course-contents/er-model-mermaid-diagrams-en.html#use-llms-to-generate-er-diagrams",
     "href": "course-contents/er-model-mermaid-diagrams-en.html#use-llms-to-generate-er-diagrams",
-    "title": "7  Mermaid ER Diagrams",
-    "section": "7.4 Use LLMs to generate ER diagrams",
-    "text": "7.4 Use LLMs to generate ER diagrams\nWe can use LLMs like ChatGPT, Gemini or Perplexity to create our draft diagrams since mermaid is normal markdown code.\nBelow AI prompt creates a draft mermaid diagram to start from.\n\nPlease create me a simple mermaid entity relationship diagram which shows students, courses, lessons and teachers. All of the entities should have common columns in it.\n\nTry it in AI tools to see the result.",
+    "title": "6  Mermaid ER Diagrams",
+    "section": "6.4 Use LLMs to generate ER diagrams",
+    "text": "6.4 Use LLMs to generate ER diagrams\nWe can use LLMs like ChatGPT, Gemini or Perplexity to create our draft diagrams since mermaid is normal markdown code.\nBelow AI prompt creates a draft mermaid diagram to start from.\n\nPlease create me a simple mermaid entity relationship diagram which shows students, courses, lessons and teachers. All of the entities should have common columns in it.\n\nTry it in AI tools to see the result.",
     "crumbs": [
+      "About",
       "Causality",
-      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Mermaid ER Diagrams</span>"
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Mermaid ER Diagrams</span>"
+    ]
+  },
+  {
+    "objectID": "references-en.html",
+    "href": "references-en.html",
+    "title": "References",
+    "section": "",
+    "text": "Chen, Peter Pin-Shan. 1976. “The Entity-Relationship Model—Toward\na Unified View of Data.” ACM Transactions on Database\nSystems 1 (1): 9–36. https://doi.org/10.1145/320434.320440.\n\n\nWikipedia. 2016. “DatabaseModelsFigure — Wikipedia,\nthe Free Encyclopedia.”",
+    "crumbs": [
+      "About",
+      "References"
     ]
   }
 ]

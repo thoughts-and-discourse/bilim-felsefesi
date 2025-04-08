@@ -5,17 +5,20 @@ book:
   title: "Philosophy of Science"
   navbar:
     background: primary
+    left:
+    - text: "About"
+      href: about-en.html 
     right:
       - text: "English"
         href: ../en/index.html
       - text: "Türkçe"
         href: ../tr/index.html  
   chapters:
+    - index.qmd
+    - about-en.qmd
     - part: "Mathematics"
       chapters:
-        - index.qmd
-        - Syllabus-en.qmd
-        - course-contents/course-introduction-en.qmd
+        - course-contents/output-en.md
     - part: "Statistics"
       chapters:        
         - course-contents/databases-intro-en.qmd

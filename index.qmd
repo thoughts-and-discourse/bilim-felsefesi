@@ -11,6 +11,9 @@
 ::: {.content-visible when-profile="en"}
 # Content  {.numbered} 
 
+This site aims to create an interdisciplinary space of thought that brings together philosophy of science and mathematical reasoning. It is important that the content maintains a certain academic standard while also being accessible to a broad audience.
+
+
 This site will feature discussions on
 
 - Philosophy of science
@@ -26,7 +29,10 @@ This site will feature discussions on
 ::: {.content-visible when-profile="tr"}
 # İçerik  {.numbered} 
 
-Bu sitede odaklanılacak başlıca konular:
+Bu site, bilim felsefesi ve matematiksel dusunce bir araya getiren disiplinler arası bir düşünce alanı oluşturmayı amaçlamaktadır. İçeriklerin, hem belli bir akademik seviyeyi korumasi, hem de geniş bir kitle tarafından anlaşılabilir nitelikte bulunması önemlidir.
+
+
+Sitede odaklanılacak konular genel olarak:
 
 - Bilim felsefesi
 - Bilimsel yöntemde dilin (doğal ve formal) rolü

@@ -1,0 +1,29 @@
+---
+title: "About"
+number-sections: false
+---
+
+The author of this website holds a Ph.D. in engineering and focuses particularly on the functional role of mathematics and formal theories in scientific thought.
+
+## Philosophical Influences
+
+The author’s thoughts are influenced by both classical Islamic thought and Western philosophy. In particular:
+
+- **Imam al-Ghazālī**’s approach to critical reasoning and epistemology,
+
+- **Bediüzzaman Said Nursî**’s efforts to establish a relationship between faith and science,
+
+- In the West, especially the empiricist philosophers’ knowledge- and observation-centered approaches, as well as the Logical Empiricists’ attempts to clarify the linguistic and logical structure of scientific statements,
+
+stand out as key sources of inspiration.
+
+
+### Contact
+
+To send your comments or to contribute to this website with content, 
+
+email: thoughts.and.discourse@gmail.com
+
+
+
+
